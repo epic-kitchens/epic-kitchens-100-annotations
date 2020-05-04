@@ -50,31 +50,31 @@ We provide csv files for the train/val/test sets of each benchmark detailed belo
 Ground truth is provided for action segments as action/verb/noun labels along with the start and end times of the segment.
 
 
-# Quick Start
+## Quick Start
 
 Here you can download the annotation files for all of the challenges. For more information on each challenge, please see the paper [here]() for more details for each challenge.
 Download scripts are provided for the [videos](), [RGB Frames]() and [Flow frames]().
 
-## Action Recognition Challenge
+### Action Recognition Challenge
 Download the [train]()/[val]()/[test]() files.
 
-## Weakly Supervised Action Recognition Challenge
+### Weakly Supervised Action Recognition Challenge
 Download the [train]()/[val]()/[test]() files.
 
-## Action Detection Challenge
+### Action Detection Challenge
 Download the [train]()/[val]()/[test]() files.
 
-## Action Anticipation Challenge
+### Action Anticipation Challenge
 Download the [train]()/[val]()/[test]() files.
 
-## Unsupervised Domain Adaptation Challenge
+### Unsupervised Domain Adaptation Challenge
 Download the [source train]()/[target train]()/[target test]() files.
 
-## Action Retrieval Challenge
+### Action Retrieval Challenge
 Download the [train]()/[test]() files.
 
 
-# Important Files
+## Important Files
 
 We direct the reader to [RDSF]() for the videos and RGB/Flow frames. For ease of use, download scripts are [provided]() (see [here](#file downloads) for more details).
 We provide html and pdf alternatives to this README which are auto-generated.
@@ -87,7 +87,7 @@ We provide html and pdf alternatives to this README which are auto-generated.
 * [`EPIC_100_val.csv`](EPIC_100_val.csv) ([info](#epic_100_valcsv)) ([Pickle](EPIC_100_val.pkl))
 * [`EPIC_100_test.csv`](EPIC_100_test.csv) ([info](#epic_100_testcsv)) ([Pickle](EPIC_100_test.pkl))
 
-## Additional Files
+### Additional Files
 
 * [`EPIC_100_UDA_source_train`](EPIC_100_UDA_source_train.csv) ([info](#epic_100_UDA_source_traincsv)) ([Pickle](epic_100_source_train.pkl))
 * [`EPIC_100_UDA_target_train`](EPIC_100_UDA_target_train.csv) ([info](#epic_100_UDA_target_traincsv)) ([Pickle](epic_100_target_train.pkl))
@@ -95,13 +95,13 @@ We provide html and pdf alternatives to this README which are auto-generated.
 * [`EPIC_100_retrieval_train`](EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](epic_100_retrieval_train.pkl))
 * [`EPIC_100_retrieval_test`](EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](epic_100_retrieval_test.pkl))
 
-# File Structure
+## File Structure
 
 <!-- TODO fill in file structure! -->
 
-# Additional Information
+## Additional Information
 
-## File Downloads
+### File Downloads
 
 Due to the size of the dataset we provide scripts for downloading parts of the dataset:
 

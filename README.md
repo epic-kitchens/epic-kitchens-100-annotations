@@ -36,7 +36,7 @@ The EPIC-Kitchens-100 dataset is an extension of the EPIC-Kitchens-55 dataset. V
 * `PXX_1YY.MP4` videos originate from the extension collected for EPIC-Kitchens-100 (thus represent new videos).
 
 
-The dataset currently has 5 active benchmarks:
+The dataset currently has 6 active benchmarks:
 
 * Action Recognition
 * Weakly Supervised Action Recognition
@@ -56,22 +56,22 @@ Here you can download the annotation files for all of the challenges. For more i
 Download scripts are provided for the [videos](), [RGB Frames]() and [Flow frames]().
 
 ### Action Recognition Challenge
-Download the [train]()/[val]()/[test]() files.
+Download the Action Recognition [train]()/[val]()/[test]() files.
 
 ### Weakly Supervised Action Recognition Challenge
-Download the [train]()/[val]()/[test]() files.
+This challenge uses the Action Recognition files, download the [train]()/[val]()/[test]() files.
 
 ### Action Detection Challenge
-Download the [train]()/[val]()/[test]() files.
+This challenge uses the Action Recognition files, download the [train]()/[val]()/[test]() files.
 
 ### Action Anticipation Challenge
-Download the [train]()/[val]()/[test]() files.
+This challenge uses the Action Recognition files, download the [train]()/[val]()/[test]() files.
 
 ### Unsupervised Domain Adaptation Challenge
-Download the [source train]()/[target train]()/[target test]() files.
+Download the Unsupervised Domain Adaptation [source train]()/[target train]()/[target test]() files.
 
 ### Action Retrieval Challenge
-Download the [train]()/[test]() files.
+Download the Action Retrieval [train]()/[test]() files.
 
 
 ## Important Files

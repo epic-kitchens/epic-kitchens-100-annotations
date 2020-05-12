@@ -1,0 +1,197 @@
+<h1 id="epic-kitchens-100-dataset">EPIC Kitchens 100 Dataset</h1>
+<!-- start badges -->
+<!-- end badges -->
+<blockquote>
+<p><a href="https://epic-kitchens.github.io/">EPIC-Kitchens-100</a> is the largest dataset in first-person (egocentric) vision; itself an extension of the <a href="https://github.com/epic-kitchens/annotations">EPIC-Kitchens-55 dataset</a>.</p>
+</blockquote>
+<h2 id="authors">Authors</h2>
+<p>Dima Damen (1) Hazel Doughty (1) Giovanni Maria Farinella (2) Antonino Furnari (2) Evangelos Kazakos (1) Jian Ma (1) Davide Moltisanti (1) Jonathan Munro (1) Toby Perrett (1) Will Price (1) Michael Wray (1)</p>
+<ul>
+<li>(1 University of Bristol)</li>
+<li>(2 University of Catania)</li>
+</ul>
+<p><strong>Contact:</strong> <a href="mailto:uob-epic-kitchens2018@bristol.ac.uk">uob-epic-kitchens2018@bristol.ac.uk</a> <!-- TODO, should this be changed/renamed? --></p>
+<h2 id="citing">Citing</h2>
+<p>When using the dataset, kindly reference:</p>
+<p>TBA</p>
+<h2 id="dataset-details">Dataset Details</h2>
+<p>The EPIC-Kitchens-100 dataset is an extension of the EPIC-Kitchens-55 dataset. Videos are distinguished as follows:</p>
+<ul>
+<li><code>PXX_YY.MP4</code> videos originate from EPIC-Kitchens-55.</li>
+<li><code>PXX_1YY.MP4</code> videos originate from the extension collected for EPIC-Kitchens-100 (thus represent new videos).</li>
+</ul>
+<p>The dataset currently has 6 active benchmarks:</p>
+<ul>
+<li>Action Recognition</li>
+<li>Weakly Supervised Action Recognition</li>
+<li>Action Detection</li>
+<li>Action Anticipation</li>
+<li>Unsupervised Domain Adaptation</li>
+<li>Action Retrieval</li>
+</ul>
+<p>We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use.</p>
+<p>Ground truth is provided for action segments as action/verb/noun labels along with the start and end times of the segment.</p>
+<h2 id="quick-start">Quick Start</h2>
+<p>Here you can download the annotation files for all of the challenges. For more information on each challenge, please see the paper <a href="">here</a>. Download scripts are provided for the <a href="">videos</a>, <a href="">RGB Frames</a> and <a href="">Flow frames</a>.</p>
+<h3 id="action-recognition-challenge">Action Recognition Challenge</h3>
+<p>Download the Action Recognition <a href="">train</a>/<a href="">val</a>/<a href="">test</a> files.</p>
+<h3 id="weakly-supervised-action-recognition-challenge">Weakly Supervised Action Recognition Challenge</h3>
+<p>This challenge uses the Action Recognition files, download the <a href="">train</a>/<a href="">val</a>/<a href="">test</a> files.</p>
+<h3 id="action-detection-challenge">Action Detection Challenge</h3>
+<p>This challenge uses the Action Recognition files, download the <a href="">train</a>/<a href="">val</a>/<a href="">test</a> files.</p>
+<h3 id="action-anticipation-challenge">Action Anticipation Challenge</h3>
+<p>This challenge uses the Action Recognition files, download the <a href="">train</a>/<a href="">val</a>/<a href="">test</a> files.</p>
+<h3 id="unsupervised-domain-adaptation-challenge">Unsupervised Domain Adaptation Challenge</h3>
+<p>Download the Unsupervised Domain Adaptation <a href="">source train</a>/<a href="">target train</a>/<a href="">target test</a> files.</p>
+<h3 id="action-retrieval-challenge">Action Retrieval Challenge</h3>
+<p>Download the Action Retrieval <a href="">train</a>/<a href="">test</a> files.</p>
+<h2 id="important-files">Important Files</h2>
+<p>We direct the reader to <a href="">RDSF</a> for the videos and RGB/Flow frames. For ease of use, download scripts are <a href="">provided</a> (see <a href="#file_downloads">here</a> for more details). We provide html and pdf alternatives to this README which are auto-generated.</p>
+<ul>
+<li><code>README.md (this file)</code></li>
+<li><code>README.pdf</code></li>
+<li><code>README.html</code></li>
+<li><a href="#license"><code>license.txt</code></a></li>
+<li><a href="EPIC_100_train.csv"><code>EPIC_100_train.csv</code></a> (<a href="#epic_100_traincsv">info</a>) (<a href="EPIC_100_train.pkl">Pickle</a>)</li>
+<li><a href="EPIC_100_val.csv"><code>EPIC_100_val.csv</code></a> (<a href="#epic_100_valcsv">info</a>) (<a href="EPIC_100_val.pkl">Pickle</a>)</li>
+<li><a href="EPIC_100_test.csv"><code>EPIC_100_test.csv</code></a> (<a href="#epic_100_testcsv">info</a>) (<a href="EPIC_100_test.pkl">Pickle</a>)</li>
+</ul>
+<h3 id="additional-files">Additional Files</h3>
+<ul>
+<li><a href="EPIC_100_UDA_source_train.csv"><code>EPIC_100_UDA_source_train</code></a> (<a href="#epic_100_UDA_source_traincsv">info</a>) (<a href="epic_100_source_train.pkl">Pickle</a>)</li>
+<li><a href="EPIC_100_UDA_target_train.csv"><code>EPIC_100_UDA_target_train</code></a> (<a href="#epic_100_UDA_target_traincsv">info</a>) (<a href="epic_100_target_train.pkl">Pickle</a>)</li>
+<li><a href="EPIC_100_UDA_target_test.csv"><code>EPIC_100_UDA_target_test</code></a> (<a href="#epic_100_UDA_target_testcsv">info</a>) (<a href="epic_100_target_test.pkl">Pickle</a>)</li>
+<li><a href="EPIC_100_retrieval_train.csv"><code>EPIC_100_retrieval_train</code></a> (<a href="#epic_100_retrieval_traincsv">info</a>) (<a href="epic_100_retrieval_train.pkl">Pickle</a>)</li>
+<li><a href="EPIC_100_retrieval_test.csv"><code>EPIC_100_retrieval_test</code></a> (<a href="#epic_100_retrieval_testcsv">info</a>) (<a href="epic_100_retrieval_test.pkl">Pickle</a>)</li>
+</ul>
+<h2 id="file-structure">File Structure</h2>
+<h4 id="epic_100_train.csv">EPIC_100_train.csv</h4>
+<p>This CSV file contains the action annotations for the training set and contains 15 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 19%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P01_01_0</code></td>
+<td>Unique ID for the segment which includes participant ID and video ID.</td>
+</tr>
+<tr class="even">
+<td><code>participant_id</code></td>
+<td>int</td>
+<td><code>P01</code></td>
+<td>ID of the participant (unique per participant).</td>
+</tr>
+<tr class="odd">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_01</code></td>
+<td>ID of the video where the segment originated from (unique per video).</td>
+</tr>
+<tr class="even">
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:00.14</code></td>
+<td>Start time in <code>HH:mm:ss.SSS</code> of the action segment.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:03.37</code></td>
+<td>End time in <code>HH:mm:ss.SSS</code> of the action segment.</td>
+</tr>
+<tr class="even">
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>8</code></td>
+<td>Start frame of the action.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>202</code></td>
+<td>End frame of the action.</td>
+</tr>
+<tr class="even">
+<td><code>narration_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:01.089</code></td>
+<td>Timestamp of when the original narration was recorded in <code>HH:mm:ss:SSS</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>open door</code></td>
+<td>Transcribed description of the English narration provided by the participant.</td>
+</tr>
+<tr class="even">
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>open</code></td>
+<td>Parsed verb from the narration.</td>
+</tr>
+<tr class="odd">
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>Numeric ID of the verb’s class.</td>
+</tr>
+<tr class="even">
+<td><code>noun</code></td>
+<td>string</td>
+<td><code>door</code></td>
+<td>First parsed noun from the narration.</td>
+</tr>
+<tr class="odd">
+<td><code>noun_class</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>Numeric ID of the first noun’s class.</td>
+</tr>
+<tr class="even">
+<td><code>all_nouns</code></td>
+<td>list of string (1 or more)</td>
+<td><code>[door]</code></td>
+<td>List of all parsed nouns within the narration.</td>
+</tr>
+<tr class="odd">
+<td><code>all_noun_classes</code></td>
+<td>list of int (1 or more)</td>
+<td><code>[3]</code></td>
+<td>Numeric ID of all of the parsed noun’s classes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-information">Additional Information</h2>
+<h3 id="file-downloads">File Downloads</h3>
+<p>Due to the size of the dataset we provide scripts for downloading parts of the dataset:</p>
+<ul>
+<li><a href="">videos</a> (GB)</li>
+<li><a href="">frames</a> (GB)
+<ul>
+<li><a href="">rgb-frames</a> (GB)</li>
+<li><a href="">flow-frames</a> (GB)</li>
+</ul></li>
+</ul>
+<p><em>Note: These scripts will work for Linux and Mac. For Windows users a bash installation should work.</em></p>
+<p>These scripts replicate the folder structure of the dataset release on RDSF, found <a href="">here</a>.</p>
+<p>If you wish to download part of the dataset instructions can be found <a href="">here</a>.</p>
+<h3 id="differences-to-epic-kitchen-100">Differences to EPIC-Kitchen-100</h3>
+<p>Whilst videos from EPIC-Kitchens-55 are used within EPIC-Kitchens-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-Kitchens-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-Kitchens-55 cannot be used for EPIC-Kitchens-100.</p>
+<h2 id="license">License</h2>
+<p>All files in this dataset are copyright by us and published under the Creative Commons Attribution-NonCommerial 4.0 International License, found <a href="https://creativecommons.org/licenses/by-nc/4.0/">here</a>. This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. You may not use the material for commercial purposes.</p>
+<h2 id="changelog">Changelog</h2>
+<p>Please see the <a href="">release history</a> for the changelog.</p>

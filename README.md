@@ -2,7 +2,7 @@
 
 <!-- start badges -->
 
-<!-- wnd badges -->
+<!-- end badges -->
 
 > [EPIC-Kitchens-100](https://epic-kitchens.github.io/) is the largest dataset in first-person (egocentric) vision; itself an extension of the [EPIC-Kitchens-55 dataset](https://github.com/epic-kitchens/annotations).
 

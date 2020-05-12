@@ -36,6 +36,7 @@ The EPIC-Kitchens-100 dataset is an extension of the EPIC-Kitchens-55 dataset. V
 * `PXX_1YY.MP4` videos originate from the extension collected for EPIC-Kitchens-100 (thus represent new videos).
 
 
+
 The dataset currently has 6 active benchmarks:
 
 * Action Recognition
@@ -139,6 +140,10 @@ These scripts replicate the folder structure of the dataset release on RDSF, fou
 
 If you wish to download part of the dataset instructions can be found
 [here]().
+
+### Differences to EPIC-Kitchen-100
+
+Whilst videos from EPIC-Kitchens-55 are used within EPIC-Kitchens-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-Kitchens-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-Kitchens-55 cannot be used for EPIC-Kitchens-100.
 
 ## License
 All files in this dataset are copyright by us and published under the 

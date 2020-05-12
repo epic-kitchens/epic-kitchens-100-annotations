@@ -51,7 +51,6 @@ jobs:
             git config --global user.name "CircleCI"
             git config --global push.default simple
             git add README.{html,pdf}
-#            git add *.pkl
             prev="$(git rev-parse --short HEAD)"
             git commit -m "[skip ci] Generate README files and add metadata to pickles from $prev"
             CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"

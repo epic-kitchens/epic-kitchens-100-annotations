@@ -1,0 +1,58 @@
+# Python CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-python/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # specify the version you desire here
+      # use `-browsers` prefix for selenium tests, e.g. `3.6.1-browsers`
+      - image: circleci/python:3.6
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      # - image: circleci/postgres:9.4
+
+    working_directory: ~/repo
+
+    steps:
+
+      - checkout
+      - run:
+          name: install dependencies
+          command: |
+            sudo apt-get update; sudo apt-get install pandoc
+            sudo apt-get --no-install-recommends install texlive-{base,extra-utils,generic-recommended,fonts-recommended,font-utils,latex-base,latex-recommended,latex-extra,science,pstricks} lmodern
+            pip install --user pandas==0.22.0
+      - run:
+          name: generate html and pdf
+          command: |
+            sed -i '/start badges/,/end badges/{//!d}' README.md
+            pandoc -f markdown -V geometry:margin=1.5cm -V geometry:landscape README.md -o README.pdf
+            pandoc -f markdown README.md -o README.html
+#      - run:
+#          name: update pickle metadata
+#          command: |
+#              python .circleci/add_metadata.py *.pkl \
+#                --commit-hash "$(git rev-parse --short HEAD)" \
+#                --version-number "$(git describe --abbrev=0 --tags)"
+#      - run:
+#          name: test pickles
+#          command: |
+#              python .circleci/test_pickles.py *.pkl \
+#                 --commit-hash "$(git rev-parse --short HEAD)" \
+#                 --version-number "$(git describe --abbrev=0 --tags)"
+      - run:
+          name: upload generated files
+          command: |
+            git config --global user.email "circleci@example.com"
+            git config --global user.name "CircleCI"
+            git config --global push.default simple
+            git add README.{html,pdf}
+            git add *.pkl
+            prev="$(git rev-parse --short HEAD)"
+            git commit -m "[skip ci] Generate README files and add metadata to pickles from $prev"
+            CURRENT_BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+            git push -u origin "$CURRENT_BRANCH"

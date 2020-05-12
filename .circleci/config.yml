@@ -51,7 +51,6 @@ jobs:
       - run:
           name: upload generated files
           command: |
-            mv ../.ssh/id_rsa_b392c5ca31552c370b71f8cfc1f9db9a ../.ssh/id_rsa
             git config --global user.email "circleci@example.com"
             git config --global user.name "CircleCI"
             git config --global push.default simple

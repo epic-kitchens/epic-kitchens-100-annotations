@@ -107,11 +107,11 @@ This CSV file contains the action annotations for the training set and contains 
 | `narration_id`        | string                     | `P01_01_0`     | Unique ID for the segment which includes participant ID and video ID.         |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_01`       | ID of the video where the segment originated from (unique per video).         |
+| `narration_timestamp` | string                     | `00:00:01.089` | Timestamp of when the original narration was recorded in `HH:mm:ss:SSS`.      |
 | `start_timestamp`     | string                     | `00:00:00.14`  | Start time in `HH:mm:ss.SSS` of the action segment.                           |
 | `stop_timestamp`      | string                     | `00:00:03.37`  | End time in `HH:mm:ss.SSS` of the action segment.                             |
 | `start_frame`         | int                        | `8`            | Start frame of the action.                                                    |
 | `stop_frame`          | int                        | `202`          | End frame of the action.                                                      |
-| `narration_timestamp` | string                     | `00:00:01.089` | Timestamp of when the original narration was recorded in `HH:mm:ss:SSS`.      |
 | `narration`           | string                     | `open door`    | Transcribed description of the English narration provided by the participant. |
 | `verb`                | string                     | `open`         | Parsed verb from the narration.                                               |
 | `verb_class`          | int                        | `3`            | Numeric ID of the verb's class.                                               |

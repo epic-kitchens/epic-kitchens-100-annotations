@@ -54,19 +54,19 @@ Ground truth is provided for action segments as action/verb/noun labels along wi
 ## Quick Start
 
 Here you can download the annotation files for all of the challenges. For more information on each challenge, please see the paper [here]().
-Download scripts are provided for the [videos](), [RGB Frames]() and [Flow frames]().
+Download scripts are provided for the videos, RGB Frames and Flow frames [here](https://github.com/epic-kitchens/download-scripts-100).
 
 ### Action Recognition Challenge
-Download the Action Recognition [train]()/[val]()/[test]() files.
+Download the Action Recognition [train](EPIC_100_train)/[val](EPIC_100_val)/[test](EPIC_100_test) files.
 
 ### Weakly Supervised Action Recognition Challenge
-This challenge uses the Action Recognition files, download the [train]()/[val]()/[test]() files.
+This challenge uses the Action Recognition files, download the [train](EPIC_100_train)/[val](EPIC_100_val)/[test](EPIC_100_test) files.
 
 ### Action Detection Challenge
-This challenge uses the Action Recognition files, download the [train]()/[val]()/[test]() files.
+This challenge uses the Action Recognition files, download the [train](EPIC_100_train)/[val](EPIC_100_val)/[test](EPIC_100_test) files.
 
 ### Action Anticipation Challenge
-This challenge uses the Action Recognition files, download the [train]()/[val]()/[test]() files.
+This challenge uses the Action Recognition files, download the [train](EPIC_100_train)/[val](EPIC_100_val)/[test](EPIC_100_test) files.
 
 ### Unsupervised Domain Adaptation Challenge
 Download the Unsupervised Domain Adaptation [source train]()/[target train]()/[target test]() files.
@@ -77,7 +77,7 @@ Download the Action Retrieval [train]()/[test]() files.
 
 ## Important Files
 
-We direct the reader to [RDSF]() for the videos and RGB/Flow frames. For ease of use, download scripts are [provided]() (see [here](#file_downloads) for more details).
+We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m) for the videos and RGB/Flow frames. For ease of use, download scripts are [provided](https://github.com/epic-kitchens/download-scripts-100) (see [file_downloads](#file_downloads) for more details).
 We provide html and pdf alternatives to this README which are auto-generated.
 
 * `README.md (this file)`
@@ -86,7 +86,7 @@ We provide html and pdf alternatives to this README which are auto-generated.
 * [`license.txt`](#license)
 * [`EPIC_100_train.csv`](EPIC_100_train.csv) ([info](#epic_100_traincsv)) ([Pickle](EPIC_100_train.pkl))
 * [`EPIC_100_val.csv`](EPIC_100_val.csv) ([info](#epic_100_valcsv)) ([Pickle](EPIC_100_val.pkl))
-* [`EPIC_100_test.csv`](EPIC_100_test.csv) ([info](#epic_100_testcsv)) ([Pickle](EPIC_100_test.pkl))
+* [`EPIC_100_test.csv`](EPIC_100_test_timestamp.csv) ([info](#epic_100_test_timestampcsv)) ([Pickle](EPIC_100_test_timestamp.pkl))
 
 ### Additional Files
 
@@ -127,6 +127,8 @@ This CSV file contains the action annotations for the training set and contains 
 
 Due to the size of the dataset we provide scripts for downloading parts of the dataset:
 
+<!-- TODO: update this with correct information once the download scripts have been implemented, remember to explain that EPIC-Kitchens-55 and EPIC-Kitchens-100 are two different collections on RDSF. --!>
+
 * [videos]() (GB)
 * [frames]() (GB)
   * [rgb-frames]() (GB)
@@ -136,10 +138,10 @@ Due to the size of the dataset we provide scripts for downloading parts of the d
 installation should work.*
 
 These scripts replicate the folder structure of the dataset release on RDSF, found 
-[here]().
+[here](https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m).
 
-If you wish to download part of the dataset instructions can be found
-[here]().
+If you wish to download part of the dataset, instructions can be found
+[here](https://github.com/epic-kitchens/download-scripts-100).
 
 ### Differences to EPIC-Kitchen-100
 
@@ -155,4 +157,4 @@ but not in any way that suggests the licensor endorses you or your use. You
 may not use the material for commercial purposes.
 
 ## Changelog
-Please see the [release history]() for the changelog.
+Please see the [release history](https://github.com/epic-kitchens/EPIC-Kitchens-100-Annotations/releases) for the changelog.

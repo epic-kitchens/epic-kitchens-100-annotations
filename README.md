@@ -57,16 +57,16 @@ Here you can download the annotation files for all of the challenges. For more i
 Download scripts are provided for the videos, RGB Frames and Flow frames [here](https://github.com/epic-kitchens/download-scripts-100).
 
 ### Action Recognition Challenge
-Download the Action Recognition [train](EPIC_100_train)/[val](EPIC_100_val)/[test](EPIC_100_test) files.
+Download the Action Recognition [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
 
 ### Weakly Supervised Action Recognition Challenge
-This challenge uses the Action Recognition files, download the [train](EPIC_100_train)/[val](EPIC_100_val)/[test](EPIC_100_test) files.
+This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
 
 ### Action Detection Challenge
-This challenge uses the Action Recognition files, download the [train](EPIC_100_train)/[val](EPIC_100_val)/[test](EPIC_100_test) files.
+This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
 
 ### Action Anticipation Challenge
-This challenge uses the Action Recognition files, download the [train](EPIC_100_train)/[val](EPIC_100_val)/[test](EPIC_100_test) files.
+This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
 
 ### Unsupervised Domain Adaptation Challenge
 Download the Unsupervised Domain Adaptation [source train]()/[target train]()/[target test]() files.
@@ -146,6 +146,20 @@ If you wish to download part of the dataset, instructions can be found
 ### Differences to EPIC-Kitchen-100
 
 Whilst videos from EPIC-Kitchens-55 are used within EPIC-Kitchens-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-Kitchens-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-Kitchens-55 cannot be used for EPIC-Kitchens-100.
+
+### Pickle Files
+
+We also provide pickle files for all of the main train/val/test csvs for ease of use. These files require python 3.5+ and pandas 1.0.0+ to read.
+The pickle files are automatically tagged with the commit hash and version for version control purposes which can be found as follows in python:
+
+```
+>>> import pandas as pd
+>>> train = pd.read_pickle('EPIC_100_train.pkl')
+>>> train._metadata
+{'commit_hash': 'ce7a0fb', 'version_number': '0.1'
+```
+
+showing that this version of the `EPIC_100_train.pkl` came from commit hash ce7a0fb and version number 0.1.
 
 ## License
 All files in this dataset are copyright by us and published under the 

@@ -34,13 +34,13 @@
 <h2 id="quick-start">Quick Start</h2>
 <p>Here you can download the annotation files for all of the challenges. For more information on each challenge, please see the paper <a href="">here</a>. Download scripts are provided for the videos, RGB Frames and Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>.</p>
 <h3 id="action-recognition-challenge">Action Recognition Challenge</h3>
-<p>Download the Action Recognition <a href="EPIC_100_train">train</a>/<a href="EPIC_100_val">val</a>/<a href="EPIC_100_test">test</a> files.</p>
+<p>Download the Action Recognition <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_val.csv">val</a>/<a href="EPIC_100_test.csv">test</a> files.</p>
 <h3 id="weakly-supervised-action-recognition-challenge">Weakly Supervised Action Recognition Challenge</h3>
-<p>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train">train</a>/<a href="EPIC_100_val">val</a>/<a href="EPIC_100_test">test</a> files.</p>
+<p>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_val.csv">val</a>/<a href="EPIC_100_test.csv">test</a> files.</p>
 <h3 id="action-detection-challenge">Action Detection Challenge</h3>
-<p>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train">train</a>/<a href="EPIC_100_val">val</a>/<a href="EPIC_100_test">test</a> files.</p>
+<p>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_val.csv">val</a>/<a href="EPIC_100_test.csv">test</a> files.</p>
 <h3 id="action-anticipation-challenge">Action Anticipation Challenge</h3>
-<p>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train">train</a>/<a href="EPIC_100_val">val</a>/<a href="EPIC_100_test">test</a> files.</p>
+<p>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_val.csv">val</a>/<a href="EPIC_100_test.csv">test</a> files.</p>
 <h3 id="unsupervised-domain-adaptation-challenge">Unsupervised Domain Adaptation Challenge</h3>
 <p>Download the Unsupervised Domain Adaptation <a href="">source train</a>/<a href="">target train</a>/<a href="">target test</a> files.</p>
 <h3 id="action-retrieval-challenge">Action Retrieval Challenge</h3>
@@ -192,6 +192,13 @@
 <p>If you wish to download part of the dataset, instructions can be found <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>.</p>
 <h3 id="differences-to-epic-kitchen-100">Differences to EPIC-Kitchen-100</h3>
 <p>Whilst videos from EPIC-Kitchens-55 are used within EPIC-Kitchens-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-Kitchens-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-Kitchens-55 cannot be used for EPIC-Kitchens-100.</p>
+<h3 id="pickle-files">Pickle Files</h3>
+<p>We also provide pickle files for all of the main train/val/test csvs for ease of use. These files require python 3.5+ and pandas 1.0.0+ to read. The pickle files are automatically tagged with the commit hash and version for version control purposes which can be found as follows in python:</p>
+<pre><code>&gt;&gt;&gt; import pandas as pd
+&gt;&gt;&gt; train = pd.read_pickle(&#39;EPIC_100_train.pkl&#39;)
+&gt;&gt;&gt; train._metadata
+{&#39;commit_hash&#39;: &#39;ce7a0fb&#39;, &#39;version_number&#39;: &#39;0.1&#39;</code></pre>
+<p>showing that this version of the <code>EPIC_100_train.pkl</code> came from commit hash ce7a0fb and version number 0.1.</p>
 <h2 id="license">License</h2>
 <p>All files in this dataset are copyright by us and published under the Creative Commons Attribution-NonCommerial 4.0 International License, found <a href="https://creativecommons.org/licenses/by-nc/4.0/">here</a>. This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. You may not use the material for commercial purposes.</p>
 <h2 id="changelog">Changelog</h2>

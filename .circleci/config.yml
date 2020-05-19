@@ -36,18 +36,18 @@ jobs:
             sed -i '/start badges/,/end badges/{//!d}' README.md
             pandoc -f markdown -V geometry:margin=1.5cm -V geometry:landscape README.md -o README.pdf
             pandoc -f markdown README.md -o README.html
-#      - run:
-#          name: update pickle metadata
-#          command: |
-#              python .circleci/add_metadata.py *.pkl \
-#                --commit-hash "$(git rev-parse --short HEAD)" \
-#                --version-number "$(git describe --abbrev=0 --tags)"
-#      - run:
-#          name: test pickles
-#          command: |
-#              python .circleci/test_pickles.py *.pkl \
-#                 --commit-hash "$(git rev-parse --short HEAD)" \
-#                 --version-number "$(git describe --abbrev=0 --tags)"
+      - run:
+          name: update pickle metadata
+          command: |
+              python .circleci/add_metadata.py *.pkl \
+                --commit-hash "$(git rev-parse --short HEAD)" \
+                --version-number "$(git describe --abbrev=0 --tags)"
+      - run:
+          name: test pickles
+          command: |
+              python .circleci/test_pickles.py *.pkl \
+                 --commit-hash "$(git rev-parse --short HEAD)" \
+                 --version-number "$(git describe --abbrev=0 --tags)"
       - run:
           name: upload generated files
           command: |

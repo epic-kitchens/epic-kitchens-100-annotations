@@ -127,7 +127,7 @@ This CSV file contains the action annotations for the training set and contains 
 
 Due to the size of the dataset we provide scripts for downloading parts of the dataset:
 
-<!-- TODO: update this with correct information once the download scripts have been implemented, remember to explain that EPIC-Kitchens-55 and EPIC-Kitchens-100 are two different collections on RDSF. --!>
+<!-- TODO: update this with correct information once the download scripts have been implemented, remember to explain that EPIC-Kitchens-55 and EPIC-Kitchens-100 are two different collections on RDSF. -->
 
 * [videos]() (GB)
 * [frames]() (GB)

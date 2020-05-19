@@ -32,21 +32,21 @@
 <p>We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use.</p>
 <p>Ground truth is provided for action segments as action/verb/noun labels along with the start and end times of the segment.</p>
 <h2 id="quick-start">Quick Start</h2>
-<p>Here you can download the annotation files for all of the challenges. For more information on each challenge, please see the paper <a href="">here</a>. Download scripts are provided for the <a href="">videos</a>, <a href="">RGB Frames</a> and <a href="">Flow frames</a>.</p>
+<p>Here you can download the annotation files for all of the challenges. For more information on each challenge, please see the paper <a href="">here</a>. Download scripts are provided for the videos, RGB Frames and Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>.</p>
 <h3 id="action-recognition-challenge">Action Recognition Challenge</h3>
-<p>Download the Action Recognition <a href="">train</a>/<a href="">val</a>/<a href="">test</a> files.</p>
+<p>Download the Action Recognition <a href="EPIC_100_train">train</a>/<a href="EPIC_100_val">val</a>/<a href="EPIC_100_test">test</a> files.</p>
 <h3 id="weakly-supervised-action-recognition-challenge">Weakly Supervised Action Recognition Challenge</h3>
-<p>This challenge uses the Action Recognition files, download the <a href="">train</a>/<a href="">val</a>/<a href="">test</a> files.</p>
+<p>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train">train</a>/<a href="EPIC_100_val">val</a>/<a href="EPIC_100_test">test</a> files.</p>
 <h3 id="action-detection-challenge">Action Detection Challenge</h3>
-<p>This challenge uses the Action Recognition files, download the <a href="">train</a>/<a href="">val</a>/<a href="">test</a> files.</p>
+<p>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train">train</a>/<a href="EPIC_100_val">val</a>/<a href="EPIC_100_test">test</a> files.</p>
 <h3 id="action-anticipation-challenge">Action Anticipation Challenge</h3>
-<p>This challenge uses the Action Recognition files, download the <a href="">train</a>/<a href="">val</a>/<a href="">test</a> files.</p>
+<p>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train">train</a>/<a href="EPIC_100_val">val</a>/<a href="EPIC_100_test">test</a> files.</p>
 <h3 id="unsupervised-domain-adaptation-challenge">Unsupervised Domain Adaptation Challenge</h3>
 <p>Download the Unsupervised Domain Adaptation <a href="">source train</a>/<a href="">target train</a>/<a href="">target test</a> files.</p>
 <h3 id="action-retrieval-challenge">Action Retrieval Challenge</h3>
 <p>Download the Action Retrieval <a href="">train</a>/<a href="">test</a> files.</p>
 <h2 id="important-files">Important Files</h2>
-<p>We direct the reader to <a href="">RDSF</a> for the videos and RGB/Flow frames. For ease of use, download scripts are <a href="">provided</a> (see <a href="#file_downloads">here</a> for more details). We provide html and pdf alternatives to this README which are auto-generated.</p>
+<p>We direct the reader to <a href="https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m">RDSF</a> for the videos and RGB/Flow frames. For ease of use, download scripts are <a href="https://github.com/epic-kitchens/download-scripts-100">provided</a> (see <a href="#file_downloads">file_downloads</a> for more details). We provide html and pdf alternatives to this README which are auto-generated.</p>
 <ul>
 <li><code>README.md (this file)</code></li>
 <li><code>README.pdf</code></li>
@@ -54,7 +54,7 @@
 <li><a href="#license"><code>license.txt</code></a></li>
 <li><a href="EPIC_100_train.csv"><code>EPIC_100_train.csv</code></a> (<a href="#epic_100_traincsv">info</a>) (<a href="EPIC_100_train.pkl">Pickle</a>)</li>
 <li><a href="EPIC_100_val.csv"><code>EPIC_100_val.csv</code></a> (<a href="#epic_100_valcsv">info</a>) (<a href="EPIC_100_val.pkl">Pickle</a>)</li>
-<li><a href="EPIC_100_test.csv"><code>EPIC_100_test.csv</code></a> (<a href="#epic_100_testcsv">info</a>) (<a href="EPIC_100_test.pkl">Pickle</a>)</li>
+<li><a href="EPIC_100_test_timestamp.csv"><code>EPIC_100_test.csv</code></a> (<a href="#epic_100_test_timestampcsv">info</a>) (<a href="EPIC_100_test_timestamp.pkl">Pickle</a>)</li>
 </ul>
 <h3 id="additional-files">Additional Files</h3>
 <ul>
@@ -178,6 +178,7 @@
 <h2 id="additional-information">Additional Information</h2>
 <h3 id="file-downloads">File Downloads</h3>
 <p>Due to the size of the dataset we provide scripts for downloading parts of the dataset:</p>
+<p>&lt;!– TODO: update this with correct information once the download scripts have been implemented, remember to explain that EPIC-Kitchens-55 and EPIC-Kitchens-100 are two different collections on RDSF. –!&gt;</p>
 <ul>
 <li><a href="">videos</a> (GB)</li>
 <li><a href="">frames</a> (GB)
@@ -187,11 +188,11 @@
 </ul></li>
 </ul>
 <p><em>Note: These scripts will work for Linux and Mac. For Windows users a bash installation should work.</em></p>
-<p>These scripts replicate the folder structure of the dataset release on RDSF, found <a href="">here</a>.</p>
-<p>If you wish to download part of the dataset instructions can be found <a href="">here</a>.</p>
+<p>These scripts replicate the folder structure of the dataset release on RDSF, found <a href="https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m">here</a>.</p>
+<p>If you wish to download part of the dataset, instructions can be found <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>.</p>
 <h3 id="differences-to-epic-kitchen-100">Differences to EPIC-Kitchen-100</h3>
 <p>Whilst videos from EPIC-Kitchens-55 are used within EPIC-Kitchens-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-Kitchens-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-Kitchens-55 cannot be used for EPIC-Kitchens-100.</p>
 <h2 id="license">License</h2>
 <p>All files in this dataset are copyright by us and published under the Creative Commons Attribution-NonCommerial 4.0 International License, found <a href="https://creativecommons.org/licenses/by-nc/4.0/">here</a>. This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. You may not use the material for commercial purposes.</p>
 <h2 id="changelog">Changelog</h2>
-<p>Please see the <a href="">release history</a> for the changelog.</p>
+<p>Please see the <a href="https://github.com/epic-kitchens/EPIC-Kitchens-100-Annotations/releases">release history</a> for the changelog.</p>

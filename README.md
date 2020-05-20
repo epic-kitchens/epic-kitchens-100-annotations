@@ -74,11 +74,11 @@ Download scripts are provided for the videos, RGB Frames and Flow frames [here](
 
 ### Unsupervised Domain Adaptation Challenge
 1. Download the [videos]()/[RGB]()/[Flow frames]().
-2. Download the Unsupervised Domain Adaptation [source train](EPIC_100_UDA_source_train.csv)/[target train](EPIC_100_UDA_target_train_timestamps.csv)/[target test](EPIC_100_UDA_target_test_timestamps.csv) files.
+2. Download the Unsupervised Domain Adaptation [source train](UDA_annotations/EPIC_100_UDA_source_train.csv)/[target train](UDA_annotations/EPIC_100_UDA_target_train_timestamps.csv)/[target test](UDA_annotations/EPIC_100_UDA_target_test_timestamps.csv) files.
 
 ### Action Retrieval Challenge
 1. Download the [videos]()/[RGB]()/[Flow frames]().
-2. Download the Action Retrieval [train](EPIC_100_retrieval_train.csv)/[test](EPIC_100_retrieval_test.csv) files.
+2. Download the Action Retrieval [train](retrieval_annotations/EPIC_100_retrieval_train.csv)/[test](retrieval_annotations/EPIC_100_retrieval_test.csv) files.
 3. Extract video features (for both the train and test set) using an off-the-shelf model trained on **EPIC-Kitchens-55** ([example model](https://github.com/epic-kitchens/action-models)).
 4. Extract word2vec features for the captions from both the train and test set ([example model](https://github.com/mmihaltz/word2vec-GoogleNews-vectors)).
 5. Enjoy the EPIC-Kitchens-100 dataset in your favourite video retrieval model, see [the paper](#citing) for details on the models we used for this baseline.
@@ -101,11 +101,11 @@ We provide html and pdf alternatives to this README which are auto-generated.
 
 ### Additional Files
 
-* [`EPIC_100_UDA_source_train`](EPIC_100_UDA_source_train.csv) ([info](#epic_100_uda_source_traincsv)) ([Pickle](epic_100_source_train.pkl))
-* [`EPIC_100_UDA_target_train_timestamps`](EPIC_100_UDA_target_train_timestamps.csv) ([info](#epic_100_uda_target_train_timestampscsv)) ([Pickle](epic_100_target_train_timestamps.pkl))
-* [`EPIC_100_UDA_target_test_timestamps`](EPIC_100_UDA_target_test_timestamps.csv) ([info](#epic_100_uda_target_test_timestampscsv)) ([Pickle](epic_100_target_test_timestamps.pkl))
-* [`EPIC_100_retrieval_train`](EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](epic_100_retrieval_train.pkl))
-* [`EPIC_100_retrieval_test`](EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](epic_100_retrieval_test.pkl))
+* [`UDA_annotations/EPIC_100_UDA_source_train`](UDA_annotations/EPIC_100_UDA_source_train.csv) ([info](#epic_100_uda_source_traincsv)) ([Pickle](UDA_annotations/epic_100_source_train.pkl))
+* [`UDA_annotations/EPIC_100_UDA_target_train_timestamps`](UDA_annotations/EPIC_100_UDA_target_train_timestamps.csv) ([info](#epic_100_uda_target_train_timestampscsv)) ([Pickle](UDA_annotations/epic_100_target_train_timestamps.pkl))
+* [`UDA_annotations/EPIC_100_UDA_target_test_timestamps`](UDA_annotations/EPIC_100_UDA_target_test_timestamps.csv) ([info](#epic_100_uda_target_test_timestampscsv)) ([Pickle](UDA_annotations/epic_100_target_test_timestamps.pkl))
+* [`retrieval_annotations/EPIC_100_retrieval_train`](retrieval_annotations/EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](retrieval_annotations/epic_100_retrieval_train.pkl))
+* [`retrieval_annotations/EPIC_100_retrieval_test`](retrieval_annotations/EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](retrieval_annotations/epic_100_retrieval_test.pkl))
 
 ## File Structure
 

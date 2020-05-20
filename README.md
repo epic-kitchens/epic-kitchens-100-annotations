@@ -199,6 +199,58 @@ This CSV file contains information on the 97 verb classes and contains 4 columns
 [Back to Important Files](#important-files)
 
 
+#### EPIC_100_retrieval_train.csv
+
+This CSV file contains the action annotations for the **action retrieval** training set and contains 15 columns:
+
+| Column Name           | Type                       | Example        | Description                                                                   |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| `uid`                 | int                        | `0`            | Unique ID for the segment as an int.                                          |
+| `narration_id`        | string                     | `P01_01_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
+| `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
+| `video_id`            | string                     | `P01_01`       | ID of the video where the segment originated from (unique per video).         |
+| `narration_timestamp` | string                     | `00:00:01.089` | Timestamp of when the original narration was recorded in `HH:mm:ss.SSS`.      |
+| `start_timestamp`     | string                     | `00:00:00.14`  | Start time in `HH:mm:ss.SS` of the action segment.                            |
+| `stop_timestamp`      | string                     | `00:00:03.37`  | End time in `HH:mm:ss.SS` of the action segment.                              |
+| `start_frame`         | int                        | `8`            | Start frame of the action.                                                    |
+| `stop_frame`          | int                        | `202`          | End frame of the action.                                                      |
+| `narration`           | string                     | `open door`    | Transcribed description of the English narration provided by the participant. |
+| `verb`                | string                     | `open`         | Parsed verb from the narration.                                               |
+| `verb_class`          | int                        | `3`            | Numeric ID of the verb's class.                                               |
+| `noun`                | string                     | `door`         | First parsed noun from the narration.                                         |
+| `noun_class`          | int                        | `3`            | Numeric ID of the first noun's class.                                         |
+| `all_nouns`           | list of string (1 or more) | `[door]`       | List of all parsed nouns within the narration.                                |
+| `all_noun_classes`    | list of int (1 or more)    | `[3]`          | Numeric ID of all of the parsed noun's classes.                               |
+
+[Back to Important Files](#important-files)
+
+
+#### EPIC_100_retrieval_test.csv
+
+This CSV file contains the action annotations for the **action retrieval** testing set and contains 15 columns:
+
+| Column Name           | Type                       | Example        | Description                                                                   |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| `uid`                 | int                        | `0`            | Unique ID for the segment as an int.                                          |
+| `narration_id`        | string                     | `P01_11_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
+| `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
+| `video_id`            | string                     | `P01_11`       | ID of the video where the segment originated from (unique per video).         |
+| `narration_timestamp` | string                     | `00:00:00.560` | Timestamp of when the original narration was recorded in `HH:mm:ss.SSS`.      |
+| `start_timestamp`     | string                     | `00:00:00.00`  | Start time in `HH:mm:ss.SS` of the action segment.                            |
+| `stop_timestamp`      | string                     | `00:00:01.89`  | End time in `HH:mm:ss.SS` of the action segment.                              |
+| `start_frame`         | int                        | `8`            | Start frame of the action.                                                    |
+| `stop_frame`          | int                        | `113`          | End frame of the action.                                                      |
+| `narration`           | string                     | `take plate`   | Transcribed description of the English narration provided by the participant. |
+| `verb`                | string                     | `take`         | Parsed verb from the narration.                                               |
+| `verb_class`          | int                        | `0`            | Numeric ID of the verb's class.                                               |
+| `noun`                | string                     | `plate`        | First parsed noun from the narration.                                         |
+| `noun_class`          | int                        | `2`            | Numeric ID of the first noun's class.                                         |
+| `all_nouns`           | list of string (1 or more) | `[plate]`      | List of all parsed nouns within the narration.                                |
+| `all_noun_classes`    | list of int (1 or more)    | `[2]`          | Numeric ID of all of the parsed noun's classes.                               |
+
+[Back to Important Files](#important-files)
+
+
 ## Additional Information
 
 ### File Downloads

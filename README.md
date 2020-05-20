@@ -87,6 +87,8 @@ We provide html and pdf alternatives to this README which are auto-generated.
 * [`EPIC_100_train.csv`](EPIC_100_train.csv) ([info](#epic_100_traincsv)) ([Pickle](EPIC_100_train.pkl))
 * [`EPIC_100_val.csv`](EPIC_100_val.csv) ([info](#epic_100_valcsv)) ([Pickle](EPIC_100_val.pkl))
 * [`EPIC_100_test.csv`](EPIC_100_test_timestamp.csv) ([info](#epic_100_test_timestampcsv)) ([Pickle](EPIC_100_test_timestamp.pkl))
+* [`EPIC_100_verb_classes.csv`](EPIC_100_verb_classes.csv`) ([info](#epic_100_verb_classescsv))
+* [`EPIC_100_noun_classes.csv`](EPIC_100_noun_classes.csv`) ([info](#epic_100_noun_classescsv))
 
 ### Additional Files
 
@@ -107,7 +109,7 @@ This CSV file contains the action annotations for the training set and contains 
 | `narration_id`        | string                     | `P01_01_0`     | Unique ID for the segment which includes participant ID and video ID.         |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_01`       | ID of the video where the segment originated from (unique per video).         |
-| `narration_timestamp` | string                     | `00:00:01.089` | Timestamp of when the original narration was recorded in `HH:mm:ss:SSS`.      |
+| `narration_timestamp` | string                     | `00:00:01.089` | Timestamp of when the original narration was recorded in `HH:mm:ss.SSS`.      |
 | `start_timestamp`     | string                     | `00:00:00.14`  | Start time in `HH:mm:ss.SSS` of the action segment.                           |
 | `stop_timestamp`      | string                     | `00:00:03.37`  | End time in `HH:mm:ss.SSS` of the action segment.                             |
 | `start_frame`         | int                        | `8`            | Start frame of the action.                                                    |
@@ -120,6 +122,7 @@ This CSV file contains the action annotations for the training set and contains 
 | `all_nouns`           | list of string (1 or more) | `[door]`       | List of all parsed nouns within the narration.                                |
 | `all_noun_classes`    | list of int (1 or more)    | `[3]`          | Numeric ID of all of the parsed noun's classes.                               |
 
+[Back to Important Files](#important-files)
 
 ## Additional Information
 
@@ -146,6 +149,8 @@ If you wish to download part of the dataset, instructions can be found
 ### Differences to EPIC-Kitchen-100
 
 Whilst videos from EPIC-Kitchens-55 are used within EPIC-Kitchens-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-Kitchens-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-Kitchens-55 cannot be used for EPIC-Kitchens-100.
+
+<!-- TODO: Narration timestamps differences between EPIC-Kitchens-55/100 -->
 
 ### Pickle Files
 

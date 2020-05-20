@@ -39,12 +39,12 @@ The EPIC-Kitchens-100 dataset is an extension of the EPIC-Kitchens-55 dataset. V
 
 The dataset currently has 6 active benchmarks:
 
-* Action Recognition
-* Weakly Supervised Action Recognition
-* Action Detection
-* Action Anticipation
-* Unsupervised Domain Adaptation
-* Action Retrieval
+* [Action Recognition](#action-recognition-challenge)
+* [Weakly Supervised Action Recognition](#weakly-supervised-action-recognition-challenge)
+* [Action Detection](#action-detection-challenge)
+* [Action Anticipation](#action-anticipation-challenge)
+* [Unsupervised Domain Adaptation](#unsupervised-domain-adaptation-challenge)
+* [Action Retrieval](#action-retrieval-challenge)
 
 We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use.
 
@@ -77,7 +77,7 @@ Download the Action Retrieval [train]()/[test]() files.
 
 ## Important Files
 
-We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m) for the videos and RGB/Flow frames. For ease of use, download scripts are [provided](https://github.com/epic-kitchens/download-scripts-100) (see [file downloads](#file-downloads) for more details).
+For ease of use, download scripts are [provided](https://github.com/epic-kitchens/download-scripts-100) to download the videos and RGB/Flow frames. (see [file downloads](#file-downloads) for more details). We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m) for the full release of videos and RGB/Flow frames. 
 We provide html and pdf alternatives to this README which are auto-generated.
 
 * `README.md (this file)`

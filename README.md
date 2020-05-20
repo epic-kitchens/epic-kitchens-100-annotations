@@ -57,22 +57,31 @@ Here you can download the annotation files for all of the challenges. For more i
 Download scripts are provided for the videos, RGB Frames and Flow frames [here](https://github.com/epic-kitchens/download-scripts-100).
 
 ### Action Recognition Challenge
-Download the Action Recognition [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
+1. Download the [videos]()/[RGB]()/[Flow frames]().
+2. Download the Action Recognition [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
 
 ### Weakly Supervised Action Recognition Challenge
-This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
+1. Download the [videos]()/[RGB]()/[Flow frames]().
+2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
 
 ### Action Detection Challenge
-This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
+1. Download the [videos]()/[RGB]()/[Flow frames]().
+2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
 
 ### Action Anticipation Challenge
-This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
+1. Download the [videos]()/[RGB]()/[Flow frames]().
+2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
 
 ### Unsupervised Domain Adaptation Challenge
-Download the Unsupervised Domain Adaptation [source train]()/[target train]()/[target test]() files.
+1. Download the [videos]()/[RGB]()/[Flow frames]().
+2. Download the Unsupervised Domain Adaptation [source train](EPIC_100_UDA_source_train.csv)/[target train](EPIC_100_UDA_target_train_timestamps.csv)/[target test](EPIC_100_UDA_target_test_timestamps.csv) files.
 
 ### Action Retrieval Challenge
-Download the Action Retrieval [train]()/[test]() files.
+1. Download the [videos]()/[RGB]()/[Flow frames]().
+2. Download the Action Retrieval [train](EPIC_100_retrieval_train.csv)/[test](EPIC_100_retrieval_test.csv) files.
+3. Extract video features (for both the train and test set) using an off-the-shelf model trained on **EPIC-Kitchens-55** ([example model](https://github.com/epic-kitchens/action-models)).
+4. Extract word2vec features for the captions from both the train and test set ([example model](https://github.com/mmihaltz/word2vec-GoogleNews-vectors)).
+5. Enjoy the EPIC-Kitchens-100 dataset in your favourite video retrieval model, see [the paper](#citing) for details on the models we used for this baseline.
 
 
 ## Important Files

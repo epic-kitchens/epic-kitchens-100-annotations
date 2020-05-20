@@ -101,11 +101,11 @@ We provide html and pdf alternatives to this README which are auto-generated.
 
 ### Additional Files
 
-* [`UDA_annotations/EPIC_100_uda_source_train`](UDA_annotations/EPIC_100_uda_source_train.csv) ([info](#epic_100_uda_source_traincsv)) ([Pickle](UDA_annotations/epic_100_uda_source_train.pkl))
-* [`UDA_annotations/EPIC_100_uda_target_train_timestamps`](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv) ([info](#epic_100_uda_target_train_timestampscsv)) ([Pickle](UDA_annotations/epic_100_uda_target_train_timestamps.pkl))
-* [`UDA_annotations/EPIC_100_uda_target_test_timestamps`](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) ([info](#epic_100_uda_target_test_timestampscsv)) ([Pickle](UDA_annotations/epic_100_uda_target_test_timestamps.pkl))
-* [`retrieval_annotations/EPIC_100_retrieval_train`](retrieval_annotations/EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](retrieval_annotations/epic_100_retrieval_train.pkl))
-* [`retrieval_annotations/EPIC_100_retrieval_test`](retrieval_annotations/EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](retrieval_annotations/epic_100_retrieval_test.pkl))
+* [`UDA_annotations/EPIC_100_uda_source_train`](UDA_annotations/EPIC_100_uda_source_train.csv) ([info](#epic_100_uda_source_traincsv)) ([Pickle](UDA_annotations/EPIC_100_uda_source_train.pkl))
+* [`UDA_annotations/EPIC_100_uda_target_train_timestamps`](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv) ([info](#epic_100_uda_target_train_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_train_timestamps.pkl))
+* [`UDA_annotations/EPIC_100_uda_target_test_timestamps`](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) ([info](#epic_100_uda_target_test_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_test_timestamps.pkl))
+* [`retrieval_annotations/EPIC_100_retrieval_train`](retrieval_annotations/EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_train.pkl))
+* [`retrieval_annotations/EPIC_100_retrieval_test`](retrieval_annotations/EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_test.pkl))
 
 ## File Structure
 

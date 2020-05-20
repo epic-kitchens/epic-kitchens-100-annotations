@@ -106,7 +106,8 @@ This CSV file contains the action annotations for the training set and contains 
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | ---------------------------| -------------- | ----------------------------------------------------------------------------- |
-| `narration_id`        | string                     | `P01_01_0`     | Unique ID for the segment which includes participant ID and video ID.         |
+| `uid`                 | int                        | `0`            | Unique ID for the segment as a float.                                         |
+| `narration_id`        | string                     | `P01_01_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_01`       | ID of the video where the segment originated from (unique per video).         |
 | `narration_timestamp` | string                     | `00:00:01.089` | Timestamp of when the original narration was recorded in `HH:mm:ss.SSS`.      |

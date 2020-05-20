@@ -74,7 +74,7 @@ Download scripts are provided for the videos, RGB Frames and Flow frames [here](
 
 ### Unsupervised Domain Adaptation Challenge
 1. Download the [videos]()/[RGB]()/[Flow frames]().
-2. Download the Unsupervised Domain Adaptation [source train](UDA_annotations/EPIC_100_UDA_source_train.csv)/[target train](UDA_annotations/EPIC_100_UDA_target_train_timestamps.csv)/[target test](UDA_annotations/EPIC_100_UDA_target_test_timestamps.csv) files.
+2. Download the Unsupervised Domain Adaptation [source train](UDA_annotations/EPIC_100_uda_source_train.csv)/[target train](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv)/[target test](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) files.
 
 ### Action Retrieval Challenge
 1. Download the [videos]()/[RGB]()/[Flow frames]().
@@ -101,9 +101,9 @@ We provide html and pdf alternatives to this README which are auto-generated.
 
 ### Additional Files
 
-* [`UDA_annotations/EPIC_100_UDA_source_train`](UDA_annotations/EPIC_100_UDA_source_train.csv) ([info](#epic_100_uda_source_traincsv)) ([Pickle](UDA_annotations/epic_100_source_train.pkl))
-* [`UDA_annotations/EPIC_100_UDA_target_train_timestamps`](UDA_annotations/EPIC_100_UDA_target_train_timestamps.csv) ([info](#epic_100_uda_target_train_timestampscsv)) ([Pickle](UDA_annotations/epic_100_target_train_timestamps.pkl))
-* [`UDA_annotations/EPIC_100_UDA_target_test_timestamps`](UDA_annotations/EPIC_100_UDA_target_test_timestamps.csv) ([info](#epic_100_uda_target_test_timestampscsv)) ([Pickle](UDA_annotations/epic_100_target_test_timestamps.pkl))
+* [`UDA_annotations/EPIC_100_uda_source_train`](UDA_annotations/EPIC_100_uda_source_train.csv) ([info](#epic_100_uda_source_traincsv)) ([Pickle](UDA_annotations/epic_100_uda_source_train.pkl))
+* [`UDA_annotations/EPIC_100_uda_target_train_timestamps`](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv) ([info](#epic_100_uda_target_train_timestampscsv)) ([Pickle](UDA_annotations/epic_100_uda_target_train_timestamps.pkl))
+* [`UDA_annotations/EPIC_100_uda_target_test_timestamps`](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) ([info](#epic_100_uda_target_test_timestampscsv)) ([Pickle](UDA_annotations/epic_100_uda_target_test_timestamps.pkl))
 * [`retrieval_annotations/EPIC_100_retrieval_train`](retrieval_annotations/EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](retrieval_annotations/epic_100_retrieval_train.pkl))
 * [`retrieval_annotations/EPIC_100_retrieval_test`](retrieval_annotations/EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](retrieval_annotations/epic_100_retrieval_test.pkl))
 
@@ -208,7 +208,7 @@ This CSV file contains information on the 97 verb classes and contains 4 columns
 [Back to Important Files](#important-files)
 
 
-#### EPIC_100_UDA_source_train.csv
+#### EPIC_100_uda_source_train.csv
 
 This CSV file contains the action annotations for the **source training set** used for **Unsupervised Domain Adaptation** and contains 15 columns:
 
@@ -238,7 +238,7 @@ See [here](#unsupervised-domain-adaptation-challenge) for more details on the un
 [Back to Important Files](#important-files)
 
 
-#### EPIC_100_UDA_target_train_timestamps.csv
+#### EPIC_100_uda_target_train_timestamps.csv
 
 This CSV file contains the action annotations for the **target training set** used for **Unsupervised Domain Adaptation** and contains 9 columns:
 
@@ -261,7 +261,7 @@ See [here](#unsupervised-domain-adaptation-challenge) for more details on the un
 [Back to Important Files](#important-files)
 
 
-#### EPIC_100_UDA_target_test_timestamps.csv
+#### EPIC_100_uda_target_test_timestamps.csv
 
 This CSV file contains the action annotations for the **target testing set** used for **Unsupervised Domain Adaptation** and contains 9 columns:
 

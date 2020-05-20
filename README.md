@@ -4,7 +4,7 @@
 
 <!-- end badges -->
 
-> [EPIC-Kitchens-100](https://epic-kitchens.github.io/) is the largest dataset in first-person (egocentric) vision; itself an extension of the [EPIC-Kitchens-55 dataset](https://github.com/epic-kitchens/annotations).
+> [EPIC-Kitchens-100](https://epic-kitchens.github.io/) is the largest dataset in first-person (egocentric) vision; itself an extension of the [EPIC-Kitchens-55 dataset](https://github.com/epic-kitchens/annotations) (formally known as EPIC-Kitchens-2018).
 
 ## Authors
 Dima Damen (1)
@@ -77,7 +77,7 @@ Download the Action Retrieval [train]()/[test]() files.
 
 ## Important Files
 
-We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m) for the videos and RGB/Flow frames. For ease of use, download scripts are [provided](https://github.com/epic-kitchens/download-scripts-100) (see [file_downloads](#file_downloads) for more details).
+We direct the reader to [RDSF](https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m) for the videos and RGB/Flow frames. For ease of use, download scripts are [provided](https://github.com/epic-kitchens/download-scripts-100) (see [file downloads](#file-downloads) for more details).
 We provide html and pdf alternatives to this README which are auto-generated.
 
 * `README.md (this file)`
@@ -106,7 +106,7 @@ This CSV file contains the action annotations for the training set and contains 
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `0`            | Unique ID for the segment as a float.                                         |
+| `uid`                 | int                        | `0`            | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_01_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_01`       | ID of the video where the segment originated from (unique per video).         |
@@ -132,7 +132,7 @@ This CSV file contains the action annotations for the validation set and contain
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `4972`         | Unique ID for the segment as a float.                                         |
+| `uid`                 | int                        | `4972`         | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_01_11`    | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_11`       | ID of the video where the segment originated from (unique per video).         |
@@ -158,7 +158,7 @@ This CSV file contains the action annotations for the testing set and contains 9
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `1924`         | Unique ID for the segment as a float.                                         |
+| `uid`                 | int                        | `1924`         | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_101_0`    | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_101`      | ID of the video where the segment originated from (unique per video).         |

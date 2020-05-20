@@ -58,19 +58,19 @@ Download scripts are provided for the videos, RGB Frames and Flow frames [here](
 
 ### Action Recognition Challenge
 1. Download the [videos]()/[RGB]()/[Flow frames]().
-2. Download the Action Recognition [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
+2. Download the Action Recognition [train](EPIC_100_train.csv)/[val](EPIC_100_validation.csv)/[test](EPIC_100_test_timestamps.csv) files.
 
 ### Weakly Supervised Action Recognition Challenge
 1. Download the [videos]()/[RGB]()/[Flow frames]().
-2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
+2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_validation.csv)/[test](EPIC_100_test_timestamps.csv) files.
 
 ### Action Detection Challenge
 1. Download the [videos]()/[RGB]()/[Flow frames]().
-2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
+2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_validation.csv)/[test](EPIC_100_test_timestamps.csv) files.
 
 ### Action Anticipation Challenge
 1. Download the [videos]()/[RGB]()/[Flow frames]().
-2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_val.csv)/[test](EPIC_100_test.csv) files.
+2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_validation.csv)/[test](EPIC_100_test_timestamps.csv) files.
 
 ### Unsupervised Domain Adaptation Challenge
 1. Download the [videos]()/[RGB]()/[Flow frames]().
@@ -96,16 +96,16 @@ We provide html and pdf alternatives to this README which are auto-generated.
 * [`EPIC_100_train.csv`](EPIC_100_train.csv) ([info](#epic_100_traincsv)) ([Pickle](EPIC_100_train.pkl))
 * [`EPIC_100_validation.csv`](EPIC_100_validation.csv) ([info](#epic_100_validationcsv)) ([Pickle](EPIC_100_validation.pkl))
 * [`EPIC_100_test_timestamps.csv`](EPIC_100_test_timestamps.csv) ([info](#epic_100_test_timestampscsv)) ([Pickle](EPIC_100_test_timestamps.pkl))
-* [`EPIC_100_noun_classes.csv`](EPIC_100_noun_classes.csv`) ([info](#epic_100_noun_classescsv))
-* [`EPIC_100_verb_classes.csv`](EPIC_100_verb_classes.csv`) ([info](#epic_100_verb_classescsv))
+* [`EPIC_100_noun_classes.csv`](EPIC_100_noun_classes.csv) ([info](#epic_100_noun_classescsv))
+* [`EPIC_100_verb_classes.csv`](EPIC_100_verb_classes.csv) ([info](#epic_100_verb_classescsv))
 
 ### Additional Files
 
-* [`UDA_annotations/EPIC_100_uda_source_train`](UDA_annotations/EPIC_100_uda_source_train.csv) ([info](#epic_100_uda_source_traincsv)) ([Pickle](UDA_annotations/EPIC_100_uda_source_train.pkl))
-* [`UDA_annotations/EPIC_100_uda_target_train_timestamps`](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv) ([info](#epic_100_uda_target_train_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_train_timestamps.pkl))
-* [`UDA_annotations/EPIC_100_uda_target_test_timestamps`](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) ([info](#epic_100_uda_target_test_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_test_timestamps.pkl))
-* [`retrieval_annotations/EPIC_100_retrieval_train`](retrieval_annotations/EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_train.pkl))
-* [`retrieval_annotations/EPIC_100_retrieval_test`](retrieval_annotations/EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_test.pkl))
+* [`UDA_annotations/EPIC_100_uda_source_train.csv`](UDA_annotations/EPIC_100_uda_source_train.csv) ([info](#epic_100_uda_source_traincsv)) ([Pickle](UDA_annotations/EPIC_100_uda_source_train.pkl))
+* [`UDA_annotations/EPIC_100_uda_target_train_timestamps.csv`](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv) ([info](#epic_100_uda_target_train_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_train_timestamps.pkl))
+* [`UDA_annotations/EPIC_100_uda_target_test_timestamps.csv`](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) ([info](#epic_100_uda_target_test_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_test_timestamps.pkl))
+* [`retrieval_annotations/EPIC_100_retrieval_train.csv`](retrieval_annotations/EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_train.pkl))
+* [`retrieval_annotations/EPIC_100_retrieval_test.csv`](retrieval_annotations/EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_test.pkl))
 
 ## File Structure
 

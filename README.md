@@ -92,9 +92,9 @@ We provide html and pdf alternatives to this README which are auto-generated.
 
 ### Additional Files
 
-* [`EPIC_100_UDA_source_train`](EPIC_100_UDA_source_train.csv) ([info](#epic_100_UDA_source_traincsv)) ([Pickle](epic_100_source_train.pkl))
-* [`EPIC_100_UDA_target_train_timestamps`](EPIC_100_UDA_target_train_timestamps.csv) ([info](#epic_100_UDA_target_train_timestampscsv)) ([Pickle](epic_100_target_train_timestamps.pkl))
-* [`EPIC_100_UDA_target_test_timestamps`](EPIC_100_UDA_target_test_timestamps.csv) ([info](#epic_100_UDA_target_test_timestampscsv)) ([Pickle](epic_100_target_test_timestamps.pkl))
+* [`EPIC_100_UDA_source_train`](EPIC_100_UDA_source_train.csv) ([info](#epic_100_uda_source_traincsv)) ([Pickle](epic_100_source_train.pkl))
+* [`EPIC_100_UDA_target_train_timestamps`](EPIC_100_UDA_target_train_timestamps.csv) ([info](#epic_100_uda_target_train_timestampscsv)) ([Pickle](epic_100_target_train_timestamps.pkl))
+* [`EPIC_100_UDA_target_test_timestamps`](EPIC_100_UDA_target_test_timestamps.csv) ([info](#epic_100_uda_target_test_timestampscsv)) ([Pickle](epic_100_target_test_timestamps.pkl))
 * [`EPIC_100_retrieval_train`](EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](epic_100_retrieval_train.pkl))
 * [`EPIC_100_retrieval_test`](EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](epic_100_retrieval_test.pkl))
 
@@ -195,6 +195,82 @@ This CSV file contains information on the 97 verb classes and contains 4 columns
 | `key`       | string                     | `let-go`              | Key used for the verb class (all keys are a member of their own class).       |
 | `instances` | list of string (1 or more) | `"['let', 'let-go']"` | All verbs within the class, including the key.                                |
 | `category`  | string                     | `leave`               | Name of the higher-level verb category that this verb class belongs to.       |
+
+[Back to Important Files](#important-files)
+
+
+#### EPIC_100_UDA_source_train.csv
+
+This CSV file contains the action annotations for the **source training set** used for **Unsupervised Domain Adaptation** and contains 15 columns:
+
+| Column Name           | Type                       | Example        | Description                                                                   |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| `uid`                 | int                        | `0`            | Unique ID for the segment as an int.                                          |
+| `narration_id`        | string                     | `P01_01_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
+| `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
+| `video_id`            | string                     | `P01_01`       | ID of the video where the segment originated from (unique per video).         |
+| `narration_timestamp` | string                     | `00:00:01.089` | Timestamp of when the original narration was recorded in `HH:mm:ss.SSS`.      |
+| `start_timestamp`     | string                     | `00:00:00.14`  | Start time in `HH:mm:ss.SS` of the action segment.                            |
+| `stop_timestamp`      | string                     | `00:00:03.37`  | End time in `HH:mm:ss.SS` of the action segment.                              |
+| `start_frame`         | int                        | `8`            | Start frame of the action.                                                    |
+| `stop_frame`          | int                        | `202`          | End frame of the action.                                                      |
+| `narration`           | string                     | `open door`    | Transcribed description of the English narration provided by the participant. |
+| `verb`                | string                     | `open`         | Parsed verb from the narration.                                               |
+| `verb_class`          | int                        | `3`            | Numeric ID of the verb's class.                                               |
+| `noun`                | string                     | `door`         | First parsed noun from the narration.                                         |
+| `noun_class`          | int                        | `3`            | Numeric ID of the first noun's class.                                         |
+| `all_nouns`           | list of string (1 or more) | `[door]`       | List of all parsed nouns within the narration.                                |
+| `all_noun_classes`    | list of int (1 or more)    | `[3]`          | Numeric ID of all of the parsed noun's classes.                               |
+
+Note that this file contains only videos from EPIC-Kitchens-55 which is used as the source domain.
+
+See [here](#unsupervised-domain-adaptation-challenge) for more details on the unsupervised domain adaptation challenge.
+
+[Back to Important Files](#important-files)
+
+
+#### EPIC_100_UDA_target_train_timestamps.csv
+
+This CSV file contains the action annotations for the **target training set** used for **Unsupervised Domain Adaptation** and contains 9 columns:
+
+| Column Name           | Type                       | Example        | Description                                                                   |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| `uid`                 | int                        | `2571`         | Unique ID for the segment as an int.                                          |
+| `narration_id`        | string                     | `P01_102_0`    | Unique ID for the segment as a string with participant ID and video ID.       |
+| `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
+| `video_id`            | string                     | `P01_102`      | ID of the video where the segment originated from (unique per video).         |
+| `narration_timestamp` | string                     | `00:00:01.100` | Timestamp of when the original narration was recorded in `HH:mm:ss.SSS`.      |
+| `start_timestamp`     | string                     | `00:00:00.54`  | Start time in `HH:mm:ss.SS` of the action segment.                            |
+| `stop_timestamp`      | string                     | `00:00:02.23`  | End time in `HH:mm:ss.SS` of the action segment.                              |
+| `start_frame`         | int                        | `27`           | Start frame of the action.                                                    |
+| `stop_frame`          | int                        | `111`          | End frame of the action.                                                      |
+
+Note that this file contains only videos from EPIC-Kitchens-100 which is used as the target domain.
+
+See [here](#unsupervised-domain-adaptation-challenge) for more details on the unsupervised domain adaptation challenge.
+
+[Back to Important Files](#important-files)
+
+
+#### EPIC_100_UDA_target_test_timestamps.csv
+
+This CSV file contains the action annotations for the **target testing set** used for **Unsupervised Domain Adaptation** and contains 9 columns:
+
+| Column Name           | Type                       | Example        | Description                                                                   |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| `uid`                 | int                        | `1924`         | Unique ID for the segment as an int.                                          |
+| `narration_id`        | string                     | `P01_101_0`    | Unique ID for the segment as a string with participant ID and video ID.       |
+| `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
+| `video_id`            | string                     | `P01_101`      | ID of the video where the segment originated from (unique per video).         |
+| `narration_timestamp` | string                     | `00:00:02.851` | Timestamp of when the original narration was recorded in `HH:mm:ss.SSS`.      |
+| `start_timestamp`     | string                     | `00:00:02.86`  | Start time in `HH:mm:ss.SS` of the action segment.                            |
+| `stop_timestamp`      | string                     | `00:00:03.87`  | End time in `HH:mm:ss.SS` of the action segment.                              |
+| `start_frame`         | int                        | `143`          | Start frame of the action.                                                    |
+| `stop_frame`          | int                        | `193`          | End frame of the action.                                                      |
+
+Note that this file contains only videos from EPIC-Kitchens-100 which is used as the target domain.
+
+See [here](#unsupervised-domain-adaptation-challenge) for more details on the unsupervised domain adaptation challenge.
 
 [Back to Important Files](#important-files)
 

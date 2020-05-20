@@ -1,0 +1,301 @@
+id,key,instances,category
+0,tap,"['tap', 'tap:water', 'water:tap', 'flow:tap', 'tab', 'tap:hot']",appliances
+1,spoon,"['spoon', 'spoon:wooden', 'spoon:using', 'teaspoon', 'risotto:spoon', 'spade', 'spade:food', 'spoon:coffee', 'spoon:tea', 'measure', 'stirrer:coffee', 'scoop', 'stirrer', 'tablespoon', 'spoon:dessert', 'spoon:sieve', 'spoon:sugar', 'spoon:olive', 'spoon:yeast', 'spoon:soup', 'spoon:slotted', 'spoon:measuring', 'stirrer:wooden', 'back:teaspoon', 'end:teaspoon', 'coffee:scoop', 'spoon:wash', 'spoon:second', 'spoon:wood', 'spoon:plastic', 'spoon:soap', 'fork:spoon', 'knife:teaspoon:fork', 'spade:plastic', 'paddle:rice', 'stick:wooden', 'tablespoon:place', 'teaspoon:honey']",cutlery
+2,plate,"['plate', 'plate:pasta', 'saucer', 'dish', 'plate:salad', 'plate:lasagna', 'food:plate', 'flatware', 'pate', 'plate:scale', 'plate:glass', 'plate:broccoli', 'edge:plate', 'stack:plate', 'centre:plate', 'top:plate', 'side:plate', 'content:plate', 'plate:small', 'plate:paper', 'plate:cereal', 'plate:new', 'plate:other', 'plate:food', 'plate:tomato', 'plate:nut', 'plate:lasagne', 'plate:soap', 'plate:top', 'dish:dirty', 'dish:meat', 'dish:tortilla', 'front:plate', 'saucer:soap']",crockery
+3,cupboard,"['cupboard', 'cabinet', 'locker', 'flap', 'door', 'door:cabinet', 'door:cupboard', 'closet', 'top:cupboard', 'content:cupboard', 'cupboard:open', 'handle:cupboard', 'cage']",storage
+4,knife,"['knife', 'knife:mincing', 'knife:using', 'blade', 'chopper', 'knife:mezzaluna', 'chopper:moon', 'mezzaluna', 'side:blade', 'angle:blade', 'knife:chef', 'knife:small', 'blade:chopping', 'blade:peeler', 'knife:bread', 'blade:knife', 'knife:paring', 'knife:spreading', 'knife:thin', 'knife:take', 'knife:wash', 'knife:soap', 'fork:knife', 'handle:knife', 'sharpness:knife', 'side:knife', 'chopper:half:moon']",cutlery
+5,pan,"['pan', 'pan:sauce', 'pan:frying', 'saucepan', 'saucepan:empty', 'saucepan:small', 'wok', 'wok:scour', 'pan:content', 'pan:cast:iron', 'pan:chilli', 'pan:uncover', 'pan:first', 'saucepan:large', 'pan:grill', 'pan:second', 'iron:cast', 'bottom:pan', 'bottom:saucepan', 'top:saucepan', 'side:wok', 'side:pan', 'top:pan', 'side:saucepan', 'content:pan', 'pan:oil', 'pan:cooking', 'pan:cooker', 'pan:serving', 'pan:hob', 'pan:pizza', 'pan:fry', 'pan:garlic', 'pan:rolling', 'pan:small', 'pan:wash', 'pane']",cookware
+6,lid,"['lid', 'lid:pot', 'lid:tin', 'lid:saucepan', 'lid:tupperware', 'lid:box', 'lid:pan', 'lid:teapot', 'lid:kettle', 'lid:yoghurt', 'lid:chopper', 'seal', 'lid:pepper:container', 'lid:aeropress', 'lid:frying:pan', 'lid:cooker', 'lid:jar', 'lid:tub', 'lid:spice:container', 'lid:olive:jar', 'lid:jam:jar', 'lid:butter:box', 'lid:garlic:granule', 'lid:clip:top:jar', 'seal:clip:top:jar', 'lid:pepper:mill', 'lid:rice:cooker', 'lid:coffee:tin', 'lid:film', 'lid:hummus:tub', 'lid:coffee:machine', 'lid:plastic', 'lid:oil:container', 'lid:top:jar', 'lid:food:box', 'lid:mince', 'lid:salt:container', 'lid:food:bin', 'lid:butter', 'lid:jug', 'lid:water:jug', 'lid:sugar', 'lid:bin', 'lid:food:processor', 'lid:scotch:egg:box', 'lid:lemon:squeezer', 'lid:trash:bin', 'lid:container', 'lid:steamer', 'lid:salt', 'lid:blender', 'lid:sun:dried:tomato', 'stack:lid', 'lods', 'lid:glass', 'lid:processor', 'lid:curry', 'lid:oregano', 'lid:pepper', 'lid:olive:oil', 'lid:olive', 'cover:salt', 'cover:bottom', 'cupboard:salt']",containers
+7,bowl,"['bowl', 'bowl:salad', 'bowl:glass', 'bowl:sugar', 'bowl:empty', 'bowl:cooker', 'bowl:washing', 'bowl:egg', 'bowl:processor', 'bowl:covered', 'bowl:scrub', 'bowl:plastic', 'bowl:large', 'bowl:washing:detergent', 'bowl:inside', 'bowl:cheese', 'bowl:raspberry', 'bowl:small', 'bowl:plate', 'bowl:several', 'bowl:corn', 'bowl:mushroom', 'bowl:dough', 'bowl:washing:up', 'content:bowl', 'bowl:lemon:zest', 'bowl:soup', 'bowl:garlic', 'bowl:food:processor', 'bowl:mozzarella', 'bowl:onion', 'bowl:little', 'bowl:rice:cooker', 'ramekin:coriander', 'ramekin', 'ramekin:peanut', 'stack:bowl', 'edge:bowl', 'side:bowl', 'ball:flour', 'bowl:cereal', 'top:bowl', 'side:ramekin', 'bowl:big', 'bowl:yoghurt', 'bowl:carrot', 'bowl:cherry', 'bowl:oatmeal', 'bowl:lettuce', 'bowl:second', 'bowl:meat', 'bowl:serving', 'bowl:saucepan', 'bowl:tomato', 'bowl:fruit', 'bowl:milk', 'pan:dish:washing', 'bucket:rice:cooker', 'underside:bowl', 'table:glass']",crockery
+8,drawer,"['drawer', 'drawer:freezer', 'drawer:refrigerator', 'draw', 'drawer:spice', 'drawer:cutlery', 'drawer:vegetable', 'drawer:fridge', 'content:drawer', 'drawer:open', 'component:drawer', 'compartment', 'drawer:close', 'drawer:other']",furniture
+9,sponge,"['sponge', 'scrubber', 'sponge:cleaning', 'bottom:sponge', 'pad:scouring', 'turn:sponge', 'scourer', 'wool:steel', 'sponge:water', 'sponge:new', 'sponge:soap', 'piece:sponge']",cleaning equipment and material
+10,glass,"['glass', 'glass:wine', 'glass:empty', 'glass:pint', 'glass:water', 'glass:orange:juice', 'glass:shot', 'glass:wash', 'glass:other', 'glass:milk', 'glass:new', 'glass:blueberry', 'glass:fruit', 'measurer:rice']",crockery
+11,hand,"['hand', 'hand:using', 'hand:my', 'hand:gloved', 'hand:other', 'hand:second', 'hand:wet', 'thumb', 'arm', 'finger', 'hand:left', 'blood']",hand
+12,fridge,"['fridge', 'refrigerator', 'door:refrigerator', 'door:fridge', 'item:fridge', 'top:fridge', 'side:fridge', 'content:fridge', 'content:fridge:drawer']",appliances
+13,cup,"['cup', 'cup:coffee', 'cup:measuring', 'cup:small', 'mug', 'mug:rinse', 'mug:clean', 'mug:glass', 'mug:tea', 'mug:rice', 'mug:coffee', 'cup:plastic', 'mug:water', 'cup:tea', 'side:mug', 'top:mug', 'content:cup', 'cup:soap', 'cup:flour', 'cup:water', 'cup:milk', 'content:mug']",crockery
+14,fork,"['fork', 'fork:soap', 'fork:wash', 'fork:paper', 'fork:wooden']",cutlery
+15,bottle,"['bottle', 'bottle:oil', 'bottle:milk', 'bottle:water', 'bottle:sauce', 'bottle:pesto', 'bottle:vinegar', 'bottle:passata', 'bottle:vanilla:extract', 'bottle:plastic', 'bottle:liquid', 'bottle:spice', 'bottle:vegetable:oil', 'bottle:whiskey', 'bottle:squash', 'bottle:fabric:conditioner', 'bottle:washing:detergent', 'bottle:tonic:water', 'bottle:rice:vinegar', 'bottle:soy:sauce', 'bottle:cooking:wine', 'bottle:gin', 'bottle:washing:liquid', 'bottle:fallen:oil', 'bottle:little', 'flask:oil', 'end:milk:bottle', 'position:tonic:water:bottle', 'shaker', 'rim', 'top:water:bottle', 'top:milk:bottle', 'bottle:olive:oil', 'bottle:bean:curd', 'bottle:wine', 'bottle:coke', 'bottle:nesquik', 'bottle:something', 'sauce:bottle', 'bottom:bottle']",containers
+16,onion,"['onion', 'onion:cutting', 'piece:onion', 'bit:onion', 'onion:red', 'onion:chopped', 'onion:sliced', 'onion:pickled', 'onion:remaining', 'layer:onion', 'end:onion', 'slice:onion', 'half:onion', 'part:onion:piece', 'side:onion', 'top:onion:layer', 'onion:excess', 'onion:open', 'onion:few', 'onion:half', 'onion:diced', 'onion:new', 'rest:onion:slice', 'top:onion', 'bottom:onion', 'choppings:onion', 'fragment:onion']",vegetables
+17,cloth,"['cloth', 'cloth:table', 'rag', 'cloth:dish', 'cloth:cleaning', 'cloth:washing', 'dishrag', 'rag:dish', 'cloth:wiping', 'dishcloth', 'rag:cloth', 'tablecloth', 'runner:table', 'clothe']",cleaning equipment and material
+18,board:chopping,"['board:chopping', 'board:cutting', 'board', 'board:serving', 'block:chopping', 'board:cut', 'block', 'board:charging', 'board:draining', 'board:drying', 'pad', 'plate:cutting', 'board:chipping', 'board:chop', 'board:washing']",utensils
+19,bag,"['bag', 'bag:plastic', 'bag:pasta', 'bag:mozzarella', 'bag:cereal', 'bag:grape', 'bag:flour', 'bag:cheese', 'bag:nut', 'bag:rice', 'bag:oregano', 'bag:salad', 'bag:bin', 'bag:coffee', 'bag:spaghetti', 'bag:food', 'bag:trash', 'bag:onion', 'bag:carrot', 'bag:bread', 'bag:grapes', 'bag:sandwich', 'bag:kitchen', 'bag:glove', 'bag:coffee:bean', 'bag:compost', 'bag:empty', 'bag:sugar', 'bag:paddleboard', 'bag:shopping', 'bag:chilli:powder', 'bag:potato', 'bag:rosemary', 'bag:apple', 'bag:mesh', 'bag:radish', 'bag:asparagus', 'bag:noodle', 'bag:breadstick', 'bag:folded', 'bag:pistachio', 'bag:chilli', 'bag:porridge', 'bag:tea:bag', 'bag:rubbish', 'bag:spice', 'bag:pepper', 'bag:sweetcorn', 'bag:cumin:seed', 'bag:rock:sugar', 'bag:carrot:packing', 'bag:open:pine:nut', 'bag:pine:nut', 'bag:bay:leaf', 'bag:herb', 'bag:crisp', 'bag:seasoning', 'bag:packing', 'bag:garlic', 'bag:bread:wrap', 'bag:coriander', 'bag:potato:packing', 'strip:coffee:bean:bag', 'purse', 'shut:bag', 'net', 'top:rice:bag', 'mesh:orange', 'top:sugar:bag', 'bag:tortilla:plastic', 'bag:salt', 'bag:fish', 'bag:tomato', 'bag:bread:plastic', 'bag:tortilla', 'bag:toast:bread', 'bag:ginger', 'bag:plastic:trash', 'bag:oatmeal', 'bag:breadcrumb', 'bag:spice:plastic', 'bag:spring:onion', 'bag:capsule', 'bag:coconut', 'bag:flower', 'bag:food:bin', 'bag:grocery', 'bag:new', 'bag:garbage', 'bag:carrier', 'content:bag', 'scrap', 'scrap:pepper']",containers
+20,spatula,"['spatula', 'spatula:wooden', 'spate', 'spatula:sieve', 'scraper', 'spatula:move', 'end:spatula']",utensils
+21,container,"['container', 'container:food', 'container:milk', 'container:sauce', 'container:rice', 'container:tofu', 'container:sugar', 'container:salt', 'container:tomato', 'container:pasta', 'container:cake', 'bin:bread', 'bucket', 'container:coffee', 'container:washing', 'container:coffee:bean', 'container:spice', 'container:coffee:ground', 'container:empty', 'container:stock', 'container:stock:cube', 'container:cream:cheese', 'container:oregano', 'container:pod', 'container:plastic', 'container:oil', 'container:ground:coffee', 'container:yoghurt', 'container:pepper', 'container:mince', 'container:cheese', 'container:inside', 'container:water', 'container:soap', 'tin:utensil']",containers
+22,liquid:washing,"['liquid:washing', 'liquid:cleaning', 'detergent', 'degreaser', 'cleanser', 'spray', 'cleaner', 'washing:dish', 'product', 'spray:cleaning', 'detergent:washing', 'product:cleaning', 'dispenser:soap', 'alcohol', 'soap', 'wash:hand', 'dish:soap', 'liquid:washing:up', 'liquid:dishwashing', 'remover:spot', 'ball:washing', 'liquid:dish:washing', 'liquid:laundry', 'soap:dish', 'soap:dishwasher', 'soap:liquid', 'soap:more', 'softener', 'spray:kitchen']",cleaning equipment and material
+23,box,"['box', 'box:lunch', 'box:cereal', 'box:tea', 'box:salt', 'tupperware', 'lunchbox', 'case', 'box:mushroom', 'box:coffee', 'box:cheese', 'box:milk', 'box:rice', 'box:carrot', 'box:fruit', 'pot:plastic', 'tub', 'box:plastic', 'box:eggs', 'box:fajita', 'box:cling:film', 'box:egg:carton', 'box:pizza', 'tub:starter', 'box:stock:container', 'box:breadstick', 'box:tomato', 'tupperware:sugar', 'box:stock:cube', 'box:ice:cream', 'box:tupperware', 'tub:hummus', 'box:food', 'box:butter', 'box:pitta:bread', 'box:noodle', 'tupperware:butter', 'case:thermometer', 'box:bread', 'tub:tupperware', 'tub:oregano', 'tub:plastic', 'box:blender', 'box:meat', 'box:cherry:tomato', 'tub:butter', 'box:egg', 'box:folding', 'box:yeast', 'box:scotch:egg', 'box:washing:powder', 'position:box', 'side:tub', 'top:butter:box', 'side:tupperware', 'stack:tub', 'bowl:tupperware', 'content:box', 'content:tupperware', 'box:small', 'box:filter', 'box:water', 'box:pasta', 'box:salad', 'box:blueberry', 'box:olive', 'box:sausage', 'box:bean:curd', 'box:empty', 'box:paper', 'box:fajitas', 'container:tupperware', 'top:stack', 'game:board', 'tupperware:second', 'tupperware:oregano', 'bit:tupperware']",containers
+24,hob,"['hob', 'stove', 'gas', 'burners', 'hop', 'hot', 'burner', 'hob:induction', 'grid', 'grid:hob', 'flame', 'grill', 'grill:hob', 'griddle', 'surface:hob', 'top:stove', 'top:burner', 'fire', 'support', 'support:pan', 'trivet', 'cap:burner', 'holder:pot', 'oven:left', 'oven:right', 'cooker:flame', 'flame:cooker', 'flame:stove', 'intensity:flame', 'number:hob', 'press:panini', 'stove:electronic', 'stove:gas', 'source:power']",appliances
+25,dough,"['dough', 'dough:bread', 'dough:remaining', 'chunk:dough', 'edge:dough', 'partition:dough', 'scrap:dough', 'ball:dough', 'ball', 'side:dough', 'dough:half', 'dough:excess']",baked goods and grains
+26,package,"['package', 'package:cheese', 'package:bread', 'package:cooky', 'package:popcorn', 'package:mozzarella', 'package:parsley', 'package:salad', 'package:pasta', 'packaging', 'packaging:salad', 'packaging:bread', 'packet', 'pack:cheese', 'pack', 'pack:tortilla', 'pack:tea', 'carton:egg', 'wrapper', 'plastic', 'package:sausage', 'package:cookies', 'pack:soup', 'package:bacon', 'pack:oat', 'carton', 'packet:beef', 'packet:tea', 'package:meat', 'sachet', 'packet:cookies', 'packet:cheese', 'carton:milk', 'sachet:flavour', 'packet:sausage', 'package:cream', 'package:salt', 'pack:salad', 'pack:meat', 'pack:pasta', 'package:fajita', 'package:wrap', 'package:spice', 'package:egg', 'cardboard', 'wrapping', 'package:honey', 'packaging:tomato', 'packaging:open:meat', 'packet:yeast', 'package:green:bean', 'sachet:sugar', 'packet:coffee', 'packaging:mince', 'pack:battery', 'package:couscous', 'package:carrot', 'wrapper:oil', 'package:crispy:pancake', 'packaging:cream:cheese', 'packaging:parsley', 'packet:tablet', 'packaging:pasta', 'packaging:it', 'packet:pork:belly', 'packaging:corn', 'packaging:stock:cube', 'packaging:rice', 'sachet:open', 'packaging:parmesan', 'package:vegetable:stock', 'package:chicken', 'packet:tofu', 'packaging:tenderstem:broccoli', 'packaging:mushroom', 'packaging:salami', 'package:potato', 'wrapping:plastic', 'pack:egg', 'package:hot:dog', 'pack:vegetable:stock', 'packaging:iron', 'packet:red:lentil', 'package:parmesan', 'packet:coriander', 'carton:juice', 'wrapping:butter', 'package:oat', 'packet:peanut', 'packaging:salmon', 'packet:broccoli', 'packet:pepper', 'packaging:cream', 'package:fish:finger', 'carton:salt', 'packet:bacon', 'package:plastic', 'packaging:pizza:base', 'packaging:cracker', 'packet:mushroom', 'packaging:plastic', 'packaging:pizza', 'packet:parsley', 'packet:open:mozzarella', 'packaging:radish', 'packaging:cheese', 'packet:rice', 'package:mustard', 'packet:crisp', 'package:paprika', 'packet:cumin:seed', 'packet:spinach', 'packaging:stock', 'package:powder', 'packet:it', 'package:cracker', 'packet:salami', 'packaging:pod', 'package:butter', 'package:cottage:cheese', 'pack:tomato', 'packet:plastic', 'packet:sugar', 'package:softener', 'packet:bread', 'packet:open:tofu', 'packaging:meat', 'package:almond:drink', 'packet:vegetable:stock', 'pack:sugar', 'sachet:baking:powder', 'package:tomato', 'wrapper:stock:cube', 'packaging:butter', 'package:pak:choi', 'packaging:cucumber', 'package:blueberry', 'packaging:biscuit', 'punnet', 'packing:rib', 'strip:opening', 'slice:bread:packet', 'bit:cheese:packet', 'packing:potato', 'bundle', 'package:quorn', 'package:olive', 'package:avocado', 'package:sauce', 'package:food', 'package:pizza', 'package:kale', 'package:mixed:spice', 'package:cookie', 'package:lettuce', 'package:fajitas', 'package:tortilla', 'bread:packing', 'carton:soy:milk', 'pack:chicken', 'pack:cookie', 'pack:pizza', 'packaging:cookie', 'packaging:fishcake', 'packaging:green:bean', 'packaging:ham', 'packaging:leek', 'packaging:lettuce', 'packet:chicken', 'packet:cookie', 'packet:fishcake', 'packet:granola', 'packet:new', 'packet:open:sausage', 'packet:popcorn', 'packet:potato', 'packing', 'packing:green:bean', 'packing:oat', 'slice:bread:packaging', 'envelope:oregano', 'pack:bin:cheese', 'strip:plastic', 'wrapper:bacon', 'wrapper:cheese']",containers
+27,water,"['water', 'water:empty', 'water:excess', 'water:hot', 'water:more', 'excess:water', 'water:boiling', 'water:cold', 'water:remove', 'water:tonic', 'water:warm', 'water:remaining', 'water:boiled', 'pressure:water', 'level:water', 'wastewater', 'water:coriander', 'water:filtered', 'water:boil', 'water:pot', 'water:dirty', 'water:kettle', 'water:salt', 'water:access', 'water:tap:cover:sink', 'water:add', 'water:actual', 'wash:water', 'depth:water']",drinks
+28,meat,"['meat', 'meat:minced', 'piece:meat', 'mix:meat', 'meat:mix', 'mincemeat', 'meat:mince', 'meat:diced', 'meat:nasty', 'dice:meat', 'fat', 'mince', 'cutlet', 'heart', 'meat:open', 'meat:stir', 'meat:stirring', 'bit:meat', 'doneness:meat', 'rib']",meat and substitute
+29,pot,"['pot', 'pot:small', 'pot:white', 'pot:right', 'pot:left', 'pot:second', 'pot:pressure', 'pot:pasta', 'pot:sauce', 'pot:third', 'pot:first', 'pot:tupperware', 'pot:inner', 'pot:cooking', 'pot:rice', 'pot:rice:cooker', 'edge:pot', 'bottom:pot', 'side:pot', 'pot:food', 'pot:hob', 'pot:kiwi', 'pot:larger', 'pot:black', 'pot:spaghetti', 'pot:salt', 'pot:top', 'pot:other', 'top:pot', 'left:pot', 'part:pot', 'position:pot']",cookware
+30,potato,"['potato', 'potato:baby', 'potato:sliced', 'potato:sweet', 'slice:potato', 'bit:potato', 'chip', 'potato:scoop']",vegetables
+31,oil,"['oil', 'oil:olive', 'oil:chilli', 'oil:sesame', 'oil:more', 'oil:truffle', 'oil:fish', 'oil:coconut', 'roll:sesame', 'switch:oil']",spices and herbs and sauces
+32,cheese,"['cheese', 'slice:cheese', 'mixture:cheese', 'mozzarella', 'paneer', 'slice:mozzarella', 'parmesan', 'cheese:grated', 'cheese:remaining', 'cheese:cream', 'cheese:containing', 'cheese:cottage', 'cheese:parmesan', 'cheese:feta', 'lengthways:cheese', 'bit:cheese', 'piece:mozzarella', 'ball:mozzarella', 'curd:cheese', 'cheese:open', 'cheese:more', 'mozzarella:more', 'mozzarella:tomato:sauce', 'piece:cheese', 'pesto:cheese']",dairy and eggs
+33,bread,"['bread', 'bread:white', 'bread:toast', 'loaf', 'rusk', 'toast', 'bun:hamburger', 'slice:bread', 'ciabatta', 'bread:sandwich', 'bread:pitta', 'loaf:bread', 'piece:bread:crust', 'bagel:release', 'pitta', 'crust:bottom', 'inside:bread', 'piece:bread', 'baguette', 'softness:bread', 'end:bread', 'bun:bao', 'bottom:bread:crust', 'bao', 'underside:bread', 'piece:pitta', 'half:bread', 'bagel', 'crust', 'half:bagel', 'bit:bread', 'bun', 'bun:steamed', 'crust:bread', 'piece:baguette', 'piece:crust', 'croissant', 'top:bread', 'bread:avocado', 'bread:hamburger', 'slice:toast:bread']",baked goods and grains
+34,food,"['food', 'food:scoop', 'bit:food', 'grocery', 'food:burned', 'food:frozen', 'food:remaining', 'piece:food', 'fry:stir', 'stroganoff', 'yesterday:cooked', 'topping', 'ingredient', 'ingredient:pan', 'ingredient:soup', 'leftover', 'food:leftover', 'scrap:food', 'jambalaya', 'paella', 'content', 'food:more', 'food:cooked', 'food:empty', 'bite', 'content:frying:pan', 'couscous']",prepared food
+35,tray,"['tray', 'tray:baking', 'pan:baking', 'tray:pizza', 'tin:baking', 'base:tin', 'tray:grill', 'tray:mug', 'tray:bacon', 'tray:second', 'tray:cutlery', 'tray:first', 'tray:weight', 'tray:plastic', 'tray:ice', 'tray:ice:cube', 'tray:steamer', 'tray:oven', 'tray:falling', 'tray:potato', 'mould', 'position:tray', 'bottom:oven:tray', 'mould:ring:cake', 'boundary:cake:mould', 'mould:cake', 'bottom:springform:tin', 'form', 'bottom:spring:form', 'casserole', 'tin:cake', 'tin:spring:form', 'dish:oven', 'tray:olive', 'base:baking:tin', 'base:cake:container', 'height:tray']",cookware
+36,bin,"['bin', 'bin:trash', 'bin:dust', 'bin:food', 'dustbin', 'bin:rubbish', 'bin:garbage', 'bin:recycling', 'basket:waste', 'wastebasket', 'bin:compost', 'bin:food:recycling', 'box:recycling', 'side:bin', 'bin:new', 'bin:other', 'can:trash', 'top:plastic:bin', 'pin:dust', 'hair']",rubbish
+37,pepper,"['pepper', 'pepper:bell', 'pepper:black', 'piece:pepper:skin', 'piece:pepper', 'bit:pepper:skin', 'bit:pepper', 'slice:pepper', 'half:pepper', 'pulp:pepper', 'core:pepper', 'part:pepper', 'part:pepper:piece', 'top:pepper', 'pepper:more', 'bit:bell:pepper', 'middle:pepper', 'peppercorn']",vegetables
+38,salt,"['salt', 'seasoning', 'salt:more', 'sale', 'soil']",spices and herbs and sauces
+39,colander,"['colander', 'strainer:pasta', 'strainer', 'strainer:mesh', 'sieve', 'strainer:tea:pot', 'strainer:teapot', 'strainer:sink', 'strainer:tea', 'mesh', 'infuser:tea', 'infuser', 'infusers:tea', 'cap:sink', 'catcher:sink', 'colander:soap', 'cupboard:strainer', 'mesh:steel', 'stain']",utensils
+40,jar,"['jar', 'jar:sugar', 'jar:coffee', 'jar:filter', 'jar:salt', 'jar:honey', 'jar:herb', 'jar:smoked:paprika', 'jar:cayenne:pepper', 'jar:cumin', 'jar:pesto:sauce', 'jar:spicy:bean:sauce', 'jar:measuring', 'jar:glass', 'jar:thyme', 'jar:sun:dried:tomato', 'jar:spicy:bean:paste', 'jar:clip:top', 'jar:top', 'jar:jam', 'jar:chilli:flake', 'jar:tahini:sauce', 'jar:dressing', 'jar:tahini', 'jar:pepper', 'jar:sauce', 'jar:paprika', 'jar:garlic', 'jar:spice', 'jar:plastic', 'thread:jar', 'rim:jar', 'top:top:jar', 'top:clip:top:jar', 'clip:top:jar', 'clip:clip:top:jar', 'jar:pasta:sauce', 'jar:coconut', 'jar:olive', 'jar:pesto']",containers
+41,carrot,"['carrot', 'carrot:tail', 'carrot:chopped', 'carrot:sliced', 'carrot:diced', 'bit:carrot', 'strip:carrot', 'handful:carrot', 'end:carrot', 'slice:carrot', 'chunk:carrot', 'piece:carrot', 'stick:carrot', 'bottom:carrot', 'choppings:carrot', 'edge:carrot']",vegetables
+42,top,"['top', 'top:counter', 'surface', 'surface:wipe', 'counter', 'counter:kitchen', 'side', 'top:kitchen', 'surface:mixture', 'surface:wiping', 'surface:work', 'bench', 'sideboard', 'tabletop', 'countertop', 'desk', 'table', 'table:round', 'top:table', 'surface:kitchen', 'surface:side', 'surface:cooking']",furniture
+43,tomato,"['tomato', 'tomato:dried', 'tomato:cherry', 'tomato:chopped', 'sun', 'tomato:sixth', 'tomato:fourth', 'tomato:seventh', 'tomato:second', 'tomato:fifth', 'tomato:chop', 'tomato:sun:dried', 'tomato:third', 'half:cherry:tomato', 'piece:sun:dried:tomato', 'piece:tomato', 'tomato:other', 'tomato:poor', 'tomato:peeled', 'centre:tomato', 'dish:tomato', 'end:tomato', 'heart:tomato']",vegetables
+44,kettle,"['kettle', 'spout:kettle', 'level:kettle', 'cooker:water', 'pot:kettle', 'boiler', 'boiler:water', 'content:water:boiler', 'kettle:electronic']",appliances
+45,pasta,"['pasta', 'spaghetti', 'piece:pasta', 'lasagne', 'tortellini', 'top:pasta', 'slice:lasagne']",baked goods and grains
+46,oven,"['oven', 'oven:adjust', 'cooker', 'door:oven', 'setting:oven', 'display:oven', 'side:oven', 'drawer:oven', 'top:oven', 'height:oven']",appliances
+47,sauce,"['sauce', 'sauce:soy', 'sauce:fish', 'sauce:pesto', 'sauce:tomato', 'salsa', 'tabasco', 'sauce:soya', 'soy', 'passata', 'sauce:tahini', 'sauce:spicy:bean', 'sauce:tabasco', 'sauce:chilli', 'sauce:black:bean', 'passata:containing', 'sauce:worcestershire', 'puree', 'glaze', 'sriracha', 'puree:tomato', 'marinade', 'marinade:pork', 'condiment', 'ketchup', 'mayonnaise', 'tahini', 'dressing:salad', 'dressing', 'mustard', 'pesto', 'sauce:other', 'sauce:jarred', 'sauce:stir', 'sauce:more', 'sauce:mix', 'sauce:spinker', 'pico']",spices and herbs and sauces
+48,skin,"['skin', 'skin:onion', 'skin:potato', 'peel', 'peel:onion', 'peeling', 'peeling:onion', 'peeling:carrot', 'rind', 'skin:squash', 'skin:carrot', 'skin:banana', 'skin:pepper', 'rind:lemon', 'skin:leaf', 'skin:orange', 'peel:lemon', 'rind:cheese', 'peeling:radish', 'peel:orange', 'peel:clove', 'skin:courgette', 'skin:garlic', 'peel:garlic', 'heap:peel', 'pile:peel', 'piece:onion:skin', 'piece:skin', 'top:peel', 'skin:kiwi:bit', 'skin:avocado', 'skin:spring:onion', 'skin:outer', 'skin:dirty', 'peel:banana', 'peel:melon', 'peel:potato', 'peeling:vegetable', 'peeling:veggie', 'rind:peach', 'trimming']",rubbish
+49,paper,"['paper', 'paper:baking', 'paper:cooking', 'letter', 'paper:shredded', 'paper:foiled', 'paper:greaseproof', 'paper:foil', 'card', 'square:greaseproof:paper', 'piece:baking:paper', 'cylinder:paper', 'square:paper', 'page', 'piece:paper', 'receipt', 'edge:paper', 'file', 'envelope', 'poster', 'mail']",materials
+50,maker:coffee,"['maker:coffee', 'v60', 'cafetiere', 'cafetiere:rinse', 'maker', 'machine:coffee', 'pot:moka', 'pot:mocha', 'moka', 'bottom:aeropress', 'aeropress', 'plunger:cafetiere', 'grinder', 'grinder:coffee', 'mocha', 'base:coffee:machine', 'pot:coffee', 'blender:coffee', 'nozzle', 'nozzle:coffee', 'top:coffee:machine', 'drawer:coffee:machine', 'holder:filter', 'top:cafetiere', 'grind:coffee', 'part:coffee:pot', 'section:coffee:maker', 'plunger']",appliances
+51,garlic,"['garlic', 'garlic:chop', 'garlic:peel', 'piece:garlic', 'clove', 'bit:garlic', 'bulb', 'garlic:smashed', 'garlic:sliced', 'clove:garlic', 'garlic:containing', 'garlic:minced', 'bulb:garlic', 'garlic:open', 'slice:garlic', 'slice:garlic:clove', 'end:garlic', 'end:garlic:clove', 'chunk:garlic', 'granule:garlic', 'garlic:more', 'garlic:dice', 'rest:garlic']",vegetables
+52,towel,"['towel', 'towel:tea', 'towel:cleaning', 'towel:second', 'rug', 'duster']",materials
+53,egg,"['egg', 'egg:open', 'egg:whisked', 'pulp:egg', 'yolk:egg', 'egg:second', 'egg:fried', 'egg:distribute', 'egg:pour', 'leftover:egg']",dairy and eggs
+54,rubbish,"['rubbish', 'trash', 'garbage', 'waste', 'waste:food', 'scum', 'dirt', 'recycling', 'compost', 'piece:plastic', 'piece:waste:pepper', 'bit:dust', 'dust', 'spot', 'crumb', 'content:sink:strainer', 'residue:food', 'residue', 'rubbish:grape', 'bin:leftover:food', 'food:residual', 'bit:garbage', 'leftover:food', 'over:left', 'remains', 'bit:sink', 'remainder', 'stuff:chopping:board', 'bit:plastic']",rubbish
+55,rice,"['rice', 'rice:scoop', 'rice:remaining', 'grain:rice', 'risotto', 'rice:jasmine', 'rice:split', 'rice:vegetable', 'rice:cooked', 'rest:rice', 'rise']",baked goods and grains
+56,mushroom,"['mushroom', 'mushroom:chop', 'mushroom:chopped', 'end:mushroom', 'bit:mushroom', 'piece:mushroom']",vegetables
+57,chicken,"['chicken', 'thigh:chicken', 'breast:chicken', 'piece:chicken', 'breast', 'drum', 'bone:chicken']",meat and substitute
+58,cutlery,"['cutlery', 'knife:fork', 'silverware', 'tableware', 'piece:cutlery']",cutlery
+59,coffee,"['coffee', 'pod:coffee', 'bean:coffee', 'ground:coffee', 'scoop:coffee', 'spill:coffee', 'grounds', 'ground', 'coffee:mug', 'pod', 'capsule', 'capsule:empty', 'capsule:coffee', 'coffee:stirring']",drinks
+60,glove,"['glove:oven', 'glove', 'mitt', 'mitt:oven', 'mitten', 'glove:rubber', 'glove:second', 'finger:rubber:glove', 'mitten:oven', 'mitt:kitchen']",materials
+61,can,"['can', 'tin', 'tin:tomato', 'tin:coffee:bean', 'can:chickpea', 'can:tomato', 'tin:kidney:bean', 'can:tin', 'tin:chopped:tomato', 'tin:condensed:milk', 'tin:coffee', 'tin:cocoa:powder', 'can:soup', 'tin:yeast', 'tin:empty', 'tin:teabag', 'can:kidney:bean', 'yeast:can', 'tin:mug']",containers
+62,leaf,"['leaf', 'leaf:lettuce', 'leaf:salad', 'leaf:spinach', 'leaf:bay', 'leaf:tea', 'leaf:rosemary', 'leaf:pak:choi', 'leaf:basil', 'leaf:choi', 'bit:basil:leaf', 'leaf:mint', 'leaf:curry', 'herb', 'garni:bouquet', 'leaf:more:salad', 'leaf:spring:onion', 'leaf:only:curry', 'leaf:more', 'leaf:oregano', 'bit:leaf', 'herb:other', 'tarragon']",vegetables
+63,sink,"['sink', 'sink:kitchen', 'sink:water', 'basin', 'hole:sink', 'drain', 'bottom:sink', 'clog', 'top:sink', 'side:sink', 'sink:empty', 'counter:sink']",furniture
+64,milk,"['milk', 'milk:soy', 'milk:coconut', 'milk:soya', 'milk:condensed', 'milk:more']",dairy and eggs
+65,heat,"['heat', 'temperature', 'temperature:gas', 'temperature:cooker', 'heat:cooker', 'temp', 'temperature:thermometer', 'temperature:milk', 'heat:stove', 'temperature:water', 'temperature:liquid', 'temperature:oil', 'temperature:hob', 'temperature:whey', 'heat:oven', 'temperature:tap', 'temperature:cast:iron:pan', 'temperature:rice:cooker', 'temperature:curd', 'temperature:dishwasher', 'temperature:bowl', 'temperature:pie', 'temperature:measure', 'heat:hob', 'temperature:oven', 'heat:right', 'heat:be', 'temperature:watch']",appliances
+66,jug,"['jug', 'jug:measuring', 'pitcher', 'carafe', 'carafe:rinse', 'jug:water', 'beaker', 'cylinder:measuring', 'top:water:filter', 'filter:water', 'jug:cafetiere', 'filter:more:water', 'filter:fill:water', 'filter:tap:water', 'jar:water:filter', 'drum:measuring']",crockery
+67,aubergine,"['aubergine', 'slice:aubergine', 'bit:aubergine', 'end:aubergine']",vegetables
+68,salad,"['salad', 'remnant:salad', 'radish', 'salad:more', 'bit:salad', 'piece:salad']",prepared food
+69,chilli,"['chilli', 'chilli:chop', 'chilli:red', 'chilli:slice', 'pepper:chilli', 'chilli:crushed', 'chilli:dried', 'chilli:green', 'pot:chilli', 'pepper:cayenne', 'flake:chilli', 'flake', 'powder:chilli', 'powder:red:chilli', 'pepper:hot', 'pepper:salted:chilli', 'bit:chilli', 'end:chilli', 'price']",spices and herbs and sauces
+70,dishwasher,"['dishwasher', 'dishwater', 'door:dishwasher', 'drawer:dishwasher', 'bit:dishwasher']",appliances
+71,mixture,"['mixture', 'mix', 'mixture:chocolate', 'mixture:sugar', 'mixture:hand:blender', 'mixture:egg', 'mixture:yeast', 'mixture:passata', 'mixture:pistachio', 'mixture:lemon:curd', 'batter', 'starter', 'flour:egg', 'mixture:egg:powder', 'mixture:chilli', 'mixture:egg:flour', 'mixture:whole', 'mixture:powder', 'mixture:oil', 'mixture:egg:food', 'egg:breadcrumb', 'spoon:mixture', 'top:mixture', 'remainder:mixture']",prepared food
+72,cucumber,"['cucumber', 'cucumber:sliced', 'salad:cucumber', 'bit:cucumber', 'end:cucumber', 'piece:cucumber', 'cucumber:chopped', 'cucumber:cut']",vegetables
+73,clothes,"['clothes', 'laundry', 'washing:washing', 'washing', 'bottom:tracksuit', 'tshirt', 'bottom:jogging', 'jumper', 'pocket', 'gown:dressing', 'cardigan', 'jean', 'boxer', 'short:boxer', 'hat', 'trouser', 'trousers', 'shirt', 't', 'shirt:tee', 'sleeve', 'sock', 'tag:top', 'tag:washing', 'tag', 'collar:shirt', 'shirt:t', 'short', 'shoulder', 'slipper']",materials
+74,peach,"['peach', 'slice:peach', 'pit:peach']",fruits and nuts
+75,flour,"['flour', 'mixture:flour', 'powder:flour', 'flour:excess', 'flour:dough', 'flour:more', 'flour:extra', 'flour:plain', 'flower']",baked goods and grains
+76,courgette,"['courgette', 'piece:courgette', 'bit:courgette', 'dice:courgette', 'slice:courgette']",vegetables
+77,filter,"['filter', 'filter:coffee', 'filter:empty', 'filter:sink', 'paper:filter', 'stud', 'filter:aeropress', 'filter:moka:pot', 'filter:v60', 'filter:teapot', 'filter:coffee:maker', 'strainer:cafetiere']",utensils
+78,butter,"['butter', 'butter:excess', 'butter:melted', 'butter:melting', 'butter:remaining', 'bit:butter', 'margarine', 'piece:butter', 'cube:butter', 'slice:butter', 'butter:more']",dairy and eggs
+79,scissors,"['scissors', 'scissor']",utensils
+80,chopstick,"['chopstick', 'stick:chop', 'chopstick:fork', 'pair:chopstick']",utensils
+81,tofu,"['tofu', 'curd:bean', 'curd', 'piece:tofu', 'slice:tofu', 'block:tofu', 'curd:cooked:bean', 'curd:salted:bean', 'number:bean:curd:source', 'slice:bean:curd']",meat and substitute
+82,blender,"['blender', 'mixer', 'blender:hand', 'shaft', 'piece:hand:blender', 'motor:hand:blender', 'shaft:blender', 'shaft:hand:blender', 'part:blender', 'shake']",appliances
+83,olive,"['olive', 'olive:own']",fruits and nuts
+84,mat,"['mat', 'mat:place', 'board:eating', 'placemat', 'mat:heatproof', 'mat:heat:proof', 'coaster', 'mat:floor', 'mat:table', 'mat:tea:place', 'net:rubber']",materials
+85,spice,"['spice', 'pot:spice', 'spice:tamarind', 'spice:mixed', 'mix:spice', 'anise:star']",spices and herbs and sauces
+86,sausage,"['sausage', 'chorizo', 'sausage:corn', 'sausage:quorn', 'sausage:quorn:cocktail', 'dog:hot', 'shape:sausage']",meat and substitute
+87,peeler:potato,"['peeler:potato', 'peeler', 'skinner:carrot', 'skinner', 'peeler:carrot']",utensils
+88,napkin,"['napkin', 'serviette', 'tissue', 'paper:tissue', 'paper:toilet', 'fork:napkin', 'spoon:napkin:yoghurt']",materials
+89,cover,"['cover', 'cover:plastic', 'cover:plate', 'cover:dish', 'cover:hob', 'cover:food:processor', 'cover:microwave', 'cover:blender', 'cover:thermometer', 'cover:can', 'cover:battery', 'cover:juicer', 'cover:pen', 'cover:tin', 'cover:squeezer', 'cover:processor', 'cover:pot', 'cover:mug', 'sheath']",containers
+90,microwave,"['microwave', 'oven:microwave', 'door:microwave', 'microwave:inside', 'top:microwave']",appliances
+91,pizza,"['pizza', 'slice:pizza', 'piece:pizza', 'top:pizza', 'base:pizza']",prepared food
+92,button,"['button', 'switch', 'switch:light']",appliances
+93,towel:kitchen,"['towel:kitchen', 'towel:paper', 'roll:kitchen', 'sheet:kitchen:roll', 'roll:kitchen:towel', 'piece:kitchen:roll', 'roll:paper']",materials
+94,vegetable,"['vegetable', 'piece:vegetable', 'green', 'vegetable:stirring']",vegetables
+95,stock,"['stock', 'cube:stock', 'stock:vegetable', 'stock:chicken', 'gravy', 'broth', 'granule:gravy', 'stock:leftover', 'cube', 'cube:gravy', 'cube:small']",spices and herbs and sauces
+96,grater,"['grater', 'grater:cheese', 'grinder:cheese']",utensils
+97,ladle,['ladle'],utensils
+98,yoghurt,"['yoghurt', 'yoghurt:greek', 'yogurt', 'pot:yoghurt', 'spoonful:yoghurt']",dairy and eggs
+99,cereal,"['cereal', 'shreddies', 'granola']",baked goods and grains
+100,wrap:plastic,"['wrap:plastic', 'foil:transparent', 'film:cling', 'film', 'film:plastic', 'film:cucumber', 'film:butter', 'piece:cellophane', 'dispenser:cellophane', 'cellophane']",materials
+101,broccoli,"['broccoli', 'broccoli:tenderstem', 'broccoli:pour', 'broccoli:stem', 'piece:broccoli', 'floret', 'floret:broccoli', 'rest:broccoli', 'sort:broccoli']",vegetables
+102,sugar,"['sugar', 'sugar:rock', 'lump:sugar', 'dissolve:sugar']",spices and herbs and sauces
+103,brush,"['brush', 'brusher', 'brush:pastry', 'broom', 'wool', 'brush:washing:up', 'brush:dish', 'mop', 'toothbrush']",cleaning equipment and material
+104,biscuit,"['biscuit', 'cookie', 'cooky', 'cracker', 'cracker:crushed', 'piece:biscuit', 'powder:biscuit', 'toast:melba']",baked goods and grains
+105,lemon,"['lemon', 'slice:lemon', 'half:lemon', 'half:second:lemon', 'zest:lemon']",fruits and nuts
+106,juicer,"['squeezer', 'juicer', 'squeezer:lemon', 'juicer:lime', 'piece:juicer', 'part:juicer', 'bowl:juicer', 'squeezer:lime', 'piece:lemon:squeezer']",utensils
+107,wrap,"['wrap', 'wrap:meat', 'wrap:bread', 'taco', 'tortilla', 'wrap:elastic']",materials
+108,scale,"['scale', 'system:weighing', 'scales', 'balance', 'scale:kitchen', 'reading:scale', 'top:scale', 'scale:measuring']",appliances
+109,rest,"['rest', 'rest:spoon', 'holder:spoon', 'rest:teabag', 'rest:pot', 'rester:teabag', 'holder:teabag', 'rest:ladle']",other
+110,rack:drying,"['rack:drying', 'rack', 'rack:dish', 'drainer', 'rack:cooling', 'rack:knife', 'rack:tray', 'drainer:sink', 'drainer:dish', 'rack:cutlery', 'strip:magnetic', 'rack:oven:tray', 'rack:oven', 'rack:draining', 'rack:dry', 'rack:dryer', 'rack:washing', 'dryer', 'track']",storage
+111,alarm,"['alarm', 'timer', 'timer:oven', 'timer:check', 'clock:oven', 'time', 'time:cooking', 'time:oven', 'button:timer', 'clock:microwave:oven', 'minute']",appliances
+112,salmon,"['salmon', 'salmon:covered', 'salmon:battered', 'piece:salmon', 'fillet:salmon', 'skin:salmon', 'top:salmon:fillet']",meat and substitute
+113,freezer,"['freezer', 'door:freezer', 'front:freezer']",appliances
+114,light,"['light', 'light:hob', 'light:oven', 'lighting', 'lamp']",appliances
+115,spreads,"['spreads', 'honey', 'jam', 'butter:peanut', 'nutella', 'curd:lemon']",prepared food
+116,squash,"['squash', 'squash:more']",vegetables
+117,leek,"['leek', 'piece:leek', 'leek:extra', 'bottom:leek', 'end:leek']",vegetables
+118,cap,"['cap', 'cap:milk:bottle', 'cap:liquid', 'cap:bottle', 'cap:oregano', 'cap:olive:oil', 'cap:oil', 'lid:bottle', 'lid:milk:bottle', 'lid:vinegar:bottle', 'lid:whiskey:bottle', 'lid:oil', 'lid:soy:sauce', 'lid:ketchup', 'lid:oil:bottle', 'lid:milk', 'lid:sesame:oil', 'lid:water:bottle', 'cap:salt', 'cap:vinegar', 'cap:milk', 'cap:sauce']",containers
+119,fish,"['fish', 'piece:fish', 'skin:fish', 'fragment:fish', 'fish:open', 'fish:cooked', 'meat:fish']",meat and substitute
+120,lettuce,"['lettuce', 'rocket', 'lettuce:chopped', 'piece:lettuce']",vegetables
+121,curry,"['curry', 'curry:fish', 'masala:bean', 'paneer:saag', 'masala', 'curry:potato']",prepared food
+122,seed,"['seed', 'pit', 'seed:squash', 'seed:pepper', 'seed:lemon', 'seed:cumin', 'seed:mustard', 'sesame', 'stone:olive', 'seed:olive', 'seed:coriander', 'core']",fruits and nuts
+123,foil,"['foil', 'foil:kitchen', 'foil:aluminium', 'foil:tin', 'foil:silver', 'aluminium', 'end:foil:paper', 'roll:foil', 'piece:aluminium:foil', 'roll:foil:paper', 'roll:tin:foil']",materials
+124,machine:washing,"['machine:washing', 'machine', 'washer', 'machine:washer', 'door:machine', 'door:washing:machine', 'door:tablet', 'drawer:washing:machine', 'setting', 'door:washing:washing']",appliances
+125,corn,"['corn', 'corn:sweet', 'cob:corn', 'cob', 'corncob', 'sweetcorn', 'piece:corn', 'corn:salt']",vegetables
+126,soup,"['soup', 'soup:noodle', 'soup:sauce']",prepared food
+127,oatmeal,"['oatmeal', 'porridge', 'oat', 'oat:porridge', 'oatmeal:stir']",baked goods and grains
+128,onion:spring,"['onion:spring', 'onion:cut:spring', 'piece:spring:onion']",vegetables
+129,clip,"['clip', 'clip:bag', 'clip:laundry', 'top:clip', 'side:clip', 'clam']",utensils
+130,lighter,['lighter'],utensils
+131,ginger,"['ginger', 'piece:ginger', 'root:galangal', 'ginger:sliced', 'ginger:pickled', 'slice:ginger', 'stick:ginger']",spices and herbs and sauces
+132,tea,"['tea', 'bag:tea', 'teabag']",drinks
+133,nut,"['nut:pine', 'nut', 'peanut', 'pine', 'peanut:chopped', 'pistachio']",fruits and nuts
+134,vinegar,"['vinegar', 'reduction:balsamic', 'vinegar:wine', 'vinegar:rice', 'reduction', 'vinegar:balsamic', 'vinegar:chinese', 'vinegar:red:wine']",spices and herbs and sauces
+135,holder,"['holder', 'holder:jug', 'holder:magnetic', 'holder:napkin', 'holder:coffee', 'holder:dishwasher:cutlery', 'holder:bread:knife', 'holder:cutlery', 'holder:tablet', 'holder:knife', 'holder:dishwasher:glass']",utensils
+136,pin:rolling,"['pin:rolling', 'pin', 'bin:rolling']",utensils
+137,pie,"['pie', 'pastry']",baked goods and grains
+138,powder,"['powder:curry', 'powder:baking', 'powder', 'powder:garlic', 'powder:cocoa', 'nesquik', 'powder:dishing', 'powder:coconut:milk', 'granule']",spices and herbs and sauces
+139,burger,"['burger:tuna', 'patty', 'patty:tuna', 'burger', 'hamburger', 'burger:chicken', 'underside:tuna:burger']",meat and substitute
+140,book,"['book', 'geographic:national', 'book:recipe', 'book:cooking', 'booklet:recipe', 'index:cooking:book', 'page:cooking:book', 'booklet:instruction', 'national', 'geographic']",other
+141,shell:egg,"['shell:egg', 'eggshell', 'shell', 'eggshell:little', 'half:eggshell', 'piece:shell', 'skin:egg']",rubbish
+142,tongs,"['tongs', 'tong', 'device:wooden']",utensils
+143,cream,"['cream', 'fraiche:creme', 'fraiche', 'cream:ice', 'cream:milk', 'cream:remaining:ice', 'pot:creme:fraiche', 'pot:fraiche']",dairy and eggs
+144,pork,"['chunk:pork:belly', 'belly:pork', 'pork', 'piece:pork', 'strip:pork:belly']",meat and substitute
+145,oregano,['oregano'],spices and herbs and sauces
+146,banana,"['banana', 'slice:banana']",fruits and nuts
+147,processor:food,"['processor:food', 'processor', 'bit:processor', 'piece:food:processor', 'blade:food:processor:chopping', 'bottom:processor', 'bit:food:processor']",appliances
+148,paste,"['paste:garlic', 'paste:miso', 'paste', 'paste:shrimp', 'paste:pepper', 'paste:nut', 'paste:curry', 'paste:ginger', 'gochujang', 'galangal', 'paste:red:pepper', 'paste:tomato', 'paste:spice', 'source:bean']",spices and herbs and sauces
+149,recipe,"['recipe', 'text:instruction', 'instruction', 'recipe:yeast']",other
+150,liquid,"['liquid', 'whey:empty', 'spill', 'whey', 'whey:spilt']",other
+151,choi:pak,"['choi:pak', 'pak', 'end:choi', 'bit:choi', 'bit:pak:choi']",vegetables
+152,cooker:slow,"['cooker:slow', 'cooker:rice', 'steamer', 'element:rice:cooker:heating', 'cooker:steam', 'pot:electronic', 'pot:electric', 'cooker:electric']",appliances
+153,plug,"['plug', 'socket', 'plug:kettle', 'plug:sink', 'plug:rice:cooker']",appliances
+154,utensil,"['utensil', 'skimmer', 'utensil:cooking', 'item:kitchen', 'spout:milk:frother', 'driver:screw']",utensils
+155,noodle,"['noodle', 'noodle:convenient', 'noodle:instant']",baked goods and grains
+156,salami,"['salami', 'ham', 'slice:ham', 'prosciutto', 'piece:salami', 'pepperoni', 'cut:cold']",meat and substitute
+157,kitchen,['kitchen'],furniture
+158,teapot,"['pot:teapot', 'teapot', 'part:teapot', 'pot:tea', 'top:teapot', 'top:tea:pot']",containers
+159,floor,"['floor', 'floor:kitchen', 'tile:floor']",furniture
+160,tuna,"['tuna', 'mixture:tuna', 'side:tuna']",meat and substitute
+161,lime,"['lime', 'piece:lime', 'line']",fruits and nuts
+162,omelette,"['omelette', 'tamagoyaki', 'frittata', 'piece:omelette', 'edge:omelette', 'border:omelet', 'border:omelette', 'omelet', 'omelette:egg', 'omelette:rolled', 'slice:rolled:omelette', 'slice:tamagoyaki']",dairy and eggs
+163,bacon,['bacon'],meat and substitute
+164,sandwich,"['sandwich', 'stack:sandwich']",prepared food
+165,phone,"['phone', 'mobile', 'phone:mobile', 'smartphone', 'app']",appliances
+166,thermometer,"['thermometer', 'end:thermometer', 'sheath:thermometer']",utensils
+167,orange,"['orange', 'orange:half', 'half:orange']",fruits and nuts
+168,basket,"['basket', 'hamper', 'basket:cutlery', 'basket:laundry', 'basket:washing']",containers
+169,parsley,['parsley'],spices and herbs and sauces
+170,spinner:salad,"['piece:salad:spinner', 'spinner:salad', 'part:salad:spinner', 'top:salad:spinner']",utensils
+171,tablet,"['tablet', 'tablet:dishwasher', 'tablet:rennet', 'crumb:rennet:tablet', 'portion:rennet:tablet', 'chunk:rennet:tablet', 'part:tablet', 'supplement']",cleaning equipment and material
+172,presser,"['presser', 'press', 'press:garlic', 'presser:garlic']",utensils
+173,coriander,"['coriander', 'cilantro', 'piece:coriander']",spices and herbs and sauces
+174,opener:bottle,"['opener:bottle', 'opener:can', 'corkscrew', 'opener', 'opener:tin']",utensils
+175,cake,"['cake', 'cylinder', 'dessert:covered:chocolate', 'tiramisu', 'muffin', 'waffle', 'cylinder:covered', 'shape:cylinder']",baked goods and grains
+176,avocado,['avocado'],fruits and nuts
+177,lentil,"['dal:urad', 'lentil:red', 'lentil', 'dal:chana', 'chickpea']",baked goods and grains
+178,blueberry,"['blueberry', 'berry', 'blueberry:opening']",fruits and nuts
+179,fan:extractor,"['fan:extractor', 'fan', 'ventilator', 'hood', 'hood:range', 'hood:kitchen', 'extractor']",appliances
+180,cellar:salt,"['shaker:pepper', 'mill:pepper', 'grinder:salt', 'grinder:pepper', 'cellar:salt', 'cellar:pepper']",containers
+181,hummus,"['hummus', 'humus', 'bit:hummus', 'hummus:more']",spices and herbs and sauces
+182,chair,"['chair', 'stool', 'char']",furniture
+183,juice,"['juice', 'juice:lemon', 'juice:fruit', 'juice:orange', 'juice:lime']",drinks
+184,pancake,"['pancake', 'pancake:crispy', 'pan:cake', 'pancake:oat']",baked goods and grains
+185,bean:green,['bean:green'],vegetables
+186,toaster,"['toaster', 'lever:toaster']",appliances
+187,apple,"['apple', 'core:apple']",fruits and nuts
+188,chocolate,"['chocolate', 'piece:chocolate', 'crumbles:chocolate', 'kitkat', 'candy']",prepared food
+189,ice,"['ice', 'cube:ice', 'piece:ice']",other
+190,knob,"['knob', 'dial', 'knob:heat', 'knob:oven']",appliances
+191,handle,"['handle', 'handle:frying:pan', 'handle:drawer', 'handle:wok', 'handle:pan', 'handle:oven', 'handle:spoon', 'handle:saucepan', 'lever']",cookware
+192,wine,"['wine', 'wine:cooking', 'mirin']",drinks
+193,pea,['pea'],vegetables
+194,pith,"['pith', 'pith:pepper', 'bit:white', 'piece:pepper:pith']",rubbish
+195,yeast,['yeast'],baked goods and grains
+196,coconut,"['coconut', 'powder:coconut']",fruits and nuts
+197,fishcakes,"['fishcakes', 'cake:fish', 'fishcake', 'finger:fish']",prepared food
+198,spinach,"['spinach', 'piece:spinach']",vegetables
+199,apron,['apron'],materials
+200,raisin,"['raisin', 'raisin:more']",fruits and nuts
+201,basil,"['basil', 'plant:basil', 'stem:basil']",spices and herbs and sauces
+202,grape,['grape'],fruits and nuts
+203,kale,['kale'],vegetables
+204,wire,"['wire', 'wire:kettle', 'cable', 'lead', 'lead:kettle', 'string', 'cord:power', 'knot', 'earplug']",appliances
+205,asparagus,['asparagus'],vegetables
+206,paprika,['paprika'],spices and herbs and sauces
+207,mango,['mango'],fruits and nuts
+208,caper,['caper'],spices and herbs and sauces
+209,drink,"['drink', 'drink:almond', 'smoothie']",drinks
+210,stalk,"['stalk', 'stalk:pepper', 'stem', 'stalk:coriander', 'stem:rosemary', 'stem:mint', 'root']",vegetables
+211,turmeric,"['turmeric', 'powder:turmeric']",spices and herbs and sauces
+212,whetstone,"['whetstone', 'sharpener:knife', 'sharpener', 'stone:sharpening', 'stone', 'guide:sharpening']",utensils
+213,kiwi,['kiwi'],fruits and nuts
+214,bean,"['bean', 'bean:kidney', 'bean:baked']",vegetables
+215,thyme,"['thyme', 'spice:thyme']",spices and herbs and sauces
+216,finger:lady,['finger:lady'],vegetables
+217,beef,"['beef', 'steak', 'steak:chop']",meat and substitute
+218,whisk,['whisk'],utensils
+219,blackberry,['blackberry'],fruits and nuts
+220,slicer,"['slicer', 'device:cutting', 'slicer:onion', 'mandolin']",utensils
+221,control:remote,"['control:remote', 'control', 'remote']",appliances
+222,label,"['label', 'sticker']",materials
+223,celery,['celery'],vegetables
+224,cabbage,"['cabbage', 'cabbage:cooked', 'fragment:cabbage', 'piece:cabbage', 'cab']",vegetables
+225,hoover,"['hoover', 'hoover:hand:held']",appliances
+226,breadstick,"['stick:bread', 'breadstick']",baked goods and grains
+227,roll,"['roll', 'roll:cling:film', 'roll:sausage', 'roll:sandwich', 'tube', 'tube:tube']",baked goods and grains
+228,cocktail,"['cocktail', 'toothpick', 'stick', 'stick:cocktail']",drinks
+229,crisp,"['crisp', 'doritos', 'cake:rice']",prepared food
+230,ladder,['ladder'],furniture
+231,beer,"['beer', 'beer:more']",drinks
+232,pan:dust,"['pan:dust', 'dustpan']",cleaning equipment and material
+233,battery,"['battery', 'compartment:battery']",appliances
+234,powder:washing,"['powder:washing', 'persil']",cleaning equipment and material
+235,backpack,"['backpack', 'rucksack']",containers
+236,cumin,"['cumin', 'jeera']",spices and herbs and sauces
+237,cutter:pizza,"['cutter:pizza', 'cutter']",utensils
+238,air,"['air', 'steam']",other
+239,pear,"['pear', 'bit:pear', 'chunk:pear', 'pit:pear']",fruits and nuts
+240,quorn,['quorn'],meat and substitute
+241,funnel,['funnel'],utensils
+242,wall,"['wall', 'tile', 'board:white', 'protector:wall']",furniture
+243,strawberry,"['strawberry', 'top:strawberry']",fruits and nuts
+244,almond,"['almond', 'almond:canned']",fruits and nuts
+245,tv,"['audio', 'tv', 'music', 'volume', 'video', 'channel', 'stereo']",appliances
+246,scotch:egg,"['scotch:egg', 'egg:scotch', 'piece:scotch:egg']",prepared food
+247,shelf,"['shelf', 'shelf:utensil', 'shelf:fridge', 'shelf:oven', 'shelf:steaming', 'trolley', 'board:side', 'shelf:plated', 'shelf:bowl', 'shelf:plate', 'shelf:lower', 'shelf:low', 'shelf:dish', 'self']",furniture
+248,straw,['straw'],utensils
+249,stand,"['stand', 'stand:kettle', 'pod:charging', 'tree:mug', 'dock', 'base', 'stand:rack', 'stand:sharpening', 'stand:spoon', 'base:pie:dish', 'base:power']",furniture
+250,machine:sous:vide,['machine:sous:vide'],appliances
+251,masher,['masher'],utensils
+252,guard:hand,"['guard:hand', 'guard']",materials
+253,shrimp,"['shrimp', 'prawn', 'shrimp:frozen']",meat and substitute
+254,fruit,['fruit'],fruits and nuts
+255,artichoke,['artichoke'],vegetables
+256,cork,"['cork', 'stopper']",containers
+257,cherry,"['cherry', 'cherry:frozen']",fruits and nuts
+258,sprout,"['sprout', 'sprout:more', 'sprout:cooked', 'spout']",vegetables
+259,mat:sushi,['mat:sushi'],utensils
+260,stick:crab,['stick:crab'],meat and substitute
+261,ring:onion,"['ring:onion', 'ring']",prepared food
+262,pestle,['pestle'],utensils
+263,window,"['window', 'blind']",furniture
+264,gin,['gin'],drinks
+265,bar,"['bar:cereal', 'bar', 'bar:breakfast', 'bar:chocolate', 'bar:coconut']",other
+266,mint,['mint'],spices and herbs and sauces
+267,heater,"['heater', 'radiator', 'heater:right', 'heater:electric']",appliances
+268,grass:lemon,['grass:lemon'],spices and herbs and sauces
+269,rubber,"['rubber', 'band:rubber']",materials
+270,gherkin,['gherkin'],vegetables
+271,breadcrumb,"['breadcrumb', 'crumb:bread', 'crumbles']",baked goods and grains
+272,watch,['watch'],appliances
+273,melon,['melon'],fruits and nuts
+274,cinnamon,['cinnamon'],spices and herbs and sauces
+275,popcorn,['popcorn'],prepared food
+276,dumpling,['dumpling'],prepared food
+277,rosemary,['rosemary'],spices and herbs and sauces
+278,power,"['power', 'level:power']",appliances
+279,syrup,"['syrup', 'syrup:maple', 'syrup:cherry']",spices and herbs and sauces
+280,candle,['candle'],furniture
+281,pineapple,"['pineapple', 'slice:pineapple']",fruits and nuts
+282,sheets,"['sheets', 'sheet']",materials
+283,soda,"['coke', 'lemonade', 'soda', 'tonic']",drinks
+284,raspberry,"['raspberry', 'punnet:raspberry']",fruits and nuts
+285,airer,"['airer', 'horse:clothes', 'hanger']",furniture
+286,balloon,['balloon'],other
+287,turkey,"['turkey', 'turkey:sliced', 'breast:turkey', 'piece:turkey']",meat and substitute
+288,computer,"['computer', 'mouse']",appliances
+289,key,['key'],utensils
+290,pillow,['pillow'],materials
+291,pen,['pen'],utensils
+292,face,"['face', 'mouth', 'head', 'nose']",other
+293,plum,['plum'],fruits and nuts
+294,whiskey,['whiskey'],drinks
+295,door:kitchen,['door:kitchen'],furniture
+296,tape,"['tape', 'sellotape']",utensils
+297,camera,['camera'],appliances
+298,cd,['cd'],appliances
+299,extract:vanilla,['extract:vanilla'],prepared food

@@ -1,0 +1,98 @@
+id,key,instances,category
+0,take,"['collect-from', 'collect-into', 'draw', 'fetch', 'get', 'get-from', 'get-in', 'get-off', 'get-with', 'grab', 'grab-down', 'grab-from', 'grab-up', 'pick', 'pick-from', 'pick-off', 'pick-up', 'pull-off', 'retrieve', 'take', 'take-from', 'take-in', 'take-of', 'take-to', 'take-up', 'unload', 'catch', 'take-into', 'remove-on', 'get-on', 'take-with', 'take-inside', 'take-on', 'take-down']",retrieve
+1,put,"['create', 'dose', 'lay', 'lay-down', 'lay-on', 'lay-onto', 'lay-out', 'layer', 'leave', 'leave-in', 'leave-with', 'lie', 'pace', 'place', 'place-away', 'place-back', 'place-down', 'place-on', 'place-onto', 'place-that', 'pose', 'position', 'pout', 'put', 'put-around', 'put-aside', 'put-away', 'put-back', 'put-down', 'put-from', 'put-of', 'put-on', 'put-onto', 'put-over', 'put-to', 'put-under', 'put-up', 'put-with', 'replace', 'reposition', 'rest', 'rest-against', 'rest-on', 'rest-onto', 'reture', 'return', 'return-from', 'return-into', 'set-down', 'tuck-under', 'pet-down', 'save', 'store', 'tip', 'put-unto', 'mushroom-onto', 'put-for', 'place-over', 'place-up', 'place-under', 'get-into', 'combine-from', 'put-outside', 'store-in', 'put-between', 'pick-into', 'layer-on', 'place-with']",leave
+2,wash,"['clean', 'clean-around', 'clean-from', 'clean-off', 'clean-up', 'clean-with', 'hoover', 'lather', 'mop-up', 'rinse', 'rinse-from', 'rinse-in', 'rinse-off', 'rinse-out', 'rinse-under', 'rise', 'soap', 'soap-up', 'sponge', 'wash', 'wash-around', 'wash-by', 'wash-off', 'wash-out', 'wash-under', 'wash-up', 'wash-with', 'wipe', 'wipe-around', 'wipe-by', 'wipe-down', 'wipe-from', 'wipe-in', 'wipe-into', 'wipe-of', 'wipe-off', 'wipe-on', 'wipe-onto', 'wipe-over', 'wipe-up', 'wipe-with', 'cool', 'wash-in', 'wash-on', 'rinse-into', 'rinse-on']",clean
+3,open,"['lever-open', 'open', 'open-in', 'open-on', 'open-up', 'open-with', 'uncork', 'unzip', 'open-to']",access
+4,close,"['close', 'close-off', 'close-with', 'screw-on', 'screw-onto', 'shut', 'twist-on', 'close-in', 'close-on']",block
+5,insert,"['drop-into', 'fit', 'fit-inside', 'insert', 'insert-into', 'move-in', 'place-in', 'place-into', 'pop-into', 'push-in', 'push-into', 'put-in', 'put-inside', 'put-into', 'slide-into', 'slide-onto', 'load', 'pack', 'place-inside', 'sheath', 'sheathe', 'insert-in']",leave
+6,turn-on,"['activate', 'begin', 'ignite', 'light', 'play', 'restart', 'start', 'switch-on', 'turn-on', 'water-on', 'tun-on']",access
+7,cut,"['chop', 'chop-in', 'chop-off', 'chop-up', 'chop-with', 'cut', 'cut-in', 'cut-into', 'cut-off', 'cut-on', 'cut-out', 'cut-with', 'dice', 'half', 'halve', 'julienne', 'score', 'slice', 'slice-along', 'slice-at', 'slice-in', 'slice-into','slice-of', 'slice-off', 'slice-onto', 'slice-out', 'slice-through', 'slice-up', 'slice-with', 'snip', 'trim', 'make', 'stick', 'start-to', 'top', 'slice-to', 'chop-into', 'cut-from', 'slice-from', 'cut-by', 'make-into', 'trim-into']",split
+8,turn-off,"['shut-off', 'switch-of', 'switch-off', 'switch-out', 'tap-off', 'turn-of', 'turn-off', 'water-off', 'flush']",block
+9,pour,"['drizzle', 'drizzle-into', 'drizzle-on', 'pour', 'pour-down', 'pour-from', 'pour-in', 'pour-into', 'pour-on', 'pour-onto', 'pour-out', 'pour-over', 'shake-into', 'sieve', 'tip-from', 'tip-in', 'tip-into', 'pour-inside', 'sieve-with']",merge
+10,mix,"['beat', 'blend', 'fold-in', 'mix', 'mix-around', 'mix-in', 'mix-so', 'mix-together', 'mix-with', 'scramble', 'stir', 'stir-in', 'stir-into', 'stir-with', 'whisk', 'whisk-in', 'mix-into', 'stir-on']",merge
+11,move,"['back', 'drag-around', 'move', 'move-along', 'move-around', 'move-from', 'move-into', 'move-off', 'move-on', 'move-onto', 'move-through', 'move-to', 'move-with', 'move-within', 'pass-to', 'return-to', 'transfer', 'transfer-from', 'transfer-into', 'transfer-to', 'flick', 'flick-up', 'swap', 'distribute-in', 'make-in', 'change-for']",transition
+12,remove,"['dispense', 'extract', 'get-out', 'pick-out', 'pop-out', 'remove', 'remove-from', 'remove-inside', 'remove-into', 'remove-out', 'remove-with', 'take-off', 'take-out', 'unclip', 'unsheathe', 'clear', 'unplug', 'desee', 'remove-off', 'extract-from', 'fish-out']",retrieve
+13,throw,"['bin', 'chuck-into', 'discard', 'dispose-of', 'recycle', 'rubbish-in', 'throw', 'throw-away', 'throw-down', 'throw-for', 'throw-from', 'throw-in', 'throw-inside', 'throw-into', 'throw-off', 'throw-on', 'throw-onto', 'throw-out', 'throw-over', 'toss', 'trash', 'trow', 'swipe-into', 'throw-to', 'remain-in']",leave
+14,dry,"['dry', 'dry-off', 'dry-on', 'dry-with', 'towel', 'dry-in']",clean
+15,shake,"['jiggle', 'shake', 'shake-from', 'shake-in', 'shake-off', 'shake-on', 'shake-onto', 'shake-out', 'shake-over', 'shake-with', 'waft', 'swirl', 'swirl-in']",manipulate
+16,scoop,"['ladle', 'scoop', 'scoop-at', 'scoop-from', 'scoop-in', 'scoop-into', 'scoop-out', 'scoop-up', 'scoop-with', 'shovel', 'shovel-up', 'skim-off', 'spoon', 'spoon-in', 'spoon-into', 'spoon-onto', 'spoon-out']",retrieve
+17,adjust,"['adjust', 'adjust-in', 'adjust-on', 'calibrate', 'change', 'regulate']",monitor
+18,squeeze,"['crumple', 'crumple-up', 'juice', 'scrunch-up', 'squash', 'squeeze', 'squeeze-around', 'squeeze-from', 'squeeze-in', 'squeeze-into', 'squeeze-onto', 'squeeze-out', 'squeeze-over', 'squeeze-with', 'squidge', 'squidge-into', 'squidge-with', 'squish', 'squish-into', 'wring', 'wring-out', 'let-out']",manipulate
+19,peel,"['peel', 'peel-back', 'peel-from', 'peel-off', 'peel-with', 'skin', 'skin-from', 'defoliate']",split
+20,empty,"['empty', 'empty-from', 'empty-into', 'empty-out', 'tip-out', 'tip-to']",split
+21,press,"['collapse', 'compress', 'press', 'press-down', 'press-into', 'press-on', 'press-onto', 'push', 'push-down', 'push-off', 'push-onto', 'push-out', 'push-up', 'press-in', 'push-on', 'compress-in', 'compress-on']",manipulate
+22,flip,"['flip', 'flip-in', 'flip-over', 'flip-through', 'overturn', 'turn-over', 'upturn', 'reverse', 'rotate-to', 'turn-with', 'flip-with', 'flip-onto']",manipulate
+23,turn,"['rotate', 'rotate-around', 'spin', 'turn', 'turn-around', 'turn-away', 'turn-in', 'turn-to']",manipulate
+24,check,"['check', 'check-in', 'check-on', 'check-out', 'ensure', 'examine', 'inspect', 'look-in', 'test', 'watch', 'count', 'realize']",monitor
+25,scrape,"['drag-through', 'loose', 'scrap', 'scrape', 'scrape-against', 'scrape-around', 'scrape-down', 'scrape-from', 'scrape-in', 'scrape-into', 'scrape-of', 'scrape-off', 'scrape-on', 'scrape-onto', 'scrape-out', 'scrape-to', 'scrape-up', 'scrape-with', 'scratch-off', 'level', 'scrap-on', 'detach-from']",clean
+26,fill,"['fill', 'fill-from', 'fill-into', 'fill-up', 'fill-with', 'stuff', 'stuff-with']",merge
+27,apply,"['apply', 'apply-to', 'distribute', 'smear', 'spread', 'spread-around', 'spread-in', 'spread-into', 'spread-on', 'spread-onto', 'spread-out', 'spread-over', 'pump-onto', 'squirt', 'add-on', 'apply-in', 'spread-with']",distribute
+28,fold,"['fold', 'fold-into', 'fold-over', 'fold-up']",order
+29,scrub,"['scrub', 'scrub-down', 'scrub-inside', 'scrub-with', 'scour']",clean
+30,break,"['break', 'break-into', 'break-off', 'break-up', 'break-with', 'crack', 'crack-in', 'crack-into', 'crack-on', 'snap', 'shred', 'stem', 'debone', 'break-apart', 'break-in', 'open-into']",split
+31,pull,"['pull', 'pull-at', 'pull-from', 'pull-in', 'pull-on', 'pull-out', 'pull-through', 'pull-up', 'pull-down']",manipulate
+32,pat,"['dab', 'dab-in', 'pat', 'pat-down', 'pat-into', 'poke', 'prod', 'tap', 'tap-against', 'tap-on', 'tap-with', 'hit', 'hit-on', 'hit-with', 'dab-with']",sense
+33,lift,"['lift', 'lift-from', 'lift-off', 'lift-out', 'lift-up', 'raise', 'tilt']",retrieve
+34,hold,"['hold', 'hold-along', 'hold-down', 'hold-in', 'hold-onto', 'hold-out', 'hold-over', 'hold-with']",manipulate
+35,eat,"['bite', 'chew-on', 'eat', 'eat-from', 'swallow', 'lick', 'sample', 'taste', 'eat-on']",sense
+36,wrap,"['clamp', 'clip', 'cover', 'cover-in', 'cover-with', 'fasten', 'lay-over', 'reseal', 'rewrap', 'seal', 'tie', 'tie-in', 'wrap', 'wrap-around', 'wrap-in', 'wrap-onto', 'wrap-up', 'wrap-with', 'seal-with', 'wrap-over', 'roll-up']",block
+37,filter,"['drain', 'drain-from', 'drain-into', 'drain-on', 'drain-out', 'dump-out', 'filter', 'strain', 'strain-from', 'strain-in', 'drain-in']",split
+38,look,"['look', 'look-at', 'look-behind', 'look-through', 'look-under', 'read', 'read-on', 'see', 'see-at', 'see-off', 'stare-at']",monitor
+39,unroll,"['roll-out', 'unroll', 'unroll-from', 'unfold', 'unfurl']",access
+40,sort,"['arrange', 'arrange-on', 'coil', 'line-up', 'pile', 'rearrange', 'sort', 'sort-out', 'straighten', 'straighten-out', 'tessellate', 'tidy', 'stack', 'stack-in', 'stack-up', 'align', 'rearrange-in', 'arrange-in', 'sort-in']",order
+41,hang,"['drape', 'hang', 'hang-up', 'hand', 'hang-on']",leave
+42,sprinkle,"['crumble', 'crumble-into', 'distribute-on', 'distribute-onto', 'scatter', 'sprincle', 'sprinkle', 'sprinkle-in', 'sprinkle-into', 'sprinkle-on', 'sprinkle-onto', 'sprinkle-over', 'scatter-onto']",distribute
+43,rip,"['rip', 'rip-off', 'tear', 'tear-down', 'tear-from', 'tear-in', 'tear-into', 'tear-off', 'tear-on', 'tear-out', 'tear-up', 'rip-with']",split
+44,spray,"['spay', 'spray', 'spray-down', 'spray-on']",distribute
+45,cook,"['boil', 'cook', 'fry', 'fry-in', 'heat', 'steam', 'stir-fry', 'toast', 'cook-into', 'boil-with']",manipulate
+46,add,"['add', 'add-from', 'add-into', 'add-to', 'combine', 'combine-into', 'add-in']",merge
+47,roll,"['roll', 'roll-around', 'roll-down', 'roll-in', 'roll-into', 'roll-on', 'roll-over']",block
+48,search,"['browse', 'find', 'fumble-for', 'locate', 'look-for', 'look-inside', 'rifle-through', 'rummage-in', 'search', 'search-for', 'search-in']",monitor
+49,crush,"['bash-against', 'crush', 'crush-into', 'crush-with', 'grind', 'grind-into', 'grind-on', 'mash', 'mash-with', 'soften', 'smash', 'grind-onto', 'crush-in']",split
+50,stretch,"['stretch', 'stretch-around', 'stretch-onto', 'stretch-out']",manipulate
+51,knead,['knead'],manipulate
+52,divide,"['detach', 'disassemble', 'divide', 'separate', 'separate-from', 'separate-out', 'split', 'split-into', 'unattach', 'divide-into']",split
+53,set,"['set', 'set-in', 'set-on', 'set-out', 'set-off', 'zero', 'set-to']",manipulate
+54,feel,"['feel', 'touch']",sense
+55,rub,"['rub', 'rub-in', 'rub-into', 'rub-off', 'rub-on', 'rub-onto', 'rub-over', 'rub-with', 'scratch', 'deburr', 'rub-around']",clean
+56,soak,"['immerge', 'immerse', 'soak', 'soak-in', 'submerge', 'submerge-in']",clean
+57,brush,"['brush', 'brush-into', 'brush-off', 'brush-onto', 'sweep', 'sweep-from', 'sweep-into', 'sweep-off', 'sweep-up', 'brush-on', 'paste-onto']",clean
+58,sharpen,"['hone', 'sharpen', 'thin', 'forge']",manipulate
+59,drop,"['drop', 'drop-down', 'drop-in', 'drop-on', 'drop-onto', 'fall-on', 'release-from', 'spill', 'tip-over']",leave
+60,drink,"['drink', 'drink-from']",sense
+61,slide,"['slide', 'slide-acros', 'slide-along', 'slide-down', 'slide-from', 'slide-inside', 'slide-off', 'slide-on', 'slide-out']",manipulate
+62,water,"['damp', 'water', 'wet']",manipulate
+63,gather,"['collect', 'gather', 'gather-in', 'gather-into', 'gather-with', 'gather-from']",retrieve
+64,attach,"['assemble', 'attach', 'attach-onto', 'attach-to', 'clip-on', 'connect', 'plug', 'plug-in', 'plug-into', 'reassemble', 'reattach', 'snap-in', 'fix', 'expand']",merge
+65,turn-down,['turn-down'],monitor
+66,coat,"['batter', 'coat', 'brush-with', 'dip', 'marinate', 'butter-in', 'oil', 'smooth-into']",merge
+67,transition,"['transition', 'enter', 'enter-into', 'walk', 'walk-around', 'walk-into', 'walk-to', 'walk-with', 'sit-on', 'step', 'step-off', 'step-on', 'stand-up']",transition
+68,wear,['wear'],manipulate
+69,measure,"['measure', 'measure-into', 'measure-out', 'weigh', 'measure-in']",monitor
+70,increase,"['increase', 'set-up', 'switch-up', 'turn-up', 'increase-on', 'rise-up']",monitor
+71,unscrew,"['screw-off', 'twist-off', 'unscrew', 'unscrew-from', 'untwist']",access
+72,wait,"['wait', 'wait-for', 'decide-if', 'decide']",monitor
+73,lower,"['lower', 'untilt']",monitor
+74,form,"['ball-up', 'form', 'form-into', 'reconstruct', 'shape', 'shape-into', 'form-from']",manipulate
+75,smell,"['smell', 'smell-in', 'sniff', 'blow', 'blow-out']",sense
+76,use,['use'],manipulate
+77,grate,"['grate', 'grate-into', 'grate-on', 'grate-onto', 'zest-into']",split
+78,screw,"['screw', 'screw-in', 'tighten', 'twist']",manipulate
+79,let-go,"['let', 'let-go']",leave
+80,finish,"['end', 'finish', 'stop']",manipulate
+81,stab,"['pierce', 'pierce-in', 'stab', 'fork']",split
+82,serve,"['dish', 'dish-up', 'plate', 'plate-on', 'plate-up', 'serve', 'serve-in', 'serve-on']",leave
+83,uncover,"['lid-off', 'uncover']",access
+84,unwrap,"['unpack', 'unravel', 'unseal', 'unwrap']",access
+85,choose,"['choose', 'select']",retrieve
+86,lock,"['lock', 'lock-in', 'lock-into', 'lock-on']",block
+87,flatten,"['flatten', 'flatten-out', 'flatten-with']",manipulate
+88,switch,"['switch', 'switch-to']",access
+89,carry,"['bring', 'carry', 'have', 'bring-to']",transition
+90,season,"['pepper', 'salt', 'season', 'sweeten', 'salt-in', 'pepper-in', 'season-with']",distribute
+91,unlock,"['unlock', 'unlock-from']",access
+92,prepare,"['prepare', 'prepare-for']",manipulate
+93,bake,['bake'],manipulate
+94,mark,"['mark', 'mark-on']",manipulate
+95,bend,['bend'],manipulate
+96,unfreeze,['unfreeze'],monitor

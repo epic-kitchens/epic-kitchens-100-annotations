@@ -87,8 +87,8 @@ We provide html and pdf alternatives to this README which are auto-generated.
 * [`EPIC_100_train.csv`](EPIC_100_train.csv) ([info](#epic_100_traincsv)) ([Pickle](EPIC_100_train.pkl))
 * [`EPIC_100_validation.csv`](EPIC_100_validation.csv) ([info](#epic_100_validationcsv)) ([Pickle](EPIC_100_validation.pkl))
 * [`EPIC_100_test_timestamps.csv`](EPIC_100_test_timestamps.csv) ([info](#epic_100_test_timestampscsv)) ([Pickle](EPIC_100_test_timestamps.pkl))
-* [`EPIC_100_verb_classes.csv`](EPIC_100_verb_classes.csv`) ([info](#epic_100_verb_classescsv))
 * [`EPIC_100_noun_classes.csv`](EPIC_100_noun_classes.csv`) ([info](#epic_100_noun_classescsv))
+* [`EPIC_100_verb_classes.csv`](EPIC_100_verb_classes.csv`) ([info](#epic_100_verb_classescsv))
 
 ### Additional Files
 
@@ -173,7 +173,7 @@ This CSV file contains the action annotations for the testing set and contains 9
 
 #### EPIC_100_noun_classes.csv
 
-This CSV file contains information on the 300 noun classes.
+This CSV file contains information on the 300 noun classes and contains 4 columns.
 
 | Column Name | Type                       | Example                  | Description                                                                   |
 | ----------- | -------------------------- | ------------------------ | ----------------------------------------------------------------------------- |
@@ -187,7 +187,7 @@ This CSV file contains information on the 300 noun classes.
 
 #### EPIC_100_verb_classes.csv
 
-This CSV file contains information on the 97 verb classes.
+This CSV file contains information on the 97 verb classes and contains 4 columns.
 
 | Column Name | Type                       | Example               | Description                                                                   |
 | ----------- | -------------------------- | --------------------- | ----------------------------------------------------------------------------- |

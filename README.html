@@ -2,7 +2,7 @@
 <!-- start badges -->
 <!-- end badges -->
 <blockquote>
-<p><a href="https://epic-kitchens.github.io/">EPIC-Kitchens-100</a> is the largest dataset in first-person (egocentric) vision; itself an extension of the <a href="https://github.com/epic-kitchens/annotations">EPIC-Kitchens-55 dataset</a>.</p>
+<p><a href="https://epic-kitchens.github.io/">EPIC-Kitchens-100</a> is the largest dataset in first-person (egocentric) vision; itself an extension of the <a href="https://github.com/epic-kitchens/annotations">EPIC-Kitchens-55 dataset</a> (formally known as EPIC-Kitchens-2018).</p>
 </blockquote>
 <h2 id="authors">Authors</h2>
 <p>Dima Damen (1) Hazel Doughty (1) Giovanni Maria Farinella (2) Antonino Furnari (2) Evangelos Kazakos (1) Jian Ma (1) Davide Moltisanti (1) Jonathan Munro (1) Toby Perrett (1) Will Price (1) Michael Wray (1)</p>
@@ -22,12 +22,12 @@
 </ul>
 <p>The dataset currently has 6 active benchmarks:</p>
 <ul>
-<li>Action Recognition</li>
-<li>Weakly Supervised Action Recognition</li>
-<li>Action Detection</li>
-<li>Action Anticipation</li>
-<li>Unsupervised Domain Adaptation</li>
-<li>Action Retrieval</li>
+<li><a href="#action-recognition-challenge">Action Recognition</a></li>
+<li><a href="#weakly-supervised-action-recognition-challenge">Weakly Supervised Action Recognition</a></li>
+<li><a href="#action-detection-challenge">Action Detection</a></li>
+<li><a href="#action-anticipation-challenge">Action Anticipation</a></li>
+<li><a href="#unsupervised-domain-adaptation-challenge">Unsupervised Domain Adaptation</a></li>
+<li><a href="#action-retrieval-challenge">Action Retrieval</a></li>
 </ul>
 <p>We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use.</p>
 <p>Ground truth is provided for action segments as action/verb/noun labels along with the start and end times of the segment.</p>
@@ -46,7 +46,7 @@
 <h3 id="action-retrieval-challenge">Action Retrieval Challenge</h3>
 <p>Download the Action Retrieval <a href="">train</a>/<a href="">test</a> files.</p>
 <h2 id="important-files">Important Files</h2>
-<p>We direct the reader to <a href="https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m">RDSF</a> for the videos and RGB/Flow frames. For ease of use, download scripts are <a href="https://github.com/epic-kitchens/download-scripts-100">provided</a> (see <a href="#file_downloads">file_downloads</a> for more details). We provide html and pdf alternatives to this README which are auto-generated.</p>
+<p>For ease of use, download scripts are <a href="https://github.com/epic-kitchens/download-scripts-100">provided</a> to download the videos and RGB/Flow frames. (see <a href="#file-downloads">file downloads</a> for more details). We direct the reader to <a href="https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m">RDSF</a> for the full release of videos and RGB/Flow frames. We provide html and pdf alternatives to this README which are auto-generated.</p>
 <ul>
 <li><code>README.md (this file)</code></li>
 <li><code>README.pdf</code></li>
@@ -60,9 +60,9 @@
 </ul>
 <h3 id="additional-files">Additional Files</h3>
 <ul>
-<li><a href="EPIC_100_UDA_source_train.csv"><code>EPIC_100_UDA_source_train</code></a> (<a href="#epic_100_UDA_source_traincsv">info</a>) (<a href="epic_100_source_train.pkl">Pickle</a>)</li>
-<li><a href="EPIC_100_UDA_target_train_timestamps.csv"><code>EPIC_100_UDA_target_train_timestamps</code></a> (<a href="#epic_100_UDA_target_train_timestampscsv">info</a>) (<a href="epic_100_target_train_timestamps.pkl">Pickle</a>)</li>
-<li><a href="EPIC_100_UDA_target_test_timestamps.csv"><code>EPIC_100_UDA_target_test_timestamps</code></a> (<a href="#epic_100_UDA_target_test_timestampscsv">info</a>) (<a href="epic_100_target_test_timestamps.pkl">Pickle</a>)</li>
+<li><a href="EPIC_100_UDA_source_train.csv"><code>EPIC_100_UDA_source_train</code></a> (<a href="#epic_100_uda_source_traincsv">info</a>) (<a href="epic_100_source_train.pkl">Pickle</a>)</li>
+<li><a href="EPIC_100_UDA_target_train_timestamps.csv"><code>EPIC_100_UDA_target_train_timestamps</code></a> (<a href="#epic_100_uda_target_train_timestampscsv">info</a>) (<a href="epic_100_target_train_timestamps.pkl">Pickle</a>)</li>
+<li><a href="EPIC_100_UDA_target_test_timestamps.csv"><code>EPIC_100_UDA_target_test_timestamps</code></a> (<a href="#epic_100_uda_target_test_timestampscsv">info</a>) (<a href="epic_100_target_test_timestamps.pkl">Pickle</a>)</li>
 <li><a href="EPIC_100_retrieval_train.csv"><code>EPIC_100_retrieval_train</code></a> (<a href="#epic_100_retrieval_traincsv">info</a>) (<a href="epic_100_retrieval_train.pkl">Pickle</a>)</li>
 <li><a href="EPIC_100_retrieval_test.csv"><code>EPIC_100_retrieval_test</code></a> (<a href="#epic_100_retrieval_testcsv">info</a>) (<a href="epic_100_retrieval_test.pkl">Pickle</a>)</li>
 </ul>
@@ -89,7 +89,7 @@
 <td><code>uid</code></td>
 <td>int</td>
 <td><code>0</code></td>
-<td>Unique ID for the segment as a float.</td>
+<td>Unique ID for the segment as an int.</td>
 </tr>
 <tr class="even">
 <td><code>narration_id</code></td>
@@ -206,7 +206,7 @@
 <td><code>uid</code></td>
 <td>int</td>
 <td><code>4972</code></td>
-<td>Unique ID for the segment as a float.</td>
+<td>Unique ID for the segment as an int.</td>
 </tr>
 <tr class="even">
 <td><code>narration_id</code></td>
@@ -323,7 +323,7 @@
 <td><code>uid</code></td>
 <td>int</td>
 <td><code>1924</code></td>
-<td>Unique ID for the segment as a float.</td>
+<td>Unique ID for the segment as an int.</td>
 </tr>
 <tr class="even">
 <td><code>narration_id</code></td>
@@ -462,6 +462,513 @@
 <td>string</td>
 <td><code>leave</code></td>
 <td>Name of the higher-level verb category that this verb class belongs to.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_uda_source_train.csv">EPIC_100_UDA_source_train.csv</h4>
+<p>This CSV file contains the action annotations for the <strong>source training set</strong> used for <strong>Unsupervised Domain Adaptation</strong> and contains 15 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>uid</code></td>
+<td>int</td>
+<td><code>0</code></td>
+<td>Unique ID for the segment as an int.</td>
+</tr>
+<tr class="even">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P01_01_0</code></td>
+<td>Unique ID for the segment as a string with participant ID and video ID.</td>
+</tr>
+<tr class="odd">
+<td><code>participant_id</code></td>
+<td>int</td>
+<td><code>P01</code></td>
+<td>ID of the participant (unique per participant).</td>
+</tr>
+<tr class="even">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_01</code></td>
+<td>ID of the video where the segment originated from (unique per video).</td>
+</tr>
+<tr class="odd">
+<td><code>narration_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:01.089</code></td>
+<td>Timestamp of when the original narration was recorded in <code>HH:mm:ss.SSS</code>.</td>
+</tr>
+<tr class="even">
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:00.14</code></td>
+<td>Start time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:03.37</code></td>
+<td>End time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="even">
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>8</code></td>
+<td>Start frame of the action.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>202</code></td>
+<td>End frame of the action.</td>
+</tr>
+<tr class="even">
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>open door</code></td>
+<td>Transcribed description of the English narration provided by the participant.</td>
+</tr>
+<tr class="odd">
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>open</code></td>
+<td>Parsed verb from the narration.</td>
+</tr>
+<tr class="even">
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>Numeric ID of the verb’s class.</td>
+</tr>
+<tr class="odd">
+<td><code>noun</code></td>
+<td>string</td>
+<td><code>door</code></td>
+<td>First parsed noun from the narration.</td>
+</tr>
+<tr class="even">
+<td><code>noun_class</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>Numeric ID of the first noun’s class.</td>
+</tr>
+<tr class="odd">
+<td><code>all_nouns</code></td>
+<td>list of string (1 or more)</td>
+<td><code>[door]</code></td>
+<td>List of all parsed nouns within the narration.</td>
+</tr>
+<tr class="even">
+<td><code>all_noun_classes</code></td>
+<td>list of int (1 or more)</td>
+<td><code>[3]</code></td>
+<td>Numeric ID of all of the parsed noun’s classes.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that this file contains only videos from EPIC-Kitchens-55 which is used as the source domain.</p>
+<p>See <a href="#unsupervised-domain-adaptation-challenge">here</a> for more details on the unsupervised domain adaptation challenge.</p>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_uda_target_train_timestamps.csv">EPIC_100_UDA_target_train_timestamps.csv</h4>
+<p>This CSV file contains the action annotations for the <strong>target training set</strong> used for <strong>Unsupervised Domain Adaptation</strong> and contains 9 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>uid</code></td>
+<td>int</td>
+<td><code>2571</code></td>
+<td>Unique ID for the segment as an int.</td>
+</tr>
+<tr class="even">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P01_102_0</code></td>
+<td>Unique ID for the segment as a string with participant ID and video ID.</td>
+</tr>
+<tr class="odd">
+<td><code>participant_id</code></td>
+<td>int</td>
+<td><code>P01</code></td>
+<td>ID of the participant (unique per participant).</td>
+</tr>
+<tr class="even">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_102</code></td>
+<td>ID of the video where the segment originated from (unique per video).</td>
+</tr>
+<tr class="odd">
+<td><code>narration_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:01.100</code></td>
+<td>Timestamp of when the original narration was recorded in <code>HH:mm:ss.SSS</code>.</td>
+</tr>
+<tr class="even">
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:00.54</code></td>
+<td>Start time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:02.23</code></td>
+<td>End time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="even">
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>27</code></td>
+<td>Start frame of the action.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>111</code></td>
+<td>End frame of the action.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that this file contains only videos from EPIC-Kitchens-100 which is used as the target domain.</p>
+<p>See <a href="#unsupervised-domain-adaptation-challenge">here</a> for more details on the unsupervised domain adaptation challenge.</p>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_uda_target_test_timestamps.csv">EPIC_100_UDA_target_test_timestamps.csv</h4>
+<p>This CSV file contains the action annotations for the <strong>target testing set</strong> used for <strong>Unsupervised Domain Adaptation</strong> and contains 9 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>uid</code></td>
+<td>int</td>
+<td><code>1924</code></td>
+<td>Unique ID for the segment as an int.</td>
+</tr>
+<tr class="even">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P01_101_0</code></td>
+<td>Unique ID for the segment as a string with participant ID and video ID.</td>
+</tr>
+<tr class="odd">
+<td><code>participant_id</code></td>
+<td>int</td>
+<td><code>P01</code></td>
+<td>ID of the participant (unique per participant).</td>
+</tr>
+<tr class="even">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_101</code></td>
+<td>ID of the video where the segment originated from (unique per video).</td>
+</tr>
+<tr class="odd">
+<td><code>narration_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:02.851</code></td>
+<td>Timestamp of when the original narration was recorded in <code>HH:mm:ss.SSS</code>.</td>
+</tr>
+<tr class="even">
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:02.86</code></td>
+<td>Start time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:03.87</code></td>
+<td>End time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="even">
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>143</code></td>
+<td>Start frame of the action.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>193</code></td>
+<td>End frame of the action.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that this file contains only videos from EPIC-Kitchens-100 which is used as the target domain.</p>
+<p>See <a href="#unsupervised-domain-adaptation-challenge">here</a> for more details on the unsupervised domain adaptation challenge.</p>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_retrieval_train.csv">EPIC_100_retrieval_train.csv</h4>
+<p>This CSV file contains the action annotations for the <strong>action retrieval</strong> training set and contains 15 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>uid</code></td>
+<td>int</td>
+<td><code>0</code></td>
+<td>Unique ID for the segment as an int.</td>
+</tr>
+<tr class="even">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P01_01_0</code></td>
+<td>Unique ID for the segment as a string with participant ID and video ID.</td>
+</tr>
+<tr class="odd">
+<td><code>participant_id</code></td>
+<td>int</td>
+<td><code>P01</code></td>
+<td>ID of the participant (unique per participant).</td>
+</tr>
+<tr class="even">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_01</code></td>
+<td>ID of the video where the segment originated from (unique per video).</td>
+</tr>
+<tr class="odd">
+<td><code>narration_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:01.089</code></td>
+<td>Timestamp of when the original narration was recorded in <code>HH:mm:ss.SSS</code>.</td>
+</tr>
+<tr class="even">
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:00.14</code></td>
+<td>Start time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:03.37</code></td>
+<td>End time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="even">
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>8</code></td>
+<td>Start frame of the action.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>202</code></td>
+<td>End frame of the action.</td>
+</tr>
+<tr class="even">
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>open door</code></td>
+<td>Transcribed description of the English narration provided by the participant.</td>
+</tr>
+<tr class="odd">
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>open</code></td>
+<td>Parsed verb from the narration.</td>
+</tr>
+<tr class="even">
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>Numeric ID of the verb’s class.</td>
+</tr>
+<tr class="odd">
+<td><code>noun</code></td>
+<td>string</td>
+<td><code>door</code></td>
+<td>First parsed noun from the narration.</td>
+</tr>
+<tr class="even">
+<td><code>noun_class</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>Numeric ID of the first noun’s class.</td>
+</tr>
+<tr class="odd">
+<td><code>all_nouns</code></td>
+<td>list of string (1 or more)</td>
+<td><code>[door]</code></td>
+<td>List of all parsed nouns within the narration.</td>
+</tr>
+<tr class="even">
+<td><code>all_noun_classes</code></td>
+<td>list of int (1 or more)</td>
+<td><code>[3]</code></td>
+<td>Numeric ID of all of the parsed noun’s classes.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_retrieval_test.csv">EPIC_100_retrieval_test.csv</h4>
+<p>This CSV file contains the action annotations for the <strong>action retrieval</strong> testing set and contains 15 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>uid</code></td>
+<td>int</td>
+<td><code>0</code></td>
+<td>Unique ID for the segment as an int.</td>
+</tr>
+<tr class="even">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P01_11_0</code></td>
+<td>Unique ID for the segment as a string with participant ID and video ID.</td>
+</tr>
+<tr class="odd">
+<td><code>participant_id</code></td>
+<td>int</td>
+<td><code>P01</code></td>
+<td>ID of the participant (unique per participant).</td>
+</tr>
+<tr class="even">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_11</code></td>
+<td>ID of the video where the segment originated from (unique per video).</td>
+</tr>
+<tr class="odd">
+<td><code>narration_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:00.560</code></td>
+<td>Timestamp of when the original narration was recorded in <code>HH:mm:ss.SSS</code>.</td>
+</tr>
+<tr class="even">
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:00.00</code></td>
+<td>Start time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:01.89</code></td>
+<td>End time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="even">
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>8</code></td>
+<td>Start frame of the action.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>113</code></td>
+<td>End frame of the action.</td>
+</tr>
+<tr class="even">
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>take plate</code></td>
+<td>Transcribed description of the English narration provided by the participant.</td>
+</tr>
+<tr class="odd">
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>take</code></td>
+<td>Parsed verb from the narration.</td>
+</tr>
+<tr class="even">
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>0</code></td>
+<td>Numeric ID of the verb’s class.</td>
+</tr>
+<tr class="odd">
+<td><code>noun</code></td>
+<td>string</td>
+<td><code>plate</code></td>
+<td>First parsed noun from the narration.</td>
+</tr>
+<tr class="even">
+<td><code>noun_class</code></td>
+<td>int</td>
+<td><code>2</code></td>
+<td>Numeric ID of the first noun’s class.</td>
+</tr>
+<tr class="odd">
+<td><code>all_nouns</code></td>
+<td>list of string (1 or more)</td>
+<td><code>[plate]</code></td>
+<td>List of all parsed nouns within the narration.</td>
+</tr>
+<tr class="even">
+<td><code>all_noun_classes</code></td>
+<td>list of int (1 or more)</td>
+<td><code>[2]</code></td>
+<td>Numeric ID of all of the parsed noun’s classes.</td>
 </tr>
 </tbody>
 </table>

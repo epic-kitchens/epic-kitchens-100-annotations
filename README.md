@@ -105,7 +105,7 @@ We provide html and pdf alternatives to this README which are auto-generated.
 This CSV file contains the action annotations for the training set and contains 15 columns:
 
 | Column Name           | Type                       | Example        | Description                                                                   |
-| --------------------- | ---------------------------| -------------- | ----------------------------------------------------------------------------- |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
 | `uid`                 | int                        | `0`            | Unique ID for the segment as a float.                                         |
 | `narration_id`        | string                     | `P01_01_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
@@ -125,12 +125,13 @@ This CSV file contains the action annotations for the training set and contains 
 
 [Back to Important Files](#important-files)
 
+
 #### EPIC_100_validation.csv
 
 This CSV file contains the action annotations for the validation set and contains 15 columns:
 
 | Column Name           | Type                       | Example        | Description                                                                   |
-| --------------------- | ---------------------------| -------------- | ----------------------------------------------------------------------------- |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
 | `uid`                 | int                        | `4972`         | Unique ID for the segment as a float.                                         |
 | `narration_id`        | string                     | `P01_01_11`    | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
@@ -150,12 +151,13 @@ This CSV file contains the action annotations for the validation set and contain
 
 [Back to Important Files](#important-files)
 
+
 #### EPIC_100_test_timestamps.csv
 
 This CSV file contains the action annotations for the testing set and contains 9 columns:
 
 | Column Name           | Type                       | Example        | Description                                                                   |
-| --------------------- | ---------------------------| -------------- | ----------------------------------------------------------------------------- |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
 | `uid`                 | int                        | `1924`         | Unique ID for the segment as a float.                                         |
 | `narration_id`        | string                     | `P01_101_0`    | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
@@ -167,6 +169,35 @@ This CSV file contains the action annotations for the testing set and contains 9
 | `stop_frame`          | int                        | `193`          | End frame of the action.                                                      |
 
 [Back to Important Files](#important-files)
+
+
+#### EPIC_100_noun_classes.csv
+
+This CSV file contains information on the 300 noun classes.
+
+| Column Name | Type                       | Example                  | Description                                                                   |
+| ----------- | -------------------------- | ------------------------ | ----------------------------------------------------------------------------- |
+| `id`        | int                        | `222`                    | Unique ID for the noun class.                                                 |
+| `key`       | string                     | `label`                  | Key used for the noun class (all keys are a member of their own class).       |
+| `instances` | list of string (1 or more) | `"['label', 'sticker']"` | All nouns within the class, including the key.                                |
+| `category`  | string                     | `materials`              | Name of the higher-level noun category that this noun class belongs to.       |
+
+[Back to Important Files](#important-files)
+
+
+#### EPIC_100_verb_classes.csv
+
+This CSV file contains information on the 97 verb classes.
+
+| Column Name | Type                       | Example               | Description                                                                   |
+| ----------- | -------------------------- | --------------------- | ----------------------------------------------------------------------------- |
+| `id`        | int                        | `79`                  | Unique ID for the verb class.                                                 |
+| `key`       | string                     | `let-go`              | Key used for the verb class (all keys are a member of their own class).       |
+| `instances` | list of string (1 or more) | `"['let', 'let-go']"` | All verbs within the class, including the key.                                |
+| `category`  | string                     | `leave`               | Name of the higher-level verb category that this verb class belongs to.       |
+
+[Back to Important Files](#important-files)
+
 
 ## Additional Information
 

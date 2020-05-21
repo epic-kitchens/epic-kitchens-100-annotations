@@ -37,33 +37,41 @@
 <ol type="1">
 <li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
 <li>Download the Action Recognition <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
+<li>Enjoy the EPIC-Kitchens-100 dataset in your favourite action recognition model, see <a href="#citing">the paper</a> for details on the models we used for this baseline. Models trained on EPIC-Kitchens-55 can be found <a href="https://github.com/epic-kitchens/action-models">here</a> as a starting point.</li>
 </ol>
 <h3 id="weakly-supervised-action-recognition-challenge">Weakly Supervised Action Recognition Challenge</h3>
 <ol type="1">
 <li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
 <li>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
+<li>The weakly supervised challenge uses the narration timestamp, not the the start/end times of the action. Therefore a simple baseline would be to modify an action recognition model to use the surrounding 5s worth of frames. See <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
 </ol>
 <h3 id="action-detection-challenge">Action Detection Challenge</h3>
 <ol type="1">
 <li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
 <li>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
+<li>Train an action proposal network on the EPIC-Kitchens-100 train set, for example <a href="https://github.com/JJBOY/BMN-Boundary-Matching-Network">this model</a>. This model predicts action-agnostic segments which still need to be classified.</li>
+<li>Use your favourite action recognition model to classify the proposals (<a href="https://github.com/epic-kitchens/action-models">example models</a>).</li>
 </ol>
 <h3 id="action-anticipation-challenge">Action Anticipation Challenge</h3>
 <ol type="1">
 <li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
 <li>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
+<li>A simple baseline for this task is to train an action recognition model (example models <a href="">here</a>) on the 5 seconds that precede an action with a 1 second gap. For example, an action that starts at 20.00s in a video would see frames between 14.00s and 19.00s.</li>
 </ol>
 <h3 id="unsupervised-domain-adaptation-challenge">Unsupervised Domain Adaptation Challenge</h3>
+<p>The unsupervised domain adaptation challenge tests how models can cope with similar data collected 2 years later on the task of action recognition.</p>
 <ol type="1">
 <li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
 <li>Download the Unsupervised Domain Adaptation <a href="UDA_annotations/EPIC_100_uda_source_train.csv">source train</a>/<a href="UDA_annotations/EPIC_100_uda_target_train_timestamps.csv">target train</a>/<a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.csv">target test</a> files.</li>
+<li>Extract video features (for all three splits) using an off-the-shelf model trained on <strong>EPIC-Kitchens-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
+<li>A simple baseline is using a domain discriminator (prediciting whether a video came from the source, EPIC-Kitchens-55, or the target, EPIC-Kitchens-100) to align the two domains. See <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
 </ol>
 <h3 id="action-retrieval-challenge">Action Retrieval Challenge</h3>
 <ol type="1">
 <li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
 <li>Download the Action Retrieval <a href="retrieval_annotations/EPIC_100_retrieval_train.csv">train</a>/<a href="retrieval_annotations/EPIC_100_retrieval_test.csv">test</a> files.</li>
 <li>Extract video features (for both the train and test set) using an off-the-shelf model trained on <strong>EPIC-Kitchens-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
-<li>Extract word2vec features for the captions from both the train and test set (<a href="https://github.com/mmihaltz/word2vec-GoogleNews-vectors">example model</a>).</li>
+<li>Extract word2vec features for the captions from both the train and test set (<a href="https://github.com/mmihaltz/word2vec-GoogleNews-vectors">example models</a>).</li>
 <li>Enjoy the EPIC-Kitchens-100 dataset in your favourite video retrieval model, see <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
 </ol>
 <h2 id="important-files">Important Files</h2>

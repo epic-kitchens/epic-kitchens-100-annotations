@@ -89,10 +89,10 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 5059,P01_11_87,P01,P01_11,00:04:26.330,00:04:26.05,00:04:26.55,15963,15993,put pizza cutter into rack.,put-into,5,cutter:pizza,237,"['cutter:pizza', 'rack']","[237, 110]"
 5060,P01_11_88,P01,P01_11,00:04:27.650,00:04:27.16,00:04:28.62,16029,16117,take tray.,take,0,tray,35,['tray'],[35]
 5061,P01_11_89,P01,P01_11,00:04:33.400,00:04:29.15,00:04:44.79,16148,17087,rinse tray.,rinse,2,tray,35,['tray'],[35]
-5062,P01_11_90,P01,P01_11,00:04:44.560,00:04:44.92,00:04:46.63,17095,17197,put tray into rack.,put-into,5,rack,110,['rack'],[110]
+5062,P01_11_90,P01,P01_11,00:04:44.560,00:04:44.92,00:04:46.63,17095,17197,put tray into rack.,put-into,5,tray,35,"['tray', 'rack']","[35, 110]"
 5063,P01_11_91,P01,P01_11,00:04:46.520,00:04:46.58,00:04:47.39,17194,17243,take tray.,take,0,tray,35,['tray'],[35]
 5064,P01_11_92,P01,P01_11,00:04:52.280,00:04:47.68,00:05:02.35,17260,18141,rinse tray.,rinse,2,tray,35,['tray'],[35]
-5065,P01_11_93,P01,P01_11,00:05:02.900,00:05:03.32,00:05:04.59,18199,18275,put tray into rack,put-into,5,rack,110,['rack'],[110]
+5065,P01_11_93,P01,P01_11,00:05:02.900,00:05:03.32,00:05:04.59,18199,18275,put tray into rack,put-into,5,tray,35,"['tray', 'rack']","[35, 110]"
 5066,P01_11_94,P01,P01_11,00:05:04.539,00:05:04.63,00:05:05.16,18277,18309,take plate,take,0,plate,2,['plate'],[2]
 5067,P01_11_95,P01,P01_11,00:05:05.539,00:05:05.26,00:05:08.31,18315,18498,rinse plate,rinse,2,plate,2,['plate'],[2]
 5068,P01_11_96,P01,P01_11,00:05:06.539,00:05:09.00,00:05:12.94,18540,18776,wash plate,wash,2,plate,2,['plate'],[2]
@@ -863,7 +863,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 5833,P01_15_267,P01,P01_15,00:13:50.759,00:13:50.73,00:14:00.41,49843,50424,wipe sink,wipe,2,sink,63,['sink'],[63]
 5834,P01_15_268,P01,P01_15,00:14:03.959,00:13:57.03,00:14:07.66,50221,50859,continue wiping sink,wipe,2,sink,63,['sink'],[63]
 5835,P01_15_269,P01,P01_15,00:14:04.959,00:14:07.04,00:14:08.85,50822,50931,put down sponges,put-down,1,sponge,9,['sponge'],[9]
-5836,P01_15_270,P01,P01_15,00:14:08.329,00:14:08.60,00:14:18.77,50916,51526,squeeze clothe,squeeze,18,clothes,73,['clothes'],[73]
+5836,P01_15_270,P01,P01_15,00:14:08.329,00:14:08.60,00:14:18.77,50916,51526,squeeze clothe,squeeze,18,clothe,17,['clothe'],[17]
 5837,P01_15_271,P01,P01_15,00:14:10.029,00:14:10.25,00:14:11.50,51015,51090,turn on tap,turn-on,6,tap,0,['tap'],[0]
 5838,P01_15_272,P01,P01_15,00:14:11.029,00:14:11.43,00:14:15.33,51085,51319,wash cloth,wash,2,cloth,17,['cloth'],[17]
 5839,P01_15_273,P01,P01_15,00:14:14.910,00:14:15.51,00:14:16.12,51330,51367,turn off tap,turn-off,8,tap,0,['tap'],[0]
@@ -1006,8 +1006,8 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 11420,P02_12_119,P02,P02_12,00:06:14.289,00:06:14.08,00:06:14.71,22444,22482,pick up olive oil,pick-up,0,oil:olive,31,['oil:olive'],[31]
 11421,P02_12_120,P02,P02_12,00:06:15.919,00:06:15.43,00:06:17.89,22525,22673,pour oil onto tray,pour-onto,9,oil,31,"['oil', 'tray']","[31, 35]"
 11422,P02_12_121,P02,P02_12,00:06:19.169,00:06:18.31,00:06:19.46,22698,22767,put olive oil bottle,put,1,bottle:oil,15,['bottle:oil'],[15]
-11423,P02_12_122,P02,P02_12,00:06:21.909,00:06:19.95,00:06:23.95,22797,23037,spread olive in tray,spread-in,27,olive,83,['olive'],[83]
-11424,P02_12_123,P02,P02_12,00:06:29.779,00:06:24.05,00:06:35.02,23043,23701,spread olive in tray,spread-in,27,olive,83,['olive'],[83]
+11423,P02_12_122,P02,P02_12,00:06:21.909,00:06:19.95,00:06:23.95,22797,23037,spread olive in tray,spread-in,27,olive,83,"['olive', 'tray']","[83, 35]"
+11424,P02_12_123,P02,P02_12,00:06:29.779,00:06:24.05,00:06:35.02,23043,23701,spread olive in tray,spread-in,27,olive,83,"['olive', 'tray']","[83, 35]"
 11425,P02_12_124,P02,P02_12,00:06:36.729,00:06:35.36,00:06:39.61,23721,23976,pick up dough,pick-up,0,dough,25,['dough'],[25]
 11426,P02_12_125,P02,P02_12,00:06:40.110,00:06:40.09,00:06:44.35,24005,24261,get a bowl of dough,get,0,bowl:dough,7,['bowl:dough'],[7]
 11427,P02_12_126,P02,P02_12,00:06:46.199,00:06:44.31,00:06:46.25,24258,24375,pick up olive oil,pick-up,0,oil:olive,31,['oil:olive'],[31]
@@ -1103,7 +1103,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 11517,P02_12_216,P02,P02_12,00:12:48.290,00:12:47.07,00:12:48.58,46024,46114,get meat mix from pan,get,0,mix:meat,28,"['mix:meat', 'pan']","[28, 5]"
 11518,P02_12_217,P02,P02_12,00:12:49.690,00:12:48.44,00:12:51.95,46106,46317,put meat mix on ball of dough,put-on,1,mix:meat,28,"['mix:meat', 'ball:dough']","[28, 25]"
 11519,P02_12_218,P02,P02_12,00:12:55.130,00:12:53.82,00:12:58.34,46429,46700,pick up tray,pick-up,0,tray,35,['tray'],[35]
-11520,P02_12_219,P02,P02_12,00:12:58.670,00:12:58.84,00:13:01.23,46730,46873,put tray on stove,put-on,1,stove,24,['stove'],[24]
+11520,P02_12_219,P02,P02_12,00:12:58.670,00:12:58.84,00:13:01.23,46730,46873,put tray on stove,put-on,1,tray,35,"['tray', 'stove']","[35, 24]"
 11521,P02_12_220,P02,P02_12,00:13:04.660,00:13:04.00,00:13:05.62,47040,47137,pick up tray,pick-up,0,tray,35,['tray'],[35]
 11522,P02_12_221,P02,P02_12,00:13:06.440,00:13:06.01,00:13:07.11,47160,47226,put tray,put,1,tray,35,['tray'],[35]
 11523,P02_12_222,P02,P02_12,00:13:08.170,00:13:07.01,00:13:07.67,47220,47260,pick up plate,pick-up,0,plate,2,['plate'],[2]
@@ -1170,7 +1170,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 11584,P02_12_283,P02,P02_12,00:17:13.419,00:17:12.26,00:17:13.01,61935,61980,pick up plate,pick-up,0,plate,2,['plate'],[2]
 11585,P02_12_284,P02,P02_12,00:17:15.230,00:17:13.11,00:17:14.36,61986,62061,pour oil,pour,9,oil,31,['oil'],[31]
 11586,P02_12_285,P02,P02_12,00:17:17.990,00:17:17.56,00:17:18.53,62253,62311,pick up olive oil bottle,pick-up,0,bottle:oil,15,['bottle:oil'],[15]
-11587,P02_12_286,P02,P02_12,00:17:19.639,00:17:18.31,00:17:19.85,62298,62390,pour oil on tray,pour-on,9,oil,31,['oil'],[31]
+11587,P02_12_286,P02,P02_12,00:17:19.639,00:17:18.31,00:17:19.85,62298,62390,pour oil on tray,pour-on,9,oil,31,"['oil', 'tray']","[31, 35]"
 11588,P02_12_287,P02,P02_12,00:17:22.679,00:17:21.41,00:17:28.91,62484,62934,spread oil in tray,spread-in,27,oil,31,"['oil', 'tray']","[31, 35]"
 11589,P02_12_288,P02,P02_12,00:17:30.899,00:17:29.26,00:17:31.51,62955,63090,pick up dough half dough,pick-up,0,dough,25,"['dough', 'dough:half']","[25, 25]"
 11590,P02_12_289,P02,P02_12,00:17:32.860,00:17:32.31,00:17:36.09,63138,63365,knead ball of dough,knead,51,ball:dough,25,['ball:dough'],[25]
@@ -1180,7 +1180,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 11594,P02_12_293,P02,P02_12,,00:17:47.56,00:17:50.75,64053,64245,roll,roll,47,ball:dough,25,['ball:dough'],[25]
 11595,P02_12_294,P02,P02_12,00:17:49.350,00:17:48.04,00:17:51.09,64082,64265,knead ball of dough,knead,51,ball:dough,25,['ball:dough'],[25]
 11596,P02_12_295,P02,P02_12,00:17:58.139,00:17:57.54,00:18:00.40,64652,64824,roll ball of dough,roll,47,ball:dough,25,['ball:dough'],[25]
-11597,P02_12_296,P02,P02_12,00:18:00.620,00:18:00.39,00:18:01.64,64823,64898,put ball of dough on tray,put-on,1,ball:dough,25,['ball:dough'],[25]
+11597,P02_12_296,P02,P02_12,00:18:00.620,00:18:00.39,00:18:01.64,64823,64898,put ball of dough on tray,put-on,1,ball:dough,25,"['ball:dough', 'tray']","[25, 35]"
 11598,P02_12_297,P02,P02_12,00:18:03.389,00:18:02.99,00:18:03.99,64979,65039,open drawer,open,3,drawer,8,['drawer'],[8]
 11599,P02_12_298,P02,P02_12,00:18:05.529,00:18:04.34,00:18:05.67,65060,65140,pick up spoon,pick-up,0,spoon,1,['spoon'],[1]
 11600,P02_12_299,P02,P02_12,00:18:08.539,00:18:07.44,00:18:08.45,65246,65307,pick up olive oil bottle,pick-up,0,bottle:oil,15,['bottle:oil'],[15]
@@ -1188,7 +1188,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 11602,P02_12_301,P02,P02_12,00:18:13.210,00:18:12.14,00:18:13.14,65528,65588,put olive oil bottle,put,1,bottle:oil,15,['bottle:oil'],[15]
 11603,P02_12_302,P02,P02_12,00:18:16.309,00:18:13.68,00:18:19.39,65620,65963,open jar,open,3,jar,40,['jar'],[40]
 11604,P02_12_303,P02,P02_12,00:18:20.919,00:18:19.49,00:18:20.97,65969,66058,scoop thyme,scoop,16,thyme,215,['thyme'],[215]
-11605,P02_12_304,P02,P02_12,00:18:22.039,00:18:21.07,00:18:21.90,66064,66114,put thyme in tray,put-in,5,thyme,215,['thyme'],[215]
+11605,P02_12_304,P02,P02_12,00:18:22.039,00:18:21.07,00:18:21.90,66064,66114,put thyme in tray,put-in,5,thyme,215,"['thyme', 'tray']","[215, 35]"
 11607,P02_12_306,P02,P02_12,00:18:25.830,00:18:22.99,00:18:28.80,66179,66528,mix thyme and olive oil in plate,mix,10,thyme,215,"['thyme', 'oil:olive', 'plate']","[215, 31, 2]"
 11608,P02_12_307,P02,P02_12,00:18:31.129,00:18:28.90,00:18:30.46,66534,66627,scoop thyme and olive oil using hand,scoop,16,thyme,215,"['thyme', 'oil:olive', 'hand']","[215, 31, 11]"
 11609,P02_12_308,P02,P02_12,00:18:33.809,00:18:29.89,00:18:33.74,66593,66824,put thyme and olive oil on dough,put-on,1,thyme,215,"['thyme', 'oil:olive', 'dough']","[215, 31, 25]"
@@ -1251,21 +1251,21 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 11666,P02_12_365,P02,P02_12,00:21:37.149,00:21:36.01,00:21:37.06,77760,77823,pick up towel,pick-up,0,towel,52,['towel'],[52]
 11667,P02_12_366,P02,P02_12,00:21:39.220,00:21:38.11,00:21:39.11,77886,77946,pick up oven gloves,pick-up,0,glove:oven,60,['glove:oven'],[60]
 11668,P02_12_367,P02,P02_12,00:21:41.230,00:21:40.43,00:21:41.40,78025,78084,open oven,open,3,oven,46,['oven'],[46]
-11669,P02_12_368,P02,P02_12,00:21:45.929,00:21:41.75,00:21:46.47,78105,78388,remove oven tray,remove,12,oven,46,['oven'],[46]
+11669,P02_12_368,P02,P02_12,00:21:45.929,00:21:41.75,00:21:46.47,78105,78388,remove oven tray,remove,12,tray:oven,35,['tray:oven'],[35]
 11670,P02_12_369,P02,P02_12,00:21:48.720,00:21:46.82,00:21:48.88,78409,78532,push oven tray,push,21,tray:oven,35,['tray:oven'],[35]
 11671,P02_12_370,P02,P02_12,00:21:49.840,00:21:48.98,00:21:50.05,78538,78603,close oven,close,4,oven,46,['oven'],[46]
 11672,P02_12_371,P02,P02_12,00:21:52.499,00:21:51.33,00:21:51.96,78679,78717,remove oven glove,remove,12,glove:oven,60,['glove:oven'],[60]
 13694,P02_13_0,P02,P02_13,00:00:02.530,00:00:02.69,00:00:03.34,161,200,pick up oven glove,pick-up,0,glove:oven,60,['glove:oven'],[60]
 13695,P02_13_1,P02,P02_13,00:00:03.530,00:00:03.00,00:00:03.94,180,236,wear oven glove,wear,68,glove:oven,60,['glove:oven'],[60]
 13696,P02_13_2,P02,P02_13,00:00:04.810,00:00:04.20,00:00:05.80,252,348,pick up tray,pick-up,0,tray,35,['tray'],[35]
-13697,P02_13_3,P02,P02_13,00:00:08.099,00:00:04.26,00:00:09.72,255,583,put tray in oven,put-in,5,oven,46,['oven'],[46]
+13697,P02_13_3,P02,P02_13,00:00:08.099,00:00:04.26,00:00:09.72,255,583,put tray in oven,put-in,5,tray,35,"['tray', 'oven']","[35, 46]"
 13698,P02_13_4,P02,P02_13,00:00:06.630,00:00:05.65,00:00:08.49,339,509,open oven,open,3,oven,46,['oven'],[46]
 13699,P02_13_5,P02,P02_13,00:00:10.389,00:00:10.26,00:00:10.89,615,653,pick up tray,pick-up,0,tray,35,['tray'],[35]
-13700,P02_13_6,P02,P02_13,00:00:11.490,00:00:10.99,00:00:12.56,659,753,put tray in oven,put-in,5,oven,46,['oven'],[46]
+13700,P02_13_6,P02,P02_13,00:00:11.490,00:00:10.99,00:00:12.56,659,753,put tray in oven,put-in,5,tray,35,"['tray', 'oven']","[35, 46]"
 13701,P02_13_7,P02,P02_13,00:00:13.040,00:00:12.66,00:00:13.57,759,814,close oven,close,4,oven,46,['oven'],[46]
 13702,P02_13_8,P02,P02_13,00:00:16.289,00:00:15.71,00:00:17.39,942,1043,pick up tray,pick-up,0,tray,35,['tray'],[35]
 13703,P02_13_9,P02,P02_13,00:00:19.610,00:00:19.33,00:00:20.85,1159,1251,open oven,open,3,oven,46,['oven'],[46]
-13704,P02_13_10,P02,P02_13,00:00:20.820,00:00:20.80,00:00:22.63,1248,1357,put tray in oven,put-in,5,oven,46,['oven'],[46]
+13704,P02_13_10,P02,P02_13,00:00:20.820,00:00:20.80,00:00:22.63,1248,1357,put tray in oven,put-in,5,tray,35,"['tray', 'oven']","[35, 46]"
 13705,P02_13_11,P02,P02_13,00:00:24.000,00:00:22.73,00:00:24.31,1363,1458,close oven,close,4,oven,46,['oven'],[46]
 13706,P02_13_12,P02,P02_13,00:00:25.140,00:00:24.41,00:00:27.17,1464,1630,set timer,set,53,timer,111,['timer'],[111]
 13707,P02_13_13,P02,P02_13,00:00:28.230,00:00:27.37,00:00:27.99,1642,1679,remove oven glove,remove,12,glove:oven,60,['glove:oven'],[60]
@@ -1274,12 +1274,12 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 15172,P02_14_2,P02,P02_14,00:00:06.520,00:00:06.15,00:00:07.40,369,444,open oven,open,3,oven,46,['oven'],[46]
 15173,P02_14_3,P02,P02_14,00:00:13.460,00:00:07.81,00:00:13.40,468,804,pick up tray,pick-up,0,tray,35,['tray'],[35]
 15174,P02_14_4,P02,P02_14,00:00:07.520,00:00:08.79,00:00:13.85,527,831,pull drawer of oven,pull,31,drawer:oven,46,['drawer:oven'],[46]
-15175,P02_14_5,P02,P02_14,00:00:14.460,00:00:13.88,00:00:14.75,832,885,place tray on stove,place-on,1,stove,24,['stove'],[24]
+15175,P02_14_5,P02,P02_14,00:00:14.460,00:00:13.88,00:00:14.75,832,885,place tray on stove,place-on,1,tray,35,"['tray', 'stove']","[35, 24]"
 15176,P02_14_6,P02,P02_14,00:00:17.520,00:00:15.10,00:00:17.85,906,1071,pull drawer,pull,31,drawer,8,['drawer'],[8]
 15177,P02_14_7,P02,P02_14,00:00:19.029,00:00:18.08,00:00:20.39,1084,1223,pick up tray,pick-up,0,tray,35,['tray'],[35]
 15178,P02_14_8,P02,P02_14,00:00:20.960,00:00:20.32,00:00:21.57,1219,1294,put tray,put,1,tray,35,['tray'],[35]
 15179,P02_14_9,P02,P02_14,00:00:22.020,00:00:22.31,00:00:23.27,1338,1396,pick up tray,pick-up,0,tray,35,['tray'],[35]
-15180,P02_14_10,P02,P02_14,00:00:23.509,00:00:23.13,00:00:24.76,1387,1485,put tray in oven,put-in,5,oven,46,['oven'],[46]
+15180,P02_14_10,P02,P02_14,00:00:23.509,00:00:23.13,00:00:24.76,1387,1485,put tray in oven,put-in,5,tray,35,"['tray', 'oven']","[35, 46]"
 15181,P02_14_11,P02,P02_14,00:00:25.110,00:00:24.84,00:00:25.84,1490,1550,close oven,close,4,oven,46,['oven'],[46]
 15182,P02_14_12,P02,P02_14,00:00:26.279,00:00:25.64,00:00:29.42,1538,1765,set timer,set,53,timer,111,['timer'],[111]
 15183,P02_14_13,P02,P02_14,00:00:30.009,00:00:29.85,00:00:30.86,1791,1851,remove oven glove,remove,12,glove:oven,60,['glove:oven'],[60]
@@ -1455,9 +1455,9 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 19914,P03_23_80,P03,P03_23,00:04:13.519,00:04:11.75,00:04:12.42,15105,15145,grab salt,grab,0,salt,38,['salt'],[38]
 19915,P03_23_81,P03,P03_23,00:04:14.519,00:04:12.95,00:04:13.70,15177,15222,put salt,put,1,salt,38,['salt'],[38]
 19916,P03_23_82,P03,P03_23,00:04:18.750,00:04:15.04,00:04:45.95,15302,17157,wrap foil,wrap,36,foil,123,['foil'],[123]
-19917,P03_23_83,P03,P03_23,00:04:34.650,00:04:33.97,00:04:34.69,16438,16481,put foil on tray,put-on,1,foil,123,['foil'],[123]
+19917,P03_23_83,P03,P03_23,00:04:34.650,00:04:33.97,00:04:34.69,16438,16481,put foil on tray,put-on,1,foil,123,"['foil', 'tray']","[123, 35]"
 19918,P03_23_84,P03,P03_23,00:04:37.949,00:04:35.14,00:04:38.14,16508,16688,fold foil,fold,28,foil,123,['foil'],[123]
-19919,P03_23_85,P03,P03_23,00:04:53.680,00:04:53.34,00:04:55.09,17600,17705,put foil on tray,put-on,1,foil,123,['foil'],[123]
+19919,P03_23_85,P03,P03_23,00:04:53.680,00:04:53.34,00:04:55.09,17600,17705,put foil on tray,put-on,1,foil,123,"['foil', 'tray']","[123, 35]"
 19920,P03_23_86,P03,P03_23,00:04:59.530,00:04:58.55,00:04:59.53,17913,17971,grab foil,grab,0,foil,123,['foil'],[123]
 19921,P03_23_87,P03,P03_23,00:05:00.780,00:04:59.63,00:05:00.41,17977,18024,open drawer,open,3,drawer,8,['drawer'],[8]
 19922,P03_23_88,P03,P03_23,00:05:01.780,00:05:00.35,00:05:01.76,18021,18105,put foil,put,1,foil,123,['foil'],[123]
@@ -1495,7 +1495,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 19954,P03_23_120,P03,P03_23,00:08:21.250,00:08:20.42,00:08:21.36,30025,30081,put kettle,put,1,kettle,44,['kettle'],[44]
 19955,P03_23_121,P03,P03_23,00:08:22.250,00:08:21.46,00:08:22.28,30087,30136,grab tray,grab,0,tray,35,['tray'],[35]
 19956,P03_23_122,P03,P03_23,00:08:23.449,00:08:23.19,00:08:23.81,30191,30228,open oven,open,3,oven,46,['oven'],[46]
-19957,P03_23_123,P03,P03_23,00:08:24.539,00:08:24.14,00:08:25.14,30248,30308,put tray in oven,put-in,5,oven,46,['oven'],[46]
+19957,P03_23_123,P03,P03_23,00:08:24.539,00:08:24.14,00:08:25.14,30248,30308,put tray in oven,put-in,5,tray,35,"['tray', 'oven']","[35, 46]"
 19958,P03_23_124,P03,P03_23,00:08:25.539,00:08:24.68,00:08:25.50,30280,30330,close the oven,close,4,oven,46,['oven'],[46]
 19959,P03_24_0,P03,P03_24,00:00:04.940,00:00:02.80,00:00:04.42,168,265,turn down hob,turn-down,65,hob,24,['hob'],[24]
 19960,P03_24_1,P03,P03_24,00:00:08.800,00:00:06.44,00:00:10.91,386,654,turn on extractor fan,turn-on,6,fan:extractor,179,['fan:extractor'],[179]
@@ -1616,7 +1616,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 20075,P03_24_116,P03,P03_24,00:12:19.529,00:12:15.99,00:12:18.75,44159,44325,grab oven mitts,grab,0,mitt:oven,60,['mitt:oven'],[60]
 20076,P03_24_117,P03,P03_24,00:12:23.160,00:12:20.26,00:12:22.18,44415,44530,grab tray,grab,0,tray,35,['tray'],[35]
 20077,P03_24_118,P03,P03_24,00:12:25.570,00:12:23.18,00:12:24.34,44590,44660,close oven,close,4,oven,46,['oven'],[46]
-20078,P03_24_119,P03,P03_24,00:12:26.750,00:12:24.61,00:12:25.93,44676,44755,put tray on side,put-on,1,side,42,['side'],[42]
+20078,P03_24_119,P03,P03_24,00:12:26.750,00:12:24.61,00:12:25.93,44676,44755,put tray on side,put-on,1,tray,35,"['tray', 'side']","[35, 42]"
 20079,P03_24_120,P03,P03_24,00:12:28.490,00:12:26.66,00:12:27.18,44799,44830,put down oven mitts,put-down,1,mitt:oven,60,['mitt:oven'],[60]
 20080,P03_24_121,P03,P03_24,00:12:31.620,00:12:27.57,00:12:38.58,44854,45514,open foil,open,3,foil,123,['foil'],[123]
 20081,P03_24_122,P03,P03_24,00:12:32.620,00:12:40.23,00:12:47.95,45613,46077,open foil,open,3,foil,123,['foil'],[123]
@@ -1918,8 +1918,8 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 29458,P04_31_21,P04,P04_31,00:01:55.050,00:01:54.38,00:01:57.67,6862,7060,put tupperware in dishwasher,put-in,5,tupperware,23,"['tupperware', 'dishwasher']","[23, 70]"
 29459,P04_31_22,P04,P04_31,00:01:59.470,00:01:55.05,00:02:02.81,6903,7368,put tupperware in dishwasher,put-in,5,tupperware,23,"['tupperware', 'dishwasher']","[23, 70]"
 29460,P04_31_23,P04,P04_31,00:01:57.030,00:01:57.77,00:01:59.14,7066,7148,empty tupperware into bin,empty-into,20,tupperware,23,"['tupperware', 'bin']","[23, 36]"
-29461,P04_31_24,P04,P04_31,00:02:07.390,00:02:03.31,00:02:05.33,7398,7519,put baking tray in dishwasher,put-in,5,dishwasher,70,['dishwasher'],[70]
-29462,P04_31_25,P04,P04_31,00:02:10.899,00:02:06.20,00:02:17.47,7572,8248,put baking tray in cupboard,put-in,5,cupboard,3,['cupboard'],[3]
+29461,P04_31_24,P04,P04_31,00:02:07.390,00:02:03.31,00:02:05.33,7398,7519,put baking tray in dishwasher,put-in,5,tray:baking,35,"['tray:baking', 'dishwasher']","[35, 70]"
+29462,P04_31_25,P04,P04_31,00:02:10.899,00:02:06.20,00:02:17.47,7572,8248,put baking tray in cupboard,put-in,5,tray:baking,35,"['tray:baking', 'cupboard']","[35, 3]"
 29463,P04_31_26,P04,P04_31,00:02:24.519,00:02:27.76,00:02:30.26,8865,9015,throw away paper,throw-away,13,paper,49,['paper'],[49]
 29464,P04_31_27,P04,P04_31,00:02:37.750,00:02:39.20,00:03:05.85,9552,11151,wash pestle and mortar,wash,2,pestle,262,['pestle'],[262]
 29465,P04_31_28,P04,P04_31,00:03:49.829,00:03:08.20,00:03:59.77,11292,14386,still washing pestle and mortar,wash,2,pestle,262,['pestle'],[262]
@@ -2639,11 +2639,11 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 35566,P08_09_29,P08,P08_09,00:01:46.890,00:01:46.59,00:01:48.09,6395,6485,wipe hands,wipe,2,hand,11,['hand'],[11]
 35567,P08_09_30,P08,P08_09,00:01:47.890,00:01:48.19,00:01:49.44,6491,6566,open cupboard,open,3,cupboard,3,['cupboard'],[3]
 35568,P08_09_31,P08,P08_09,00:01:49.659,00:01:49.54,00:01:51.23,6572,6673,get mug,get,0,mug,13,['mug'],[13]
-35569,P08_09_32,P08,P08_09,00:01:52.380,00:01:52.63,00:01:54.14,6757,6848,place mug on counter,place-on,1,counter,42,['counter'],[42]
+35569,P08_09_32,P08,P08_09,00:01:52.380,00:01:52.63,00:01:54.14,6757,6848,place mug on counter,place-on,1,mug,13,"['mug', 'counter']","[13, 42]"
 35570,P08_09_33,P08,P08_09,00:01:53.710,00:01:53.99,00:01:54.99,6839,6899,open fridge,open,3,fridge,12,['fridge'],[12]
 35571,P08_09_34,P08,P08_09,00:01:54.710,00:01:55.00,00:01:57.33,6900,7039,get milk,get,0,milk,64,['milk'],[64]
 35572,P08_09_35,P08,P08_09,00:01:58.090,00:01:58.05,00:01:59.79,7083,7187,unscrew lid,unscrew,71,lid,6,['lid'],[6]
-35573,P08_09_36,P08,P08_09,00:02:00.320,00:01:59.81,00:02:04.64,7188,7478,pour milk in mug,pour-in,9,milk,64,['milk'],[64]
+35573,P08_09_36,P08,P08_09,00:02:00.320,00:01:59.81,00:02:04.64,7188,7478,pour milk in mug,pour-in,9,milk,64,"['milk', 'mug']","[64, 13]"
 35574,P08_09_37,P08,P08_09,00:02:04.240,00:02:04.44,00:02:06.74,7466,7604,screw lid back,screw,78,lid,6,['lid'],[6]
 35575,P08_09_38,P08,P08_09,00:02:06.940,00:02:06.81,00:02:07.96,7608,7677,place milk,place,1,milk,64,['milk'],[64]
 35576,P08_09_39,P08,P08_09,00:02:08.729,00:02:08.97,00:02:10.07,7738,7804,open fridge,open,3,fridge,12,['fridge'],[12]
@@ -2702,7 +2702,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 35629,P08_09_92,P08,P08_09,00:06:19.749,00:06:20.05,00:06:21.55,22803,22893,close lid,close,4,lid,6,['lid'],[6]
 35630,P08_09_93,P08,P08_09,00:06:23.449,00:06:21.60,00:06:24.62,22896,23077,check on coffee,check-on,24,coffee,59,['coffee'],[59]
 35631,P08_09_94,P08,P08_09,00:06:25.529,00:06:24.58,00:06:25.62,23074,23137,close hob,close,4,hob,24,['hob'],[24]
-35632,P08_09_95,P08,P08_09,00:06:26.740,00:06:25.72,00:06:32.38,23143,23542,pour coffee in mug,pour-in,9,coffee,59,['coffee'],[59]
+35632,P08_09_95,P08,P08_09,00:06:26.740,00:06:25.72,00:06:32.38,23143,23542,pour coffee in mug,pour-in,9,coffee,59,"['coffee', 'mug']","[59, 13]"
 35633,P08_09_96,P08,P08_09,00:06:34.610,00:06:32.48,00:06:36.36,23548,23781,move pan,move,11,pan,5,['pan'],[5]
 35634,P08_09_97,P08,P08_09,00:06:36.189,00:06:36.38,00:06:37.51,23782,23850,place pot,place,1,pot,29,['pot'],[29]
 35635,P08_09_98,P08,P08_09,00:06:39.180,00:06:37.61,00:06:39.70,23856,23982,turn loaf of bread,turn,23,loaf:bread,33,['loaf:bread'],[33]
@@ -2847,7 +2847,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 35839,P08_14_27,P08,P08_14,00:01:10.159,00:01:10.00,00:01:11.21,4200,4272,get knife,get,0,knife,4,['knife'],[4]
 35840,P08_14_28,P08,P08_14,00:01:11.750,00:01:11.71,00:01:12.76,4302,4365,get lemon,get,0,lemon,105,['lemon'],[105]
 35841,P08_14_29,P08,P08_14,00:01:12.750,00:01:12.78,00:01:15.10,4366,4506,slice lemon,slice,7,lemon,105,['lemon'],[105]
-35842,P08_14_30,P08,P08_14,00:01:15.880,00:01:16.59,00:01:23.94,4595,5036,squeeze lemon in mug,squeeze-in,18,lemon,105,['lemon'],[105]
+35842,P08_14_30,P08,P08_14,00:01:15.880,00:01:16.59,00:01:23.94,4595,5036,squeeze lemon in mug,squeeze-in,18,lemon,105,"['lemon', 'mug']","[105, 13]"
 35843,P08_14_31,P08,P08_14,00:01:24.780,00:01:24.75,00:01:26.63,5085,5197,wipe off hands,wipe-off,2,hand,11,['hand'],[11]
 35844,P08_14_32,P08,P08_14,00:01:27.579,00:01:27.20,00:01:33.76,5232,5625,get kitchen towel,get,0,towel:kitchen,93,['towel:kitchen'],[93]
 35845,P08_14_33,P08,P08_14,00:01:29.240,00:01:29.50,00:01:32.81,5370,5568,wipe off hands,wipe-off,2,hand,11,['hand'],[11]
@@ -3724,7 +3724,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 41105,P11_20_10,P11,P11_20,00:00:29.009,00:00:27.70,00:00:29.10,1662,1746,close fridge,close,4,fridge,12,['fridge'],[12]
 41106,P11_20_11,P11,P11_20,00:00:30.450,00:00:30.02,00:00:30.74,1801,1844,open oven,open,3,oven,46,['oven'],[46]
 41107,P11_20_12,P11,P11_20,00:00:31.450,00:00:30.99,00:00:31.99,1859,1919,put on oven gloves,put-on,1,glove:oven,60,['glove:oven'],[60]
-41108,P11_20_13,P11,P11_20,00:00:33.430,00:00:32.34,00:00:33.59,1940,2015,take out oven tray,take-out,12,oven,46,['oven'],[46]
+41108,P11_20_13,P11,P11_20,00:00:33.430,00:00:32.34,00:00:33.59,1940,2015,take out oven tray,take-out,12,tray:oven,35,['tray:oven'],[35]
 41109,P11_20_14,P11,P11_20,00:00:35.800,00:00:34.85,00:00:37.05,2091,2223,put away oven gloves,put,1,glove:oven,60,['glove:oven'],[60]
 41110,P11_20_15,P11,P11_20,00:00:34.800,00:00:34.90,00:00:35.89,2094,2153,close oven,close,4,oven,46,['oven'],[46]
 41111,P11_20_16,P11,P11_20,00:00:39.410,00:00:39.31,00:00:40.91,2358,2454,turn on stereo,turn-on,6,stereo,245,['stereo'],[245]
@@ -3753,7 +3753,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 41134,P11_20_39,P11,P11_20,00:02:06.750,00:02:06.71,00:02:10.26,7602,7815,adjust fishcakes,adjust,17,fishcakes,197,['fishcakes'],[197]
 41135,P11_20_40,P11,P11_20,00:02:12.870,00:02:11.92,00:02:13.16,7915,7989,pick up oven gloves,pick-up,0,glove:oven,60,['glove:oven'],[60]
 41136,P11_20_41,P11,P11_20,00:02:14.529,00:02:14.08,00:02:15.27,8044,8116,open oven,open,3,oven,46,['oven'],[46]
-41137,P11_20_42,P11,P11_20,00:02:16.219,00:02:15.70,00:02:20.23,8141,8413,put tray into oven,put-into,5,oven,46,['oven'],[46]
+41137,P11_20_42,P11,P11_20,00:02:16.219,00:02:15.70,00:02:20.23,8141,8413,put tray into oven,put-into,5,tray,35,"['tray', 'oven']","[35, 46]"
 41138,P11_20_43,P11,P11_20,00:02:20.439,00:02:20.36,00:02:21.52,8421,8491,close oven,close,4,oven,46,['oven'],[46]
 41139,P11_20_44,P11,P11_20,00:02:21.439,00:02:21.56,00:02:24.84,8493,8690,put away oven gloves,put,1,glove:oven,60,['glove:oven'],[60]
 41140,P11_20_45,P11,P11_20,00:02:24.459,00:02:23.75,00:02:27.54,8625,8852,set timer,set,53,timer,111,['timer'],[111]
@@ -3943,7 +3943,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 41324,P11_22_23,P11,P11_22,00:00:58.129,00:00:57.50,00:00:59.25,3450,3555,push fish cake into bowl,push-into,5,cake:fish,197,"['cake:fish', 'bowl']","[197, 7]"
 41325,P11_22_24,P11,P11_22,00:00:59.989,00:00:59.88,00:01:02.89,3592,3773,push fish cake into bowl,push-into,5,cake:fish,197,"['cake:fish', 'bowl']","[197, 7]"
 41326,P11_22_25,P11,P11_22,00:01:02.440,00:01:01.25,00:01:05.70,3675,3942,push fish cake into bowl,push-into,5,cake:fish,197,"['cake:fish', 'bowl']","[197, 7]"
-41327,P11_22_26,P11,P11_22,00:01:07.030,00:01:06.09,00:01:12.05,3965,4323,put tray back in oven,put-in,5,oven,46,['oven'],[46]
+41327,P11_22_26,P11,P11_22,00:01:07.030,00:01:06.09,00:01:12.05,3965,4323,put tray back in oven,put-in,5,tray,35,"['tray', 'oven']","[35, 46]"
 41328,P11_22_27,P11,P11_22,00:01:12.510,00:01:12.19,00:01:13.07,4331,4384,close oven,close,4,oven,46,['oven'],[46]
 41329,P11_22_28,P11,P11_22,00:01:14.680,00:01:13.04,00:01:15.54,4382,4532,put away oven gloves,put,1,glove:oven,60,['glove:oven'],[60]
 41330,P11_22_29,P11,P11_22,00:01:19.680,00:01:18.84,00:01:20.64,4730,4838,pick up pot,pick-up,0,pot,29,['pot'],[29]
@@ -4426,13 +4426,13 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 44185,P15_06_47,P15,P15_06,00:06:33.400,00:06:31.88,00:06:33.49,23512,23609,stir content of pan,stir,10,content:pan,5,['content:pan'],[5]
 44186,P15_06_48,P15,P15_06,00:06:35.030,00:06:45.03,00:06:47.41,24301,24444,pick up kettle,pick-up,0,kettle,44,['kettle'],[44]
 44187,P15_06_49,P15,P15_06,00:06:49.789,00:06:47.51,00:06:50.04,24450,24602,pour water in mug,pour-in,9,water,27,"['water', 'mug']","[27, 13]"
-44188,P15_06_50,P15,P15_06,00:06:52.139,00:06:51.09,00:06:52.40,24665,24744,stir content of mug,stir,10,content,34,['content'],[34]
+44188,P15_06_50,P15,P15_06,00:06:52.139,00:06:51.09,00:06:52.40,24665,24744,stir content of mug,stir,10,content:mug,13,['content:mug'],[13]
 44189,P15_06_51,P15,P15_06,00:07:08.280,00:07:05.64,00:07:10.63,25538,25837,pour water in mug,pour-in,9,water,27,"['water', 'mug']","[27, 13]"
-44190,P15_06_52,P15,P15_06,00:07:14.900,00:07:13.44,00:07:15.91,26006,26154,pour milk in mug,pour-in,9,milk,64,['milk'],[64]
+44190,P15_06_52,P15,P15_06,00:07:14.900,00:07:13.44,00:07:15.91,26006,26154,pour milk in mug,pour-in,9,milk,64,"['milk', 'mug']","[64, 13]"
 44191,P15_06_53,P15,P15_06,00:07:27.539,00:07:25.65,00:07:27.72,26739,26863,put down spoon,put-down,1,spoon,1,['spoon'],[1]
 44192,P15_06_54,P15,P15_06,00:07:28.539,00:07:29.74,00:07:30.75,26984,27045,turn light on,turn-on,6,light,114,['light'],[114]
 44193,P15_06_55,P15,P15_06,00:07:33.110,00:07:32.76,00:07:33.77,27165,27226,open microwave,open,3,microwave,90,['microwave'],[90]
-44194,P15_06_56,P15,P15_06,00:07:34.430,00:07:33.72,00:07:35.25,27223,27315,put mug in microwave,put-in,5,microwave,90,['microwave'],[90]
+44194,P15_06_56,P15,P15_06,00:07:34.430,00:07:33.72,00:07:35.25,27223,27315,put mug in microwave,put-in,5,mug,13,"['mug', 'microwave']","[13, 90]"
 44195,P15_06_57,P15,P15_06,00:07:37.870,00:07:36.06,00:07:37.70,27363,27462,turn microwave on,turn-on,6,microwave,90,['microwave'],[90]
 44196,P15_06_58,P15,P15_06,00:07:43.069,00:07:38.25,00:07:48.05,27495,28083,wash spoon,wash,2,spoon,1,['spoon'],[1]
 44198,P15_06_60,P15,P15_06,00:07:59.699,00:08:04.50,00:08:05.42,29070,29125,pick up plate,pick-up,0,plate,2,['plate'],[2]
@@ -4569,7 +4569,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 44754,P18_01_42,P18,P18_01,00:02:29.310,00:02:26.96,00:02:36.12,8817,9367,close toast bread,close,4,bread:toast,33,['bread:toast'],[33]
 44755,P18_02_0,P18,P18_02,00:00:04.430,00:00:03.70,00:00:04.95,222,297,stop toaster,stop,80,toaster,186,['toaster'],[186]
 44756,P18_02_1,P18,P18_02,00:00:07.250,00:00:05.44,00:00:06.98,326,418,take off coffee,take-off,12,coffee,59,['coffee'],[59]
-44757,P18_02_2,P18,P18_02,00:00:09.330,00:00:07.08,00:00:14.83,424,889,pour coffee in mug,pour-in,9,coffee,59,['coffee'],[59]
+44757,P18_02_2,P18,P18_02,00:00:09.330,00:00:07.08,00:00:14.83,424,889,pour coffee in mug,pour-in,9,coffee,59,"['coffee', 'mug']","[59, 13]"
 44758,P18_02_3,P18,P18_02,00:00:15.809,00:00:14.93,00:00:17.28,895,1036,place coffee pot in sink,place-in,5,pot:coffee,50,"['pot:coffee', 'sink']","[50, 63]"
 44759,P18_02_4,P18,P18_02,00:00:19.269,00:00:19.08,00:00:24.19,1144,1451,take out slices or switch around the slices of bread,take-out,12,slice:bread,33,['slice:bread'],[33]
 44760,P18_02_5,P18,P18_02,00:00:24.340,00:00:20.70,00:00:24.41,1242,1464,put back in toaster,put-in,5,toaster,186,['toaster'],[186]
@@ -4608,7 +4608,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 44795,P18_03_11,P18,P18_03,00:00:23.660,00:00:22.91,00:00:23.95,1374,1437,take cup,take,0,cup,13,['cup'],[13]
 44796,P18_03_12,P18,P18_03,00:00:26.090,00:00:25.77,00:00:27.50,1546,1650,open cupboard,open,3,cupboard,3,['cupboard'],[3]
 44797,P18_03_13,P18,P18_03,00:00:28.410,00:00:28.04,00:00:29.17,1682,1750,put cup,put,1,cup,13,['cup'],[13]
-44798,P18_03_14,P18,P18_03,00:00:29.680,00:00:29.86,00:00:30.85,1791,1851,put mug in cupboard,put-in,5,cupboard,3,['cupboard'],[3]
+44798,P18_03_14,P18,P18_03,00:00:29.680,00:00:29.86,00:00:30.85,1791,1851,put mug in cupboard,put-in,5,mug,13,"['mug', 'cupboard']","[13, 3]"
 44799,P18_03_15,P18,P18_03,00:00:31.919,00:00:31.39,00:00:32.49,1883,1949,close cupboard,close,4,cupboard,3,['cupboard'],[3]
 44800,P18_03_16,P18,P18_03,00:00:33.649,00:00:33.16,00:00:34.28,1989,2056,open drawer,open,3,drawer,8,['drawer'],[8]
 44801,P18_03_17,P18,P18_03,00:00:34.649,00:00:35.34,00:00:36.04,2120,2162,put knife and spoon in drawer,put,1,knife,4,"['knife', 'spoon', 'drawer']","[4, 1, 8]"
@@ -4968,7 +4968,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 45155,P18_06_85,P18,P18_06,00:05:37.879,00:05:27.84,00:05:36.51,19670,20190,keep stirring oatmeal,stir,10,oatmeal,127,['oatmeal'],[127]
 45156,P18_06_86,P18,P18_06,00:05:39.449,00:05:37.41,00:06:11.11,20244,22266,twist bowl and stir oatmeal,twist,78,bowl,7,"['bowl', 'oatmeal:stir']","[7, 127]"
 45157,P18_06_87,P18,P18_06,00:06:38.919,00:06:37.63,00:06:40.33,23857,24019,take coffee pot,take,0,pot:coffee,50,['pot:coffee'],[50]
-45158,P18_06_88,P18,P18_06,00:06:41.899,00:06:40.11,00:06:49.01,24006,24540,pour coffee in mug,pour-in,9,coffee,59,['coffee'],[59]
+45158,P18_06_88,P18,P18_06,00:06:41.899,00:06:40.11,00:06:49.01,24006,24540,pour coffee in mug,pour-in,9,coffee,59,"['coffee', 'mug']","[59, 13]"
 45159,P18_06_89,P18,P18_06,00:06:50.679,00:06:49.64,00:06:53.29,24578,24797,put pot back in coffee machine,put-in,5,pot,29,"['pot', 'machine:coffee']","[29, 50]"
 45160,P18_06_90,P18,P18_06,00:06:54.149,00:06:53.57,00:06:54.79,24814,24887,turn off coffee machine,turn-off,8,machine:coffee,50,['machine:coffee'],[50]
 45161,P18_07_0,P18,P18_07,00:00:03.810,00:00:02.54,00:00:03.89,152,233,open cupboard,open,3,cupboard,3,['cupboard'],[3]
@@ -4989,7 +4989,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 45176,P18_07_15,P18,P18_07,00:00:44.210,00:00:41.80,00:00:43.05,2508,2583,take mug,take,0,mug,13,['mug'],[13]
 45177,P18_07_16,P18,P18_07,00:00:45.210,00:00:43.13,00:00:44.79,2587,2687,take bowl,take,0,bowl,7,['bowl'],[7]
 45178,P18_07_17,P18,P18_07,00:00:47.460,00:00:46.27,00:00:50.68,2776,3040,open cupboard,open,3,cupboard,3,['cupboard'],[3]
-45179,P18_07_18,P18,P18_07,00:00:51.180,00:00:50.62,00:00:51.95,3037,3117,put mug in cupboard,put-in,5,cupboard,3,['cupboard'],[3]
+45179,P18_07_18,P18,P18_07,00:00:51.180,00:00:50.62,00:00:51.95,3037,3117,put mug in cupboard,put-in,5,mug,13,"['mug', 'cupboard']","[13, 3]"
 45180,P18_07_19,P18,P18_07,00:00:53.680,00:00:52.11,00:00:54.56,3126,3273,put bowl in cupboard,put-in,5,bowl,7,"['bowl', 'cupboard']","[7, 3]"
 45181,P18_07_20,P18,P18_07,00:00:55.810,00:00:54.60,00:00:56.66,3276,3399,take plate,take,0,plate,2,['plate'],[2]
 45182,P18_07_21,P18,P18_07,00:00:57.480,00:00:56.58,00:00:58.33,3394,3499,put on counter,put-on,1,counter,42,['counter'],[42]
@@ -7135,7 +7135,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 62224,P24_09_210,P24,P24_09,00:22:35.779,00:22:34.40,00:22:53.38,81264,82402,put eggs into the pan,put-into,5,egg,53,"['egg', 'pan']","[53, 5]"
 62225,P24_09_211,P24,P24_09,00:22:37.299,00:22:53.81,00:22:55.31,82428,82518,put plate down,put-down,1,plate,2,['plate'],[2]
 62226,P24_09_212,P24,P24_09,00:23:06.940,00:23:06.91,00:23:07.41,83214,83244,grab wooden spoon,grab,0,spoon:wooden,1,['spoon:wooden'],[1]
-62227,P24_09_213,P24,P24_09,00:23:08.200,00:23:07.36,00:23:25.21,83241,84312,move frittata around,move,11,spoon:wooden,1,['spoon:wooden'],[1]
+62227,P24_09_213,P24,P24_09,00:23:08.200,00:23:07.36,00:23:25.21,83241,84312,move frittata around,move,11,frittata,162,['frittata'],[162]
 62228,P24_09_214,P24,P24_09,00:23:15.749,00:23:11.94,00:23:25.95,83516,84357,move frittata around in the pan,move-in,5,pan,5,['pan'],[5]
 62229,P24_09_215,P24,P24_09,00:23:26.220,00:23:25.88,00:23:26.81,84352,84408,put wooden spoon down,put,1,spoon:wooden,1,['spoon:wooden'],[1]
 62230,P24_09_216,P24,P24_09,00:23:27.679,00:23:26.60,00:23:28.74,84396,84524,put fork down,put-down,1,fork,14,['fork'],[14]
@@ -8066,14 +8066,14 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 74795,P29_05_35,P29,P29_05,00:01:41.820,00:01:41.58,00:01:43.35,6094,6201,pick up chopping board,pick-up,0,board:chopping,18,['board:chopping'],[18]
 74796,P29_05_36,P29,P29_05,00:01:46.610,00:01:43.38,00:01:46.10,6202,6366,put chopping board away,put,1,board:chopping,18,['board:chopping'],[18]
 74797,P29_05_37,P29,P29_05,00:01:50.630,00:01:47.89,00:01:49.59,6473,6575,pick up baking tray,pick-up,0,tray:baking,35,['tray:baking'],[35]
-74798,P29_05_38,P29,P29_05,00:01:51.880,00:01:49.79,00:01:53.13,6587,6787,put baking tray in cupboard,put-in,5,cupboard,3,['cupboard'],[3]
+74798,P29_05_38,P29,P29_05,00:01:51.880,00:01:49.79,00:01:53.13,6587,6787,put baking tray in cupboard,put-in,5,tray:baking,35,"['tray:baking', 'cupboard']","[35, 3]"
 74799,P29_05_39,P29,P29_05,00:01:53.460,00:01:51.98,00:01:53.18,6718,6790,close cupboard door,close,4,door:cupboard,3,['door:cupboard'],[3]
 74800,P29_05_40,P29,P29_05,00:01:55.840,00:01:54.14,00:01:55.61,6848,6936,pick up bowl,pick-up,0,bowl,7,['bowl'],[7]
 74801,P29_05_41,P29,P29_05,00:01:57.320,00:01:55.71,00:01:58.42,6942,7105,put bowl in cupboard,put-in,5,bowl,7,"['bowl', 'cupboard']","[7, 3]"
-74802,P29_05_42,P29,P29_05,00:02:01.520,00:01:59.20,00:02:00.76,7152,7245,pick up grater and baking tray,pick-up,0,grater,96,['grater'],[96]
+74802,P29_05_42,P29,P29_05,00:02:01.520,00:01:59.20,00:02:00.76,7152,7245,pick up grater and baking tray,pick-up,0,grater,96,"['grater', 'tray:baking']","[96, 35]"
 74803,P29_05_43,P29,P29_05,00:02:03.730,00:02:00.86,00:02:02.97,7251,7378,open cupboard,open,3,cupboard,3,['cupboard'],[3]
 74804,P29_05_44,P29,P29_05,00:02:04.730,00:02:03.22,00:02:04.24,7393,7454,put grater in cupboard,put-in,5,grater,96,"['grater', 'cupboard']","[96, 3]"
-74805,P29_05_45,P29,P29_05,00:02:06.140,00:02:03.83,00:02:06.90,7429,7614,put baking tray in cupboard,put-in,5,cupboard,3,['cupboard'],[3]
+74805,P29_05_45,P29,P29_05,00:02:06.140,00:02:03.83,00:02:06.90,7429,7614,put baking tray in cupboard,put-in,5,tray:baking,35,"['tray:baking', 'cupboard']","[35, 3]"
 74806,P29_05_46,P29,P29_05,00:02:07.840,00:02:06.83,00:02:07.50,7609,7650,close cupboard door,close,4,door:cupboard,3,['door:cupboard'],[3]
 74807,P29_05_47,P29,P29_05,00:02:09.500,00:02:07.00,00:02:09.55,7620,7773,pick up tin,pick-up,0,tin,61,['tin'],[61]
 74808,P29_05_48,P29,P29_05,00:02:14.590,00:02:09.33,00:02:16.68,7759,8200,put tin in cupboard,put-in,5,tin,61,"['tin', 'cupboard']","[61, 3]"
@@ -8101,14 +8101,14 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 74830,P29_05_70,P29,P29_05,00:03:05.950,00:03:04.96,00:03:06.71,11097,11202,put down spoon,put-down,1,spoon,1,['spoon'],[1]
 74831,P29_05_71,P29,P29_05,00:03:07.630,00:03:05.72,00:03:07.23,11143,11233,put away spoon,put,1,spoon,1,['spoon'],[1]
 74832,P29_05_72,P29,P29_05,00:03:09.680,00:03:08.66,00:03:10.66,11319,11439,put tea bag into bin,put-into,5,bag:tea,132,"['bag:tea', 'bin']","[132, 36]"
-74833,P29_05_73,P29,P29_05,00:03:15.370,00:03:13.53,00:03:15.27,11611,11716,empty mug into sink,empty,20,sink,63,['sink'],[63]
-74834,P29_05_74,P29,P29_05,00:03:19.190,00:03:17.59,00:03:19.49,11855,11969,empty mug into sink,empty,20,sink,63,['sink'],[63]
-74835,P29_05_75,P29,P29_05,00:03:23.280,00:03:18.30,00:03:19.80,11898,11988,empty mug into sink,empty,20,sink,63,['sink'],[63]
+74833,P29_05_73,P29,P29_05,00:03:15.370,00:03:13.53,00:03:15.27,11611,11716,empty mug into sink,empty,20,mug,13,"['mug', 'sink']","[13, 63]"
+74834,P29_05_74,P29,P29_05,00:03:19.190,00:03:17.59,00:03:19.49,11855,11969,empty mug into sink,empty,20,mug,13,"['mug', 'sink']","[13, 63]"
+74835,P29_05_75,P29,P29_05,00:03:23.280,00:03:18.30,00:03:19.80,11898,11988,empty mug into sink,empty,20,mug,13,"['mug', 'sink']","[13, 63]"
 74836,P29_05_76,P29,P29_05,00:03:25.720,00:03:24.24,00:03:25.59,12254,12335,pick up tea towel,pick-up,0,towel:tea,52,['towel:tea'],[52]
 74837,P29_05_77,P29,P29_05,00:03:26.990,00:03:25.38,00:03:26.60,12322,12396,put down tea towel,put-down,1,towel:tea,52,['towel:tea'],[52]
 74838,P29_05_78,P29,P29_05,00:03:29.350,00:03:27.75,00:03:31.05,12465,12663,pick up cutlery,pick-up,0,cutlery,58,['cutlery'],[58]
 74839,P29_05_79,P29,P29_05,00:03:32.220,00:03:29.80,00:03:31.45,12588,12687,put down cutlery,put-down,1,cutlery,58,['cutlery'],[58]
-74840,P29_05_80,P29,P29_05,00:03:34.440,00:03:31.79,00:03:33.91,12707,12834,empty mug into sink,empty,20,sink,63,['sink'],[63]
+74840,P29_05_80,P29,P29_05,00:03:34.440,00:03:31.79,00:03:33.91,12707,12834,empty mug into sink,empty,20,mug,13,"['mug', 'sink']","[13, 63]"
 74841,P29_05_81,P29,P29_05,00:03:35.780,00:03:33.96,00:03:35.46,12837,12927,put mug down,put-down,1,mug,13,['mug'],[13]
 74842,P29_05_82,P29,P29_05,00:03:37.569,00:03:35.31,00:03:39.42,12918,13165,pick up plate,pick-up,0,plate,2,['plate'],[2]
 74843,P29_05_83,P29,P29_05,00:03:40.530,00:03:39.04,00:03:40.61,13142,13236,put down plate,put-down,1,plate,2,['plate'],[2]
@@ -8167,22 +8167,22 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 74896,P29_05_136,P29,P29_05,00:06:45.509,00:06:44.14,00:06:45.25,24248,24315,pick up mug,pick-up,0,mug,13,['mug'],[13]
 74897,P29_05_137,P29,P29_05,00:06:58.330,00:06:45.22,00:06:47.93,24313,24475,wash mug,wash,2,mug,13,['mug'],[13]
 74898,P29_05_138,P29,P29_05,00:07:04.899,00:06:48.03,00:06:52.65,24481,24759,rinse mug,rinse,2,mug,13,['mug'],[13]
-74899,P29_05_139,P29,P29_05,00:06:53.689,00:06:52.75,00:06:53.81,24765,24828,put mug on side,put-on,1,side,42,['side'],[42]
-74900,P29_05_140,P29,P29_05,00:07:05.899,00:06:52.98,00:06:53.63,24778,24817,put mug on side,put-on,1,side,42,['side'],[42]
+74899,P29_05_139,P29,P29_05,00:06:53.689,00:06:52.75,00:06:53.81,24765,24828,put mug on side,put-on,1,mug,13,"['mug', 'side']","[13, 42]"
+74900,P29_05_140,P29,P29_05,00:07:05.899,00:06:52.98,00:06:53.63,24778,24817,put mug on side,put-on,1,mug,13,"['mug', 'side']","[13, 42]"
 74901,P29_05_141,P29,P29_05,00:06:54.689,00:06:55.44,00:06:56.02,24926,24961,pick up mug,pick-up,0,mug,13,['mug'],[13]
 74902,P29_05_142,P29,P29_05,00:07:10.069,00:06:56.22,00:07:01.77,24973,25306,wash mug,wash,2,mug,13,['mug'],[13]
 74903,P29_05_143,P29,P29_05,00:07:18.639,00:07:01.87,00:07:04.54,25312,25472,wash mug,wash,2,mug,13,['mug'],[13]
 74904,P29_05_144,P29,P29_05,00:07:08.389,00:07:07.26,00:07:07.94,25635,25676,pick up mug,pick-up,0,mug,13,['mug'],[13]
 74905,P29_05_145,P29,P29_05,00:07:26.050,00:07:17.08,00:07:25.92,26224,26755,wash mug,wash,2,mug,13,['mug'],[13]
 74906,P29_05_146,P29,P29_05,00:07:28.669,00:07:29.56,00:07:32.01,26973,27120,rinse mug,rinse,2,mug,13,['mug'],[13]
-74907,P29_05_147,P29,P29_05,00:07:33.479,00:07:32.73,00:07:34.47,27163,27268,put mug on side,put-on,1,side,42,['side'],[42]
+74907,P29_05_147,P29,P29_05,00:07:33.479,00:07:32.73,00:07:34.47,27163,27268,put mug on side,put-on,1,mug,13,"['mug', 'side']","[13, 42]"
 74908,P29_05_148,P29,P29_05,00:07:34.479,00:07:35.54,00:07:36.89,27332,27413,pick up mug,pick-up,0,mug,13,['mug'],[13]
 74909,P29_05_149,P29,P29_05,00:07:39.830,00:07:38.22,00:07:45.94,27493,27956,wash mug,wash,2,mug,13,['mug'],[13]
 74910,P29_05_150,P29,P29_05,00:07:48.659,00:07:47.82,00:07:48.99,28069,28139,put mug down,put-down,1,mug,13,['mug'],[13]
 74911,P29_05_151,P29,P29_05,00:07:52.050,00:07:51.07,00:07:52.23,28264,28333,pick up mug,pick-up,0,mug,13,['mug'],[13]
 74912,P29_05_152,P29,P29_05,00:07:54.759,00:07:53.38,00:07:59.68,28402,28780,wash mug,wash,2,mug,13,['mug'],[13]
 74913,P29_05_153,P29,P29_05,00:08:00.059,00:07:59.61,00:08:00.34,28776,28820,inspect mug,inspect,24,mug,13,['mug'],[13]
-74914,P29_05_154,P29,P29_05,00:08:01.969,00:08:00.93,00:08:01.88,28855,28912,put mug on side,put-on,1,side,42,['side'],[42]
+74914,P29_05_154,P29,P29_05,00:08:01.969,00:08:00.93,00:08:01.88,28855,28912,put mug on side,put-on,1,mug,13,"['mug', 'side']","[13, 42]"
 74915,P29_05_155,P29,P29_05,00:08:02.969,00:08:02.63,00:08:03.38,28957,29002,pick up scissors,pick-up,0,scissors,79,['scissors'],[79]
 74916,P29_05_156,P29,P29_05,00:08:06.020,00:08:03.73,00:08:08.50,29023,29310,wash scissors,wash,2,scissors,79,['scissors'],[79]
 74917,P29_05_157,P29,P29_05,00:08:10.119,00:08:09.33,00:08:10.58,29359,29434,put scissors away,put,1,scissors,79,['scissors'],[79]
@@ -8488,19 +8488,19 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 75218,P29_05_458,P29,P29_05,00:23:51.890,00:23:49.54,00:23:51.13,85772,85867,close cupboard,close,4,cupboard,3,['cupboard'],[3]
 75219,P29_05_459,P29,P29_05,00:23:53.940,00:23:51.23,00:23:54.18,85873,86050,put baking tray down,put-down,1,tray:baking,35,['tray:baking'],[35]
 75220,P29_05_460,P29,P29_05,00:23:56.070,00:23:53.97,00:23:59.39,86038,86363,pick up chicken,pick-up,0,chicken,57,['chicken'],[57]
-75221,P29_05_461,P29,P29_05,00:23:57.070,00:23:59.37,00:24:01.77,86362,86506,put chicken on tray,put-on,1,chicken,57,['chicken'],[57]
+75221,P29_05_461,P29,P29_05,00:23:57.070,00:23:59.37,00:24:01.77,86362,86506,put chicken on tray,put-on,1,chicken,57,"['chicken', 'tray']","[57, 35]"
 75222,P29_05_462,P29,P29_05,00:24:05.900,00:24:04.58,00:24:06.52,86674,86791,open cheese,open,3,cheese,32,['cheese'],[32]
 75223,P29_05_463,P29,P29_05,00:24:12.490,00:24:11.85,00:24:12.77,87111,87166,slice open cheese,slice,7,cheese:open,32,['cheese:open'],[32]
 75224,P29_05_464,P29,P29_05,00:24:16.660,00:24:13.39,00:24:16.56,87203,87393,remove cheese from packet,remove-from,12,cheese,32,"['cheese', 'packet']","[32, 26]"
 75225,P29_05_465,P29,P29_05,00:24:18.570,00:24:17.91,00:24:20.15,87474,87609,cut cheese in half,cut-in,7,cheese,32,['cheese'],[32]
 75226,P29_05_466,P29,P29_05,00:24:22.290,00:24:21.30,00:24:27.29,87678,88037,place cheese inside chicken,place-inside,5,cheese,32,"['cheese', 'chicken']","[32, 57]"
 75227,P29_05_467,P29,P29_05,00:24:28.910,00:24:27.58,00:24:34.51,88054,88470,pick up chicken,pick-up,0,chicken,57,['chicken'],[57]
-75228,P29_05_468,P29,P29_05,00:24:35.690,00:24:34.57,00:24:36.77,88474,88606,put chicken on baking tray,put-on,1,chicken,57,['chicken'],[57]
+75228,P29_05_468,P29,P29_05,00:24:35.690,00:24:34.57,00:24:36.77,88474,88606,put chicken on baking tray,put-on,1,chicken,57,"['chicken', 'tray:baking']","[57, 35]"
 75229,P29_05_469,P29,P29_05,00:24:42.400,00:24:40.41,00:24:42.62,88824,88957,slice cheese packet,slice,7,packet:cheese,26,['packet:cheese'],[26]
 75230,P29_05_470,P29,P29_05,00:24:44.030,00:24:42.84,00:24:43.86,88970,89031,take cheese out of packet,take-out,12,cheese,32,"['cheese', 'packet']","[32, 26]"
 75231,P29_05_471,P29,P29_05,00:24:48.190,00:24:45.00,00:24:48.09,89100,89285,cut cheese in half,cut-in,7,cheese,32,['cheese'],[32]
 75232,P29_05_472,P29,P29_05,00:24:50.760,00:24:49.37,00:24:54.67,89362,89680,put cheese inside chicken,put-inside,5,cheese,32,"['cheese', 'chicken']","[32, 57]"
-75233,P29_05_473,P29,P29_05,00:24:57.280,00:24:56.28,00:24:58.68,89776,89920,put chicken on baking tray,put-on,1,chicken,57,['chicken'],[57]
+75233,P29_05_473,P29,P29_05,00:24:57.280,00:24:56.28,00:24:58.68,89776,89920,put chicken on baking tray,put-on,1,chicken,57,"['chicken', 'tray:baking']","[57, 35]"
 75234,P29_05_474,P29,P29_05,00:25:02.170,00:25:00.72,00:25:02.81,90043,90168,wash hands,wash,2,hand,11,['hand'],[11]
 75235,P29_05_475,P29,P29_05,00:25:11.260,00:25:08.26,00:25:18.02,90495,91081,season chicken,season,90,chicken,57,['chicken'],[57]
 75236,P29_05_476,P29,P29_05,00:25:12.260,00:25:18.90,00:25:21.68,91134,91300,check phone,check,24,phone,165,['phone'],[165]
@@ -8528,11 +8528,11 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 75258,P29_05_498,P29,P29_05,00:26:26.970,00:26:24.29,00:26:27.19,95057,95231,stab potato,stab,81,potato,30,['potato'],[30]
 75259,P29_05_499,P29,P29_05,00:26:30.740,00:26:29.05,00:26:30.47,95343,95428,put down knife,put-down,1,knife,4,['knife'],[4]
 75260,P29_05_500,P29,P29_05,00:26:34.580,00:26:33.00,00:26:34.07,95580,95644,pick up olive oil,pick-up,0,oil:olive,31,['oil:olive'],[31]
-75261,P29_05_501,P29,P29_05,00:26:37.650,00:26:34.73,00:26:40.28,95683,96016,pour olive oil onto baking tray,pour-onto,9,oil:olive,31,['oil:olive'],[31]
+75261,P29_05_501,P29,P29_05,00:26:37.650,00:26:34.73,00:26:40.28,95683,96016,pour olive oil onto baking tray,pour-onto,9,oil:olive,31,"['oil:olive', 'tray:baking']","[31, 35]"
 75262,P29_05_502,P29,P29_05,00:26:44.810,00:26:42.33,00:26:44.64,96139,96278,pick up pastry brush,pick-up,0,brush:pastry,103,['brush:pastry'],[103]
 75263,P29_05_503,P29,P29_05,00:26:45.830,00:26:45.68,00:26:53.86,96340,96831,brush oil on olive tray,brush-on,57,oil,31,"['oil', 'tray:olive']","[31, 35]"
-75264,P29_05_504,P29,P29_05,00:26:49.020,00:26:49.76,00:27:07.18,96585,97630,brush olive oil onto baking tray,brush-onto,57,oil:olive,31,['oil:olive'],[31]
-75265,P29_05_505,P29,P29_05,00:27:05.560,00:26:55.55,00:27:06.07,96933,97564,brush olive oil onto baking tray,brush-onto,57,oil:olive,31,['oil:olive'],[31]
+75264,P29_05_504,P29,P29_05,00:26:49.020,00:26:49.76,00:27:07.18,96585,97630,brush olive oil onto baking tray,brush-onto,57,oil:olive,31,"['oil:olive', 'tray:baking']","[31, 35]"
+75265,P29_05_505,P29,P29_05,00:27:05.560,00:26:55.55,00:27:06.07,96933,97564,brush olive oil onto baking tray,brush-onto,57,oil:olive,31,"['oil:olive', 'tray:baking']","[31, 35]"
 75266,P29_05_506,P29,P29_05,00:27:10.420,00:27:08.24,00:27:10.76,97694,97845,put pastry brush down,put-down,1,brush:pastry,103,['brush:pastry'],[103]
 75267,P29_05_507,P29,P29_05,00:27:13.690,00:27:11.56,00:27:13.77,97893,98026,pick up potatoes,pick-up,0,potato,30,['potato'],[30]
 75268,P29_05_508,P29,P29_05,00:27:15.520,00:27:14.61,00:27:16.13,98076,98167,put down potatoes,put-down,1,potato,30,['potato'],[30]
@@ -8574,9 +8574,9 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 75304,P29_05_544,P29,P29_05,00:29:09.810,00:29:07.96,00:29:10.25,104877,105015,put down pan lid,put-down,1,lid:pan,6,['lid:pan'],[6]
 75305,P29_05_545,P29,P29_05,00:29:15.890,00:29:13.69,00:29:15.34,105221,105320,put down glove,put-down,1,glove,60,['glove'],[60]
 75306,P29_05_546,P29,P29_05,00:29:18.770,00:29:17.20,00:29:18.17,105432,105490,pick up spatula,pick-up,0,spatula,20,['spatula'],[20]
-75307,P29_05_547,P29,P29_05,00:29:21.720,00:29:18.83,00:29:22.43,105529,105745,scoop potatoes onto baking tray,bake,93,potato:scoop,30,['potato:scoop'],[30]
-75308,P29_05_548,P29,P29_05,00:29:29.560,00:29:22.30,00:29:32.75,105738,106365,scoop potatoes onto baking tray,bake,93,potato:scoop,30,['potato:scoop'],[30]
-75309,P29_05_549,P29,P29_05,00:29:33.850,00:29:33.31,00:29:41.78,106398,106906,spread potatoes with spatula onto baking tray,spread-with,27,potato,30,"['potato', 'spatula']","[30, 20]"
+75307,P29_05_547,P29,P29_05,00:29:21.720,00:29:18.83,00:29:22.43,105529,105745,scoop potatoes onto baking tray,bake,93,potato:scoop,30,"['potato:scoop', 'tray']","[30, 35]"
+75308,P29_05_548,P29,P29_05,00:29:29.560,00:29:22.30,00:29:32.75,105738,106365,scoop potatoes onto baking tray,bake,93,potato:scoop,30,"['potato:scoop', 'tray']","[30, 35]"
+75309,P29_05_549,P29,P29_05,00:29:33.850,00:29:33.31,00:29:41.78,106398,106906,spread potatoes with spatula onto baking tray,spread-with,27,potato,30,"['potato', 'spatula', 'tray:baking']","[30, 20, 35]"
 75310,P29_05_550,P29,P29_05,00:29:42.810,00:29:41.69,00:29:45.01,106901,107100,put pan into sink,put-into,5,pan,5,"['pan', 'sink']","[5, 63]"
 75311,P29_05_551,P29,P29_05,00:29:46.480,00:29:45.69,00:29:47.02,107141,107221,put spatula onto sink,put-onto,1,spatula,20,"['spatula', 'sink']","[20, 63]"
 75312,P29_05_552,P29,P29_05,00:29:49.610,00:29:48.49,00:29:51.10,107309,107466,pick up pastry brush,pick-up,0,brush:pastry,103,['brush:pastry'],[103]
@@ -8584,7 +8584,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 75314,P29_05_554,P29,P29_05,00:29:59.410,00:29:58.47,00:30:00.12,107908,108007,put pastry brush onto sink,put-onto,1,brush:pastry,103,"['brush:pastry', 'sink']","[103, 63]"
 75315,P29_05_555,P29,P29_05,00:30:01.830,00:30:00.12,00:30:02.12,108007,108127,pick up baking tray,pick-up,0,tray:baking,35,['tray:baking'],[35]
 75316,P29_05_556,P29,P29_05,00:30:03.490,00:30:03.47,00:30:05.97,108208,108358,put baking tray into oven,put-into,5,tray:baking,35,"['tray:baking', 'oven']","[35, 46]"
-75317,P29_05_557,P29,P29_05,00:30:08.730,00:30:05.87,00:30:09.57,108352,108574,adjust oven height of tray,adjust,17,height:oven,46,['height:oven'],[46]
+75317,P29_05_557,P29,P29_05,00:30:08.730,00:30:05.87,00:30:09.57,108352,108574,adjust oven height of tray,adjust,17,height:oven,46,"['height:oven', 'height:tray']","[46, 35]"
 75318,P29_05_558,P29,P29_05,00:30:12.410,00:30:10.42,00:30:11.92,108625,108715,pick up baking tray,pick-up,0,tray:baking,35,['tray:baking'],[35]
 75319,P29_05_559,P29,P29_05,00:30:13.570,00:30:11.79,00:30:14.31,108707,108858,put baking tray into oven,put-into,5,tray:baking,35,"['tray:baking', 'oven']","[35, 46]"
 75320,P29_05_560,P29,P29_05,00:30:15.570,00:30:14.17,00:30:15.17,108850,108910,close oven door,close,4,door:oven,46,['door:oven'],[46]
@@ -8602,9 +8602,9 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 75332,P29_06_7,P29,P29_06,00:00:17.550,00:00:16.28,00:00:17.77,976,1066,put down plate,put-down,1,plate,2,['plate'],[2]
 75333,P29_06_8,P29,P29_06,00:00:25.670,00:00:24.21,00:00:26.39,1452,1583,pick up oven mitt,pick-up,0,mitt:oven,60,['mitt:oven'],[60]
 75334,P29_06_9,P29,P29_06,00:00:28.250,00:00:26.49,00:00:28.52,1589,1711,open oven,open,3,oven,46,['oven'],[46]
-75335,P29_06_10,P29,P29_06,00:00:30.510,00:00:28.12,00:00:31.09,1687,1865,remove oven tray,remove,12,oven,46,['oven'],[46]
-75336,P29_06_11,P29,P29_06,00:00:33.269,00:00:31.19,00:00:34.20,1871,2052,put down oven tray,put-down,1,oven,46,['oven'],[46]
-75337,P29_06_12,P29,P29_06,00:00:36.910,00:00:34.30,00:00:37.39,2058,2243,remove oven tray,remove,12,oven,46,['oven'],[46]
+75335,P29_06_10,P29,P29_06,00:00:30.510,00:00:28.12,00:00:31.09,1687,1865,remove oven tray,remove,12,tray:oven,35,['tray:oven'],[35]
+75336,P29_06_11,P29,P29_06,00:00:33.269,00:00:31.19,00:00:34.20,1871,2052,put down oven tray,put-down,1,tray:oven,35,['tray:oven'],[35]
+75337,P29_06_12,P29,P29_06,00:00:36.910,00:00:34.30,00:00:37.39,2058,2243,remove oven tray,remove,12,tray:oven,35,['tray:oven'],[35]
 75338,P29_06_13,P29,P29_06,00:00:37.910,00:00:38.18,00:00:41.42,2290,2485,put oven tray in oven,put-in,5,tray:oven,35,"['tray:oven', 'oven']","[35, 46]"
 75339,P29_06_14,P29,P29_06,00:00:43.980,00:00:41.52,00:00:43.91,2491,2634,adjust temperature on oven,adjust-on,17,temperature,65,"['temperature', 'oven']","[65, 46]"
 75340,P29_06_15,P29,P29_06,00:00:50.170,00:00:46.66,00:00:49.53,2799,2971,pick up fork,pick-up,0,fork,14,['fork'],[14]
@@ -8614,7 +8614,7 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 75344,P29_06_19,P29,P29_06,00:01:12.380,00:01:12.45,00:01:14.07,4347,4444,put down chicken,put-down,1,chicken,57,['chicken'],[57]
 75345,P29_06_20,P29,P29_06,00:01:17.409,00:01:14.13,00:01:18.65,4447,4719,pick up chicken,pick-up,0,chicken,57,['chicken'],[57]
 75346,P29_06_21,P29,P29_06,00:01:19.590,00:01:18.75,00:01:20.26,4725,4815,put down chicken,put-down,1,chicken,57,['chicken'],[57]
-75347,P29_06_22,P29,P29_06,00:01:38.140,00:01:28.00,00:01:37.82,5280,5869,pick up oven tray,pick-up,0,oven,46,['oven'],[46]
+75347,P29_06_22,P29,P29_06,00:01:38.140,00:01:28.00,00:01:37.82,5280,5869,pick up oven tray,pick-up,0,tray:oven,35,['tray:oven'],[35]
 75348,P29_06_23,P29,P29_06,00:01:32.670,00:01:30.63,00:01:34.25,5437,5655,turn off oven,turn-off,8,oven,46,['oven'],[46]
 75349,P29_06_24,P29,P29_06,00:01:35.200,00:01:33.76,00:01:36.07,5625,5764,pick up oven glove,pick-up,0,glove:oven,60,['glove:oven'],[60]
 75350,P29_06_25,P29,P29_06,00:01:36.200,00:01:35.67,00:01:36.72,5740,5803,open oven door,open,3,door:oven,46,['door:oven'],[46]
@@ -8828,10 +8828,10 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 76855,P30_08_82,P30,P30_08,00:03:47.230,00:03:44.74,00:03:45.93,13484,13555,move spoons,move,11,spoon,1,['spoon'],[1]
 76856,P30_08_83,P30,P30_08,00:03:49.609,00:03:46.75,00:03:48.79,13605,13727,take mugs,take,0,mug,13,['mug'],[13]
 76857,P30_08_84,P30,P30_08,00:03:50.609,00:03:48.68,00:03:50.06,13720,13803,put mugs,put,1,mug,13,['mug'],[13]
-76858,P30_08_85,P30,P30_08,00:03:52.709,00:03:50.16,00:03:51.99,13809,13919,take mug in jug,take-in,0,jug,66,['jug'],[66]
+76858,P30_08_85,P30,P30_08,00:03:52.709,00:03:50.16,00:03:51.99,13809,13919,take mug in jug,take-in,0,mug,13,"['mug', 'jug']","[13, 66]"
 76859,P30_08_86,P30,P30_08,00:03:53.909,00:03:52.09,00:03:54.42,13925,14065,put mug in jug,put-in,5,mug,13,"['mug', 'jug']","[13, 66]"
-76860,P30_08_87,P30,P30_08,00:03:58.400,00:03:56.51,00:03:57.85,14190,14271,take mug in glass,take-in,0,glass,10,['glass'],[10]
-76861,P30_08_88,P30,P30_08,00:04:01.129,00:03:57.95,00:03:59.71,14277,14382,put mug in glass,put-in,5,glass,10,['glass'],[10]
+76860,P30_08_87,P30,P30_08,00:03:58.400,00:03:56.51,00:03:57.85,14190,14271,take mug in glass,take-in,0,mug,13,"['mug', 'glass']","[13, 10]"
+76861,P30_08_88,P30,P30_08,00:04:01.129,00:03:57.95,00:03:59.71,14277,14382,put mug in glass,put-in,5,mug,13,"['mug', 'glass']","[13, 10]"
 76862,P30_08_89,P30,P30_08,00:04:06.099,00:03:59.68,00:04:01.12,14380,14467,take jug out cafetiere,take-out,12,jug,66,"['jug', 'cafetiere']","[66, 50]"
 76863,P30_08_90,P30,P30_08,00:04:09.200,00:04:02.99,00:04:04.64,14579,14678,tun water on,tun-on,6,water,27,['water'],[27]
 76864,P30_08_91,P30,P30_08,00:04:10.950,00:04:05.03,00:04:10.66,14701,15039,put washing up liquid in washing up bowl,put,1,liquid:washing:up,22,"['liquid:washing:up', 'bowl:washing:up']","[22, 7]"
@@ -8871,14 +8871,14 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 76898,P30_08_125,P30,P30_08,00:06:05.090,00:06:03.46,00:06:04.26,21807,21855,take mug,take,0,mug,13,['mug'],[13]
 76899,P30_08_126,P30,P30_08,00:06:08.150,00:06:04.06,00:06:09.54,21843,22172,wash mug,wash,2,mug,13,['mug'],[13]
 76900,P30_08_127,P30,P30_08,00:06:11.130,00:06:09.64,00:06:14.64,22178,22478,rinse,rinse,2,mug,13,['mug'],[13]
-76901,P30_08_128,P30,P30_08,00:06:17.080,00:06:15.08,00:06:17.61,22504,22656,put mug in drying rack,put-in,5,rack:drying,110,['rack:drying'],[110]
+76901,P30_08_128,P30,P30_08,00:06:17.080,00:06:15.08,00:06:17.61,22504,22656,put mug in drying rack,put-in,5,mug,13,"['mug', 'rack:drying']","[13, 110]"
 76902,P30_08_129,P30,P30_08,00:06:12.130,00:06:15.12,00:06:16.62,22507,22597,turn on tap,turn-on,6,tap,0,['tap'],[0]
 76903,P30_08_130,P30,P30_08,00:06:21.580,00:06:17.87,00:06:19.02,22672,22741,take mug,take,0,mug,13,['mug'],[13]
 76904,P30_08_131,P30,P30_08,00:06:22.580,00:06:19.12,00:06:23.54,22747,23012,wash mug,wash,2,mug,13,['mug'],[13]
 76905,P30_08_132,P30,P30_08,00:06:13.130,00:06:19.34,00:06:21.65,22760,22899,rinse mug,rinse,2,mug,13,['mug'],[13]
 76906,P30_08_133,P30,P30_08,00:06:23.590,00:06:23.93,00:06:28.10,23035,23286,continuing washing mug,wash,2,mug,13,['mug'],[13]
 76907,P30_08_134,P30,P30_08,00:06:29.300,00:06:27.50,00:06:31.95,23250,23517,rinse mug,rinse,2,mug,13,['mug'],[13]
-76908,P30_08_135,P30,P30_08,00:06:33.060,00:06:32.04,00:06:33.16,23522,23589,put mug in drying rack,put-in,5,rack:drying,110,['rack:drying'],[110]
+76908,P30_08_135,P30,P30_08,00:06:33.060,00:06:32.04,00:06:33.16,23522,23589,put mug in drying rack,put-in,5,mug,13,"['mug', 'rack:drying']","[13, 110]"
 76909,P30_08_136,P30,P30_08,00:06:37.310,00:06:34.29,00:06:36.26,23657,23775,fill mug,fill,26,mug,13,['mug'],[13]
 76910,P30_08_137,P30,P30_08,00:06:39.190,00:06:36.43,00:06:40.42,23785,24025,wash mug,wash,2,mug,13,['mug'],[13]
 76911,P30_08_138,P30,P30_08,00:06:44.150,00:06:39.59,00:06:43.26,23975,24195,continue washing mug,wash,2,mug,13,['mug'],[13]
@@ -8891,12 +8891,12 @@ uid,narration_id,participant_id,video_id,narration_timestamp,start_timestamp,sto
 76918,P30_08_145,P30,P30_08,00:06:57.470,00:06:56.60,00:07:04.02,24996,25441,wipe surface,wipe,2,surface,42,['surface'],[42]
 76919,P30_08_146,P30,P30_08,00:07:06.520,00:07:04.67,00:07:05.60,25480,25536,put mug,put,1,mug,13,['mug'],[13]
 76920,P30_08_147,P30,P30_08,00:07:08.310,00:07:05.60,00:07:06.40,25536,25584,put spoons into washing up bowl,put-into,5,spoon,1,"['spoon', 'bowl:washing:up']","[1, 7]"
-76921,P30_08_148,P30,P30_08,00:07:10.990,00:07:06.50,00:07:09.75,25590,25785,put mug into washing up bowl,put-into,5,bowl:washing:up,7,['bowl:washing:up'],[7]
+76921,P30_08_148,P30,P30_08,00:07:10.990,00:07:06.50,00:07:09.75,25590,25785,put mug into washing up bowl,put-into,5,mug,13,"['mug', 'washing', 'bowl:washing:up']","[13, 73, 7]"
 76922,P30_08_149,P30,P30_08,00:07:15.650,00:07:09.75,00:07:15.30,25785,26118,wash mug,wash,2,mug,13,['mug'],[13]
 76923,P30_08_150,P30,P30_08,00:07:16.740,00:07:15.08,00:07:17.59,26104,26255,turn on tap,turn-on,6,tap,0,['tap'],[0]
 76924,P30_08_151,P30,P30_08,00:07:17.830,00:07:16.91,00:07:20.82,26214,26449,rinse mug,rinse,2,mug,13,['mug'],[13]
 76925,P30_08_152,P30,P30_08,00:07:21.940,00:07:19.41,00:07:21.44,26364,26486,continue rinsing mug,rinse,2,mug,13,['mug'],[13]
-76926,P30_08_153,P30,P30_08,00:07:23.870,00:07:21.54,00:07:22.66,26492,26559,put mug on drying rack,put-on,1,rack:drying,110,['rack:drying'],[110]
+76926,P30_08_153,P30,P30_08,00:07:23.870,00:07:21.54,00:07:22.66,26492,26559,put mug on drying rack,put-on,1,mug,13,"['mug', 'rack:drying']","[13, 110]"
 76927,P30_08_154,P30,P30_08,00:07:25.660,00:07:23.19,00:07:24.44,26591,26666,take glass,take,0,glass,10,['glass'],[10]
 76928,P30_08_155,P30,P30_08,00:07:26.940,00:07:25.25,00:07:30.46,26715,27027,wash glass,wash,2,glass,10,['glass'],[10]
 76929,P30_08_156,P30,P30_08,00:07:32.250,00:07:29.91,00:07:35.25,26994,27315,rinse glass,rinse,2,glass,10,['glass'],[10]

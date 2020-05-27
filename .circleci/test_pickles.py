@@ -15,6 +15,13 @@ def test_files(pkl_paths, csv_paths, commit_hash, version_number):
         csv_ids = set(csv[csv.columns[0]])
         df_ids = set(df.index)
         assert csv_ids == df_ids, get_csv_error_message(pkl_path, csv_path, csv_ids, df_ids)
+        if 'noun_class' in df.columns or 'verb_class' in df.columns:
+            print(pkl_path)
+            csv = csv.set_index('uid')
+        if 'noun_class' in df.columns:
+            assert (csv.noun_class == df.noun_class).all()
+        if 'verb_class' in df.columns:
+            assert (csv.verb_class == df.verb_class).all()
 
 def get_csv_error_message(csv_path, pkl_path, csv_ids, df_ids):
     in_csv_not_in_df = csv_ids - df_ids

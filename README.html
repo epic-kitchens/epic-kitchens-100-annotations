@@ -90,6 +90,7 @@
 <h3 id="additional-files">Additional Files</h3>
 <ul>
 <li><a href="UDA_annotations/EPIC_100_uda_source_train.csv"><code>UDA_annotations/EPIC_100_uda_source_train.csv</code></a> (<a href="#epic_100_uda_source_traincsv">info</a>) (<a href="UDA_annotations/EPIC_100_uda_source_train.pkl">Pickle</a>)</li>
+<li><a href="UDA_annotations/EPIC_100_uda_source_test_timestamps.csv"><code>UDA_annotations/EPIC_100_uda_source_test_timestamps.csv</code></a> (<a href="#epic_100_uda_source_test_timestampscsv">info</a>) (<a href="UDA_annotations/EPIC_100_uda_source_test_timestamps.pkl">Pickle</a>)</li>
 <li><a href="UDA_annotations/EPIC_100_uda_target_train_timestamps.csv"><code>UDA_annotations/EPIC_100_uda_target_train_timestamps.csv</code></a> (<a href="#epic_100_uda_target_train_timestampscsv">info</a>) (<a href="UDA_annotations/EPIC_100_uda_target_train_timestamps.pkl">Pickle</a>)</li>
 <li><a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.csv"><code>UDA_annotations/EPIC_100_uda_target_test_timestamps.csv</code></a> (<a href="#epic_100_uda_target_test_timestampscsv">info</a>) (<a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.pkl">Pickle</a>)</li>
 <li><a href="retrieval_annotations/EPIC_100_retrieval_train.csv"><code>retrieval_annotations/EPIC_100_retrieval_train.csv</code></a> (<a href="#epic_100_retrieval_traincsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_train.pkl">Pickle</a>)</li>
@@ -608,6 +609,83 @@
 <td>list of int (1 or more)</td>
 <td><code>[3]</code></td>
 <td>Numeric ID of all of the parsed noun’s classes.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that this file contains only videos from EPIC-Kitchens-55 which is used as the source domain.</p>
+<p>See <a href="#unsupervised-domain-adaptation-challenge">here</a> for more details on the unsupervised domain adaptation challenge.</p>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_uda_source_test_timestamps.csv">EPIC_100_uda_source_test_timestamps.csv</h4>
+<p>This CSV file contains the action annotations for the <strong>source testing set</strong> used for <strong>Unsupervised Domain Adaptation</strong> and contains 9 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>uid</code></td>
+<td>int</td>
+<td><code>4972</code></td>
+<td>Unique ID for the segment as an int.</td>
+</tr>
+<tr class="even">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P01_11_0</code></td>
+<td>Unique ID for the segment as a string with participant ID and video ID.</td>
+</tr>
+<tr class="odd">
+<td><code>participant_id</code></td>
+<td>int</td>
+<td><code>P01</code></td>
+<td>ID of the participant (unique per participant).</td>
+</tr>
+<tr class="even">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P01_11</code></td>
+<td>ID of the video where the segment originated from (unique per video).</td>
+</tr>
+<tr class="odd">
+<td><code>narration_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:00.560</code></td>
+<td>Timestamp of when the original narration was recorded in <code>HH:mm:ss.SSS</code>.</td>
+</tr>
+<tr class="even">
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:00.00</code></td>
+<td>Start time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:01.89</code></td>
+<td>End time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="even">
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>1</code></td>
+<td>Start frame of the action.</td>
+</tr>
+<tr class="odd">
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>113</code></td>
+<td>End frame of the action.</td>
 </tr>
 </tbody>
 </table>

@@ -111,6 +111,7 @@ We provide html and pdf alternatives to this README which are auto-generated.
 ### Additional Files
 
 * [`UDA_annotations/EPIC_100_uda_source_train.csv`](UDA_annotations/EPIC_100_uda_source_train.csv) ([info](#epic_100_uda_source_traincsv)) ([Pickle](UDA_annotations/EPIC_100_uda_source_train.pkl))
+* [`UDA_annotations/EPIC_100_uda_source_test_timestamps.csv`](UDA_annotations/EPIC_100_uda_source_test_timestamps.csv) ([info](#epic_100_uda_source_test_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_source_test_timestamps.pkl))
 * [`UDA_annotations/EPIC_100_uda_target_train_timestamps.csv`](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv) ([info](#epic_100_uda_target_train_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_train_timestamps.pkl))
 * [`UDA_annotations/EPIC_100_uda_target_test_timestamps.csv`](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) ([info](#epic_100_uda_target_test_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_test_timestamps.pkl))
 * [`retrieval_annotations/EPIC_100_retrieval_train.csv`](retrieval_annotations/EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_train.pkl))
@@ -239,6 +240,28 @@ This CSV file contains the action annotations for the **source training set** us
 | `noun_class`          | int                        | `3`            | Numeric ID of the first noun's class.                                         |
 | `all_nouns`           | list of string (1 or more) | `[door]`       | List of all parsed nouns within the narration.                                |
 | `all_noun_classes`    | list of int (1 or more)    | `[3]`          | Numeric ID of all of the parsed noun's classes.                               |
+
+Note that this file contains only videos from EPIC-Kitchens-55 which is used as the source domain.
+
+See [here](#unsupervised-domain-adaptation-challenge) for more details on the unsupervised domain adaptation challenge.
+
+[Back to Important Files](#important-files)
+
+#### EPIC_100_uda_source_test_timestamps.csv
+
+This CSV file contains the action annotations for the **source testing set** used for **Unsupervised Domain Adaptation** and contains 9 columns:
+
+| Column Name           | Type                       | Example        | Description                                                                   |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| `uid`                 | int                        | `4972`         | Unique ID for the segment as an int.                                          |
+| `narration_id`        | string                     | `P01_11_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
+| `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
+| `video_id`            | string                     | `P01_11`       | ID of the video where the segment originated from (unique per video).         |
+| `narration_timestamp` | string                     | `00:00:00.560` | Timestamp of when the original narration was recorded in `HH:mm:ss.SSS`.      |
+| `start_timestamp`     | string                     | `00:00:00.00`  | Start time in `HH:mm:ss.SS` of the action segment.                            |
+| `stop_timestamp`      | string                     | `00:00:01.89`  | End time in `HH:mm:ss.SS` of the action segment.                              |
+| `start_frame`         | int                        | `1`            | Start frame of the action.                                                    |
+| `stop_frame`          | int                        | `113`          | End frame of the action.                                                      |
 
 Note that this file contains only videos from EPIC-Kitchens-55 which is used as the source domain.
 

@@ -15,13 +15,46 @@ def test_files(pkl_paths, csv_paths, commit_hash, version_number):
         csv_ids = set(csv[csv.columns[0]])
         df_ids = set(df.index)
         assert csv_ids == df_ids, get_csv_error_message(pkl_path, csv_path, csv_ids, df_ids)
-        if 'noun_class' in df.columns or 'verb_class' in df.columns:
-            print(pkl_path)
-            csv = csv.set_index('uid')
-        if 'noun_class' in df.columns:
-            assert (csv.noun_class == df.noun_class).all()
-        if 'verb_class' in df.columns:
-            assert (csv.verb_class == df.verb_class).all()
+        columns_to_check = [
+                'narration_id',
+                'participant_id',
+                'video_id',
+                'start_timestamp',
+                'stop_timestamp',
+                'start_frame',
+                'stop_frame',
+                'narration',
+                'verb_class',
+                'noun_class',
+                'verb',
+                'noun'
+        ]
+        if 'narration_id' in csv.columns:
+            csv = csv.set_index('narration_id')
+        for column in columns_to_check:
+            if column in df.columns:
+                try:
+                    assert (csv[column] == df[column]).all()
+                except:
+                    import bpdb; bpdb.set_trace()
+                    raise Exception('Column {} doesn\'t match between {} and {}'.format(column, csv_path, pkl_path))
+        if 'narration_timestamp' in df.columns:
+            train_missing = pd.read_csv('./EPIC_100_train_missing_timestamp_narrations.csv')
+            val_missing = pd.read_csv('./EPIC_100_val_missing_timestamp_narrations.csv')
+            missing = set(pd.concat([train_missing, val_missing]).narration_id)
+            diff = set(df[csv['narration_timestamp'] != df['narration_timestamp']].index)
+            assert len(diff) == 0 or diff.issubset(missing)
+        #if 'noun_class' in df.columns or 'verb_class' in df.columns or 'start_timestamp' df.columns or 'end_timestamp' in df.columns:
+        #    print(pkl_path)
+        #    csv = csv.set_index('uid')
+        #if 'noun_class' in df.columns:
+        #    assert (csv.noun_class == df.noun_class).all()
+        #if 'verb_class' in df.columns:
+        #    assert (csv.verb_class == df.verb_class).all()
+        #if 'start_timestamp' in df.columns:
+        #    assert (csv.start_timestamp == df.start_timestamp).all()
+        #if 'stop_timestamp' in df.columns:
+        #    assert (csv.stop_timestamp == df.stop_timestamp).all()
 
 def get_csv_error_message(csv_path, pkl_path, csv_ids, df_ids):
     in_csv_not_in_df = csv_ids - df_ids

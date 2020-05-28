@@ -125,7 +125,6 @@ This CSV file contains the action annotations for the training set and contains 
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `0`            | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_01_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_01`       | ID of the video where the segment originated from (unique per video).         |
@@ -151,7 +150,6 @@ This CSV file contains the action annotations for the validation set and contain
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `4972`         | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_01_11`    | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_11`       | ID of the video where the segment originated from (unique per video).         |
@@ -177,7 +175,6 @@ This CSV file contains the action annotations for the testing set and contains 9
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `1924`         | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_101_0`    | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_101`      | ID of the video where the segment originated from (unique per video).         |
@@ -224,7 +221,6 @@ This CSV file contains the action annotations for the **source training set** us
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `0`            | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_01_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_01`       | ID of the video where the segment originated from (unique per video).         |
@@ -253,7 +249,6 @@ This CSV file contains the action annotations for the **source testing set** use
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `4972`         | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_11_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_11`       | ID of the video where the segment originated from (unique per video).         |
@@ -276,7 +271,6 @@ This CSV file contains the action annotations for the **target training set** us
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `2571`         | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_102_0`    | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_102`      | ID of the video where the segment originated from (unique per video).         |
@@ -299,7 +293,6 @@ This CSV file contains the action annotations for the **target testing set** use
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `1924`         | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_101_0`    | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_101`      | ID of the video where the segment originated from (unique per video).         |
@@ -322,7 +315,6 @@ This CSV file contains the action annotations for the **action retrieval** train
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `0`            | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_01_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_01`       | ID of the video where the segment originated from (unique per video).         |
@@ -348,7 +340,6 @@ This CSV file contains the action annotations for the **action retrieval** testi
 
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `uid`                 | int                        | `0`            | Unique ID for the segment as an int.                                          |
 | `narration_id`        | string                     | `P01_11_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
 | `participant_id`      | int                        | `P01`          | ID of the participant (unique per participant).                               |
 | `video_id`            | string                     | `P01_11`       | ID of the video where the segment originated from (unique per video).         |

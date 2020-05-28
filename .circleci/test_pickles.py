@@ -40,7 +40,7 @@ def test_files(pkl_paths, csv_paths, commit_hash, version_number):
                     raise Exception('Column {} doesn\'t match between {} and {}'.format(column, csv_path, pkl_path))
         if 'narration_timestamp' in df.columns:
             train_missing = pd.read_csv('./EPIC_100_train_missing_timestamp_narrations.csv')
-            val_missing = pd.read_csv('./EPIC_100_val_missing_timestamp_narrations.csv')
+            val_missing = pd.read_csv('./EPIC_100_validation_missing_timestamp_narrations.csv')
             missing = set(pd.concat([train_missing, val_missing]).narration_id)
             diff = set(df[csv['narration_timestamp'] != df['narration_timestamp']].index)
             assert len(diff) == 0 or diff.issubset(missing)

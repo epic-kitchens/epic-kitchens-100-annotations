@@ -95,6 +95,8 @@
 <li><a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.csv"><code>UDA_annotations/EPIC_100_uda_target_test_timestamps.csv</code></a> (<a href="#epic_100_uda_target_test_timestampscsv">info</a>) (<a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.pkl">Pickle</a>)</li>
 <li><a href="retrieval_annotations/EPIC_100_retrieval_train.csv"><code>retrieval_annotations/EPIC_100_retrieval_train.csv</code></a> (<a href="#epic_100_retrieval_traincsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_train.pkl">Pickle</a>)</li>
 <li><a href="retrieval_annotations/EPIC_100_retrieval_test.csv"><code>retrieval_annotations/EPIC_100_retrieval_test.csv</code></a> (<a href="#epic_100_retrieval_testcsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_test.pkl">Pickle</a>)</li>
+<li><a href="EPIC_100_train_missing_timestamps_narrations.csv"><code>EPIC_100_train_missing_timestamps_narrations.csv</code></a> (<a href="#epic_100_train_missing_timestamps_narrationscsv">info</a>)</li>
+<li><a href="EPIC_100_validation_missing_timestamps_narrations.csv"><code>EPIC_100_validation_missing_timestamps_narrations.csv</code></a> (<a href="#epic_100_validation_missing_timestamps_narrationscsv">info</a>)</li>
 </ul>
 <h2 id="file-structure">File Structure</h2>
 <h4 id="epic_100_train.csv">EPIC_100_train.csv</h4>
@@ -1025,6 +1027,12 @@
 </tr>
 </tbody>
 </table>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_train_missing_timestamps_narrations.csv">EPIC_100_train_missing_timestamps_narrations.csv</h4>
+<p>This CSV file contains the narration IDs of all EPIC-Kitchens-55 videos in the training set which do not have a narration timestamp (see <a href="">here</a> for more details). This file has one column: | Column Name | Type | Example | Description | | ——————— | ————————– | ————– | —————————————————————————– | | <code>narration_id</code> | string | <code>P01_09_660</code> | Unique ID for the segment as a string with participant ID and video ID. |</p>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_validation_missing_timestamps_narrations.csv">EPIC_100_validation_missing_timestamps_narrations.csv</h4>
+<p>This CSV file contains the narration IDs of all EPIC-Kitchens-55 videos in the validation set which do not have a narration timestamp (see <a href="">here</a> for more details). This file has one column: | Column Name | Type | Example | Description | | ——————— | ————————– | ————– | —————————————————————————– | | <code>narration_id</code> | string | <code>P02_12_293</code> | Unique ID for the segment as a string with participant ID and video ID. |</p>
 <p><a href="#important-files">Back to Important Files</a></p>
 <h2 id="additional-information">Additional Information</h2>
 <h3 id="file-downloads">File Downloads</h3>

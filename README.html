@@ -14,6 +14,15 @@
 <h2 id="citing">Citing</h2>
 <p>When using the dataset, kindly reference:</p>
 <p>TBA</p>
+<h2 id="index">Index</h2>
+<ul>
+<li><a href="#dataset-details">Dataset Details</a></li>
+<li><a href="#quick-start">Quick start Guides</a></li>
+<li><a href="#important-files">Important Files</a></li>
+<li><a href="#file-structure">File Structure</a></li>
+<li><a href="#additional-information">Additional Information</a></li>
+<li><a href="#license">License</a></li>
+</ul>
 <h2 id="dataset-details">Dataset Details</h2>
 <p>The EPIC-Kitchens-100 dataset is an extension of the EPIC-Kitchens-55 dataset. Videos are distinguished as follows:</p>
 <ul>
@@ -29,51 +38,71 @@
 <li><a href="#unsupervised-domain-adaptation-challenge">Unsupervised Domain Adaptation</a></li>
 <li><a href="#action-retrieval-challenge">Action Retrieval</a></li>
 </ul>
-<p>We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use.</p>
+<p>We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use, see <a href="#important-files">Important Files</a> for more information.</p>
 <p>Ground truth is provided for action segments as action/verb/noun labels along with the start and end times of the segment.</p>
+<p><a href="#index">back to top</a></p>
 <h2 id="quick-start">Quick Start</h2>
-<p>Here you can download the annotation files for all of the challenges. For more information on each challenge, please see the paper <a href="">here</a>. Download scripts are provided for the videos, RGB Frames and Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>.</p>
+<p>Here you can download the annotation files for all of the challenges. For more information on each challenge, please see the paper <a href="">here</a>. A download script is provided for the videos, RGB Frames and Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>.</p>
 <h3 id="action-recognition-challenge">Action Recognition Challenge</h3>
 <ol type="1">
-<li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
+<li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
+<ol start="2" type="1">
 <li>Download the Action Recognition <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
 <li>Enjoy the EPIC-Kitchens-100 dataset in your favourite action recognition model, see <a href="#citing">the paper</a> for details on the models we used for this baseline. Models trained on EPIC-Kitchens-55 can be found <a href="https://github.com/epic-kitchens/action-models">here</a> as a starting point.</li>
 </ol>
 <h3 id="weakly-supervised-action-recognition-challenge">Weakly Supervised Action Recognition Challenge</h3>
 <ol type="1">
-<li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
+<li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
+<ol start="2" type="1">
 <li>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
 <li>The weakly supervised challenge uses the narration timestamp, not the the start/end times of the action. Therefore a simple baseline would be to modify an action recognition model to use the surrounding 5s worth of frames. See <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
 </ol>
 <h3 id="action-detection-challenge">Action Detection Challenge</h3>
 <ol type="1">
-<li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
+<li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
+</ol>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
+<ol start="2" type="1">
 <li>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
 <li>Train an action proposal network on the EPIC-Kitchens-100 train set, for example <a href="https://github.com/JJBOY/BMN-Boundary-Matching-Network">this model</a>. This model predicts action-agnostic segments which still need to be classified.</li>
 <li>Use your favourite action recognition model to classify the proposals (<a href="https://github.com/epic-kitchens/action-models">example models</a>).</li>
 </ol>
 <h3 id="action-anticipation-challenge">Action Anticipation Challenge</h3>
 <ol type="1">
-<li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
+<li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
+</ol>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
+<ol start="2" type="1">
 <li>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
 <li>A simple baseline for this task is to train an action recognition model (example models <a href="">here</a>) on the 5 seconds that precede an action with a 1 second gap. For example, an action that starts at 20.00s in a video would see frames between 14.00s and 19.00s.</li>
 </ol>
 <h3 id="unsupervised-domain-adaptation-challenge">Unsupervised Domain Adaptation Challenge</h3>
 <p>The unsupervised domain adaptation challenge tests how models can cope with similar data collected 2 years later on the task of action recognition.</p>
 <ol type="1">
-<li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
+<li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
+</ol>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames --domain-adaptation</a></code></pre></div>
+<ol start="2" type="1">
 <li>Download the Unsupervised Domain Adaptation <a href="UDA_annotations/EPIC_100_uda_source_train.csv">source train</a>/<a href="UDA_annotations/EPIC_100_uda_target_train_timestamps.csv">target train</a>/<a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.csv">target test</a> files.</li>
 <li>Extract video features (for all three splits) using an off-the-shelf model trained on <strong>EPIC-Kitchens-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
 <li>A simple baseline is using a domain discriminator (prediciting whether a video came from the source, EPIC-Kitchens-55, or the target, EPIC-Kitchens-100) to align the two domains. See <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
 </ol>
 <h3 id="action-retrieval-challenge">Action Retrieval Challenge</h3>
 <ol type="1">
-<li>Download the <a href="">videos</a>/<a href="">RGB</a>/<a href="">Flow frames</a>.</li>
+<li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
+</ol>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames --action-retrieval</a></code></pre></div>
+<ol start="2" type="1">
 <li>Download the Action Retrieval <a href="retrieval_annotations/EPIC_100_retrieval_train.csv">train</a>/<a href="retrieval_annotations/EPIC_100_retrieval_test.csv">test</a> files.</li>
 <li>Extract video features (for both the train and test set) using an off-the-shelf model trained on <strong>EPIC-Kitchens-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
 <li>Extract word2vec features for the captions from both the train and test set (<a href="https://github.com/mmihaltz/word2vec-GoogleNews-vectors">example models</a>).</li>
 <li>Enjoy the EPIC-Kitchens-100 dataset in your favourite video retrieval model, see <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
 </ol>
+<p><a href="#index">back to top</a></p>
 <h2 id="important-files">Important Files</h2>
 <p>For ease of use, download scripts are <a href="https://github.com/epic-kitchens/download-scripts-100">provided</a> to download the videos and RGB/Flow frames. (see <a href="#file-downloads">file downloads</a> for more details). We direct the reader to <a href="https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m">RDSF</a> for the full release of videos and RGB/Flow frames. We provide html and pdf alternatives to this README which are auto-generated.</p>
 <ul>
@@ -98,6 +127,7 @@
 <li><a href="EPIC_100_train_missing_timestamps_narrations.csv"><code>EPIC_100_train_missing_timestamps_narrations.csv</code></a> (<a href="#epic_100_train_missing_timestamps_narrationscsv">info</a>)</li>
 <li><a href="EPIC_100_validation_missing_timestamps_narrations.csv"><code>EPIC_100_validation_missing_timestamps_narrations.csv</code></a> (<a href="#epic_100_validation_missing_timestamps_narrationscsv">info</a>)</li>
 </ul>
+<p><a href="#index">back to top</a></p>
 <h2 id="file-structure">File Structure</h2>
 <h4 id="epic_100_train.csv">EPIC_100_train.csv</h4>
 <p>This CSV file contains the action annotations for the training set and contains 15 columns:</p>
@@ -1034,24 +1064,19 @@
 <h4 id="epic_100_validation_missing_timestamps_narrations.csv">EPIC_100_validation_missing_timestamps_narrations.csv</h4>
 <p>This CSV file contains the narration IDs of all EPIC-Kitchens-55 videos in the validation set which do not have a narration timestamp (see <a href="">here</a> for more details). This file has one column: | Column Name | Type | Example | Description | | ——————— | ————————– | ————– | —————————————————————————– | | <code>narration_id</code> | string | <code>P02_12_293</code> | Unique ID for the segment as a string with participant ID and video ID. |</p>
 <p><a href="#important-files">Back to Important Files</a></p>
+<p><a href="#index">back to top</a></p>
 <h2 id="additional-information">Additional Information</h2>
 <h3 id="file-downloads">File Downloads</h3>
-<p>Due to the size of the dataset we provide scripts for downloading parts of the dataset:</p>
-<!-- TODO: update this with correct information once the download scripts have been implemented, remember to explain that EPIC-Kitchens-55 and EPIC-Kitchens-100 are two different collections on RDSF. -->
-<ul>
-<li><a href="">videos</a> (GB)</li>
-<li><a href="">frames</a> (GB)
-<ul>
-<li><a href="">rgb-frames</a> (GB)</li>
-<li><a href="">flow-frames</a> (GB)</li>
-</ul></li>
-</ul>
-<p><em>Note: These scripts will work for Linux and Mac. For Windows users a bash installation should work.</em></p>
-<p>These scripts replicate the folder structure of the dataset release on RDSF, found <a href="https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m">here</a>.</p>
-<p>If you wish to download part of the dataset, instructions can be found <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>.</p>
-<h3 id="differences-to-epic-kitchen-100">Differences to EPIC-Kitchen-100</h3>
+<p>Due to the size of the dataset we provide a script for downloading parts of the dataset which can be found <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>. If you wish to download the extension only (i.e. you have already downloaded EPIC-Kitchens-55) the following command can be run:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">python</span> epic_downloader.py --extension-only</a></code></pre></div>
+<p>If you wish to download the whole dataset, the follwoing command can be run:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="ex">python</span> epic_downloader.py</a></code></pre></div>
+<p>See the <a href="https://github.com/epic-kitchens/download-scripts-100/blob/master/README.md">README</a> for more information.</p>
+<h3 id="differences-to-epic-kitchen-55">Differences to EPIC-Kitchen-55</h3>
+<h4 id="updated-annotations">Updated Annotations</h4>
 <p>Whilst videos from EPIC-Kitchens-55 are used within EPIC-Kitchens-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-Kitchens-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-Kitchens-55 cannot be used for EPIC-Kitchens-100.</p>
-<!-- TODO: Narration timestamps differences between EPIC-Kitchens-55/100 -->
+<h4 id="missing-narration-timestamps">Missing Narration Timestamps</h4>
+<p>Due to the differences in the annotation pipeline between EPIC-Kitchens-100 and EPIC-Kitchens-55, it was impossible to assign the narration timestamp to every action. Because of this, there are actions within <a href="#epic_100_traincsv">EPIC_100_train.csv</a> and <a href="#epic_100_validationcsv">EPIC_100_validation.csv</a> which do not have timestamp narrations and are thus marked with NaN within the dataframes.</p>
 <h3 id="pickle-files">Pickle Files</h3>
 <p>We also provide pickle files for all of the main train/val/test csvs for ease of use. These files require python 3.5+ and pandas 1.0.0+ to read. The pickle files are automatically tagged with the commit hash and version for version control purposes which can be found as follows in python:</p>
 <pre><code>&gt;&gt;&gt; import pandas as pd
@@ -1059,7 +1084,10 @@
 &gt;&gt;&gt; train._metadata
 {&#39;commit_hash&#39;: &#39;ce7a0fb&#39;, &#39;version_number&#39;: &#39;0.1&#39;</code></pre>
 <p>showing that this version of the <code>EPIC_100_train.pkl</code> came from commit hash ce7a0fb and version number 0.1.</p>
+<p><a href="#index">back to top</a></p>
 <h2 id="license">License</h2>
 <p>All files in this dataset are copyright by us and published under the Creative Commons Attribution-NonCommerial 4.0 International License, found <a href="https://creativecommons.org/licenses/by-nc/4.0/">here</a>. This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. You may not use the material for commercial purposes.</p>
+<p><a href="#index">back to top</a></p>
 <h2 id="changelog">Changelog</h2>
 <p>Please see the <a href="https://github.com/epic-kitchens/EPIC-Kitchens-100-Annotations/releases">release history</a> for the changelog.</p>
+<p><a href="#index">back to top</a></p>

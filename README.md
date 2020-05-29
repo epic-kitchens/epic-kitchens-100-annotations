@@ -29,6 +29,14 @@ When using the dataset, kindly reference:
 
 TBA
 
+## Index
+* [Dataset Details](#dataset-details)
+* [Quick start Guides](#quick-start)
+* [Important Files](#important-files)
+* [File Structure](#file-structure)
+* [Additional Information](#additional-information)
+* [License](#license)
+
 ## Dataset Details
 The EPIC-Kitchens-100 dataset is an extension of the EPIC-Kitchens-55 dataset. Videos are distinguished as follows:
 
@@ -46,52 +54,84 @@ The dataset currently has 6 active benchmarks:
 * [Unsupervised Domain Adaptation](#unsupervised-domain-adaptation-challenge)
 * [Action Retrieval](#action-retrieval-challenge)
 
-We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use.
+We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use, see [Important Files](#important-files) for more information.
 
 Ground truth is provided for action segments as action/verb/noun labels along with the start and end times of the segment.
 
+[back to top](#index)
 
 ## Quick Start
 
 Here you can download the annotation files for all of the challenges. For more information on each challenge, please see the paper [here]().
-Download scripts are provided for the videos, RGB Frames and Flow frames [here](https://github.com/epic-kitchens/download-scripts-100).
+A download script is provided for the videos, RGB Frames and Flow frames [here](https://github.com/epic-kitchens/download-scripts-100).
 
 ### Action Recognition Challenge
-1. Download the [videos]()/[RGB]()/[Flow frames]().
+1. Download the videos/RGB/Flow frames [here](https://github.com/epic-kitchens/download-scripts-100) with the following command: 
+
+```bash
+python epic_downloader.py --videos --rgb-frames --flow-frames
+```
+
 2. Download the Action Recognition [train](EPIC_100_train.csv)/[val](EPIC_100_validation.csv)/[test](EPIC_100_test_timestamps.csv) files.
 3. Enjoy the EPIC-Kitchens-100 dataset in your favourite action recognition model, see [the paper](#citing) for details on the models we used for this baseline. Models trained on EPIC-Kitchens-55 can be found [here](https://github.com/epic-kitchens/action-models) as a starting point.
 
 ### Weakly Supervised Action Recognition Challenge
-1. Download the [videos]()/[RGB]()/[Flow frames]().
+1. Download the videos/RGB/Flow frames [here](https://github.com/epic-kitchens/download-scripts-100) with the following command: 
+
+```bash
+python epic_downloader.py --videos --rgb-frames --flow-frames
+```
+
 2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_validation.csv)/[test](EPIC_100_test_timestamps.csv) files.
 3. The weakly supervised challenge uses the narration timestamp, not the the start/end times of the action. Therefore a simple baseline would be to modify an action recognition model to use the surrounding 5s worth of frames. See [the paper](#citing) for details on the models we used for this baseline.
 
 ### Action Detection Challenge
-1. Download the [videos]()/[RGB]()/[Flow frames]().
+1. Download the videos/RGB/Flow frames [here](https://github.com/epic-kitchens/download-scripts-100) with the following command: 
+
+```bash
+python epic_downloader.py --videos --rgb-frames --flow-frames
+```
+
 2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_validation.csv)/[test](EPIC_100_test_timestamps.csv) files.
 3. Train an action proposal network on the EPIC-Kitchens-100 train set, for example [this model](https://github.com/JJBOY/BMN-Boundary-Matching-Network). This model predicts action-agnostic segments which still need to be classified.
 4. Use your favourite action recognition model to classify the proposals ([example models](https://github.com/epic-kitchens/action-models)).
 
 ### Action Anticipation Challenge
-1. Download the [videos]()/[RGB]()/[Flow frames]().
+1. Download the videos/RGB/Flow frames [here](https://github.com/epic-kitchens/download-scripts-100) with the following command: 
+
+```bash
+python epic_downloader.py --videos --rgb-frames --flow-frames
+```
+
 2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_validation.csv)/[test](EPIC_100_test_timestamps.csv) files.
 3. A simple baseline for this task is to train an action recognition model (example models [here]()) on the 5 seconds that precede an action with a 1 second gap. For example, an action that starts at 20.00s in a video would see frames between 14.00s and 19.00s.
 
 ### Unsupervised Domain Adaptation Challenge
 The unsupervised domain adaptation challenge tests how models can cope with similar data collected 2 years later on the task of action recognition.
 
-1. Download the [videos]()/[RGB]()/[Flow frames]().
+1. Download the videos/RGB/Flow frames [here](https://github.com/epic-kitchens/download-scripts-100) with the following command: 
+
+```bash
+python epic_downloader.py --videos --rgb-frames --flow-frames --domain-adaptation
+```
+
 2. Download the Unsupervised Domain Adaptation [source train](UDA_annotations/EPIC_100_uda_source_train.csv)/[target train](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv)/[target test](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) files.
 3. Extract video features (for all three splits) using an off-the-shelf model trained on **EPIC-Kitchens-55** ([example model](https://github.com/epic-kitchens/action-models)).
 4. A simple baseline is using a domain discriminator (prediciting whether a video came from the source, EPIC-Kitchens-55, or the target, EPIC-Kitchens-100) to align the two domains. See [the paper](#citing) for details on the models we used for this baseline.
 
 ### Action Retrieval Challenge
-1. Download the [videos]()/[RGB]()/[Flow frames]().
+1. Download the videos/RGB/Flow frames [here](https://github.com/epic-kitchens/download-scripts-100) with the following command: 
+
+```bash
+python epic_downloader.py --videos --rgb-frames --flow-frames --action-retrieval
+```
 2. Download the Action Retrieval [train](retrieval_annotations/EPIC_100_retrieval_train.csv)/[test](retrieval_annotations/EPIC_100_retrieval_test.csv) files.
 3. Extract video features (for both the train and test set) using an off-the-shelf model trained on **EPIC-Kitchens-55** ([example model](https://github.com/epic-kitchens/action-models)).
 4. Extract word2vec features for the captions from both the train and test set ([example models](https://github.com/mmihaltz/word2vec-GoogleNews-vectors)).
 5. Enjoy the EPIC-Kitchens-100 dataset in your favourite video retrieval model, see [the paper](#citing) for details on the models we used for this baseline.
 
+
+[back to top](#index)
 
 ## Important Files
 
@@ -118,6 +158,8 @@ We provide html and pdf alternatives to this README which are auto-generated.
 * [`retrieval_annotations/EPIC_100_retrieval_test.csv`](retrieval_annotations/EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_test.pkl))
 * [`EPIC_100_train_missing_timestamps_narrations.csv`](EPIC_100_train_missing_timestamps_narrations.csv) ([info](#epic_100_train_missing_timestamps_narrationscsv)) 
 * [`EPIC_100_validation_missing_timestamps_narrations.csv`](EPIC_100_validation_missing_timestamps_narrations.csv) ([info](#epic_100_validation_missing_timestamps_narrationscsv)) 
+
+[back to top](#index)
 
 ## File Structure
 
@@ -379,33 +421,35 @@ This CSV file contains the narration IDs of all EPIC-Kitchens-55 videos in the v
 [Back to Important Files](#important-files)
 
 
+[back to top](#index)
+
 ## Additional Information
 
 ### File Downloads
 
-Due to the size of the dataset we provide scripts for downloading parts of the dataset:
+Due to the size of the dataset we provide a script for downloading parts of the dataset which can be found [here](https://github.com/epic-kitchens/download-scripts-100).
+If you wish to download the extension only (i.e. you have already downloaded EPIC-Kitchens-55) the following command can be run:
+```bash
+python epic_downloader.py --extension-only
+```
 
-<!-- TODO: update this with correct information once the download scripts have been implemented, remember to explain that EPIC-Kitchens-55 and EPIC-Kitchens-100 are two different collections on RDSF. -->
+If you wish to download the whole dataset, the follwoing command can be run:
+```bash
+python epic_downloader.py
+```
 
-* [videos]() (GB)
-* [frames]() (GB)
-  * [rgb-frames]() (GB)
-  * [flow-frames]() (GB)
+See the [README](https://github.com/epic-kitchens/download-scripts-100/blob/master/README.md) for more information.
 
-*Note: These scripts will work for Linux and Mac. For Windows users a bash 
-installation should work.*
+### Differences to EPIC-Kitchen-55
 
-These scripts replicate the folder structure of the dataset release on RDSF, found 
-[here](https://data.bris.ac.uk/data/dataset/2g1n6qdydwa9u22shpxqzp0t8m).
-
-If you wish to download part of the dataset, instructions can be found
-[here](https://github.com/epic-kitchens/download-scripts-100).
-
-### Differences to EPIC-Kitchen-100
+#### Updated Annotations
 
 Whilst videos from EPIC-Kitchens-55 are used within EPIC-Kitchens-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-Kitchens-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-Kitchens-55 cannot be used for EPIC-Kitchens-100.
 
-<!-- TODO: Narration timestamps differences between EPIC-Kitchens-55/100 -->
+
+#### Missing Narration Timestamps
+
+Due to the differences in the annotation pipeline between EPIC-Kitchens-100 and EPIC-Kitchens-55, it was impossible to assign the narration timestamp to every action. Because of this, there are actions within [EPIC_100_train.csv](#epic_100_traincsv) and [EPIC_100_validation.csv](#epic_100_validationcsv) which do not have timestamp narrations and are thus marked with NaN within the dataframes.
 
 ### Pickle Files
 
@@ -421,6 +465,8 @@ The pickle files are automatically tagged with the commit hash and version for v
 
 showing that this version of the `EPIC_100_train.pkl` came from commit hash ce7a0fb and version number 0.1.
 
+[back to top](#index)
+
 ## License
 All files in this dataset are copyright by us and published under the 
 Creative Commons Attribution-NonCommerial 4.0 International License, found 
@@ -430,5 +476,9 @@ and indicate if changes were made. You may do so in any reasonable manner,
 but not in any way that suggests the licensor endorses you or your use. You
 may not use the material for commercial purposes.
 
+[back to top](#index)
+
 ## Changelog
 Please see the [release history](https://github.com/epic-kitchens/EPIC-Kitchens-100-Annotations/releases) for the changelog.
+
+[back to top](#index)

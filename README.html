@@ -1,8 +1,8 @@
-<h1 id="epic-kitchens-100-dataset">EPIC Kitchens 100 Dataset</h1>
+<h1 id="epic-kitchens-100-dataset">EPIC KITCHENS-100 Dataset</h1>
 <!-- start badges -->
 <!-- end badges -->
 <blockquote>
-<p><a href="https://epic-kitchens.github.io/">EPIC-Kitchens-100</a> is the largest dataset in first-person (egocentric) vision; itself an extension of the <a href="https://github.com/epic-kitchens/annotations">EPIC-Kitchens-55 dataset</a> (formally known as EPIC-Kitchens-2018).</p>
+<p><a href="https://epic-kitchens.github.io/">EPIC-KITCHENS-100</a> is the largest dataset in first-person (egocentric) vision; itself an extension of the <a href="https://github.com/epic-kitchens/annotations">EPIC-KITCHENS-55 dataset</a> (formally known as EPIC-KITCHENS-2018).</p>
 </blockquote>
 <h2 id="authors">Authors</h2>
 <p>Dima Damen (1) Hazel Doughty (1) Giovanni Maria Farinella (2) Antonino Furnari (2) Evangelos Kazakos (1) Jian Ma (1) Davide Moltisanti (1) Jonathan Munro (1) Toby Perrett (1) Will Price (1) Michael Wray (1)</p>
@@ -24,10 +24,10 @@
 <li><a href="#license">License</a></li>
 </ul>
 <h2 id="dataset-details">Dataset Details</h2>
-<p>The EPIC-Kitchens-100 dataset is an extension of the EPIC-Kitchens-55 dataset. Videos are distinguished as follows:</p>
+<p>The EPIC-KITCHENS-100 dataset is an extension of the EPIC-KITCHENS-55 dataset. Videos are distinguished as follows:</p>
 <ul>
-<li><code>PXX_YY.MP4</code> videos originate from EPIC-Kitchens-55.</li>
-<li><code>PXX_1YY.MP4</code> videos originate from the extension collected for EPIC-Kitchens-100 (thus represent new videos).</li>
+<li><code>PXX_YY.MP4</code> videos originate from EPIC-KITCHENS-55.</li>
+<li><code>PXX_1YY.MP4</code> videos originate from the extension collected for EPIC-KITCHENS-100 (thus represent new videos).</li>
 </ul>
 <p>The dataset currently has 6 active benchmarks:</p>
 <ul>
@@ -50,7 +50,7 @@
 <div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
 <ol start="2" type="1">
 <li>Download the Action Recognition <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
-<li>Enjoy the EPIC-Kitchens-100 dataset in your favourite action recognition model, see <a href="#citing">the paper</a> for details on the models we used for this baseline. Models trained on EPIC-Kitchens-55 can be found <a href="https://github.com/epic-kitchens/action-models">here</a> as a starting point.</li>
+<li>Enjoy the EPIC-KITCHENS-100 dataset in your favourite action recognition model, see <a href="#citing">the paper</a> for details on the models we used for this baseline. Models trained on EPIC-KITCHENS-55 can be found <a href="https://github.com/epic-kitchens/action-models">here</a> as a starting point.</li>
 </ol>
 <h3 id="weakly-supervised-action-recognition-challenge">Weakly Supervised Action Recognition Challenge</h3>
 <ol type="1">
@@ -68,7 +68,7 @@
 <div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
 <ol start="2" type="1">
 <li>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
-<li>Train an action proposal network on the EPIC-Kitchens-100 train set, for example <a href="https://github.com/JJBOY/BMN-Boundary-Matching-Network">this model</a>. This model predicts action-agnostic segments which still need to be classified.</li>
+<li>Train an action proposal network on the EPIC-KITCHENS-100 train set, for example <a href="https://github.com/JJBOY/BMN-Boundary-Matching-Network">this model</a>. This model predicts action-agnostic segments which still need to be classified.</li>
 <li>Use your favourite action recognition model to classify the proposals (<a href="https://github.com/epic-kitchens/action-models">example models</a>).</li>
 </ol>
 <h3 id="action-anticipation-challenge">Action Anticipation Challenge</h3>
@@ -88,8 +88,8 @@
 <div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames --domain-adaptation</a></code></pre></div>
 <ol start="2" type="1">
 <li>Download the Unsupervised Domain Adaptation <a href="UDA_annotations/EPIC_100_uda_source_train.csv">source train</a>/<a href="UDA_annotations/EPIC_100_uda_target_train_timestamps.csv">target train</a>/<a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.csv">target test</a> files.</li>
-<li>Extract video features (for all three splits) using an off-the-shelf model trained on <strong>EPIC-Kitchens-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
-<li>A simple baseline is using a domain discriminator (prediciting whether a video came from the source, EPIC-Kitchens-55, or the target, EPIC-Kitchens-100) to align the two domains. See <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
+<li>Extract video features (for all three splits) using an off-the-shelf model trained on <strong>EPIC-KITCHENS-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
+<li>A simple baseline is using a domain discriminator (prediciting whether a video came from the source, EPIC-KITCHENS-55, or the target, EPIC-KITCHENS-100) to align the two domains. See <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
 </ol>
 <h3 id="action-retrieval-challenge">Action Retrieval Challenge</h3>
 <ol type="1">
@@ -98,9 +98,9 @@
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames --action-retrieval</a></code></pre></div>
 <ol start="2" type="1">
 <li>Download the Action Retrieval <a href="retrieval_annotations/EPIC_100_retrieval_train.csv">train</a>/<a href="retrieval_annotations/EPIC_100_retrieval_test.csv">test</a> files.</li>
-<li>Extract video features (for both the train and test set) using an off-the-shelf model trained on <strong>EPIC-Kitchens-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
+<li>Extract video features (for both the train and test set) using an off-the-shelf model trained on <strong>EPIC-KITCHENS-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
 <li>Extract word2vec features for the captions from both the train and test set (<a href="https://github.com/mmihaltz/word2vec-GoogleNews-vectors">example models</a>).</li>
-<li>Enjoy the EPIC-Kitchens-100 dataset in your favourite video retrieval model, see <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
+<li>Enjoy the EPIC-KITCHENS-100 dataset in your favourite video retrieval model, see <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
 </ol>
 <p><a href="#index">back to top</a></p>
 <h2 id="important-files">Important Files</h2>
@@ -620,7 +620,7 @@
 </tr>
 </tbody>
 </table>
-<p>Note that this file contains only videos from EPIC-Kitchens-55 which is used as the source domain.</p>
+<p>Note that this file contains only videos from EPIC-KITCHENS-55 which is used as the source domain.</p>
 <p>See <a href="#unsupervised-domain-adaptation-challenge">here</a> for more details on the unsupervised domain adaptation challenge.</p>
 <p><a href="#important-files">Back to Important Files</a></p>
 <h4 id="epic_100_uda_source_test_timestamps.csv">EPIC_100_uda_source_test_timestamps.csv</h4>
@@ -691,7 +691,7 @@
 </tr>
 </tbody>
 </table>
-<p>Note that this file contains only videos from EPIC-Kitchens-55 which is used as the source domain.</p>
+<p>Note that this file contains only videos from EPIC-KITCHENS-55 which is used as the source domain.</p>
 <p>See <a href="#unsupervised-domain-adaptation-challenge">here</a> for more details on the unsupervised domain adaptation challenge.</p>
 <p><a href="#important-files">Back to Important Files</a></p>
 <h4 id="epic_100_uda_target_train_timestamps.csv">EPIC_100_uda_target_train_timestamps.csv</h4>
@@ -762,7 +762,7 @@
 </tr>
 </tbody>
 </table>
-<p>Note that this file contains only videos from EPIC-Kitchens-100 which is used as the target domain.</p>
+<p>Note that this file contains only videos from EPIC-KITCHENS-100 which is used as the target domain.</p>
 <p>See <a href="#unsupervised-domain-adaptation-challenge">here</a> for more details on the unsupervised domain adaptation challenge.</p>
 <p><a href="#important-files">Back to Important Files</a></p>
 <h4 id="epic_100_uda_target_test_timestamps.csv">EPIC_100_uda_target_test_timestamps.csv</h4>
@@ -833,7 +833,7 @@
 </tr>
 </tbody>
 </table>
-<p>Note that this file contains only videos from EPIC-Kitchens-100 which is used as the target domain.</p>
+<p>Note that this file contains only videos from EPIC-KITCHENS-100 which is used as the target domain.</p>
 <p>See <a href="#unsupervised-domain-adaptation-challenge">here</a> for more details on the unsupervised domain adaptation challenge.</p>
 <p><a href="#important-files">Back to Important Files</a></p>
 <h4 id="epic_100_retrieval_train.csv">EPIC_100_retrieval_train.csv</h4>
@@ -1059,24 +1059,24 @@
 </table>
 <p><a href="#important-files">Back to Important Files</a></p>
 <h4 id="epic_100_train_missing_timestamps_narrations.csv">EPIC_100_train_missing_timestamps_narrations.csv</h4>
-<p>This CSV file contains the narration IDs of all EPIC-Kitchens-55 videos in the training set which do not have a narration timestamp (see <a href="">here</a> for more details). This file has one column: | Column Name | Type | Example | Description | | ——————— | ————————– | ————– | —————————————————————————– | | <code>narration_id</code> | string | <code>P01_09_660</code> | Unique ID for the segment as a string with participant ID and video ID. |</p>
+<p>This CSV file contains the narration IDs of all EPIC-KITCHENS-55 videos in the training set which do not have a narration timestamp (see <a href="">here</a> for more details). This file has one column: | Column Name | Type | Example | Description | | ——————— | ————————– | ————– | —————————————————————————– | | <code>narration_id</code> | string | <code>P01_09_660</code> | Unique ID for the segment as a string with participant ID and video ID. |</p>
 <p><a href="#important-files">Back to Important Files</a></p>
 <h4 id="epic_100_validation_missing_timestamps_narrations.csv">EPIC_100_validation_missing_timestamps_narrations.csv</h4>
-<p>This CSV file contains the narration IDs of all EPIC-Kitchens-55 videos in the validation set which do not have a narration timestamp (see <a href="">here</a> for more details). This file has one column: | Column Name | Type | Example | Description | | ——————— | ————————– | ————– | —————————————————————————– | | <code>narration_id</code> | string | <code>P02_12_293</code> | Unique ID for the segment as a string with participant ID and video ID. |</p>
+<p>This CSV file contains the narration IDs of all EPIC-KITCHENS-55 videos in the validation set which do not have a narration timestamp (see <a href="">here</a> for more details). This file has one column: | Column Name | Type | Example | Description | | ——————— | ————————– | ————– | —————————————————————————– | | <code>narration_id</code> | string | <code>P02_12_293</code> | Unique ID for the segment as a string with participant ID and video ID. |</p>
 <p><a href="#important-files">Back to Important Files</a></p>
 <p><a href="#index">back to top</a></p>
 <h2 id="additional-information">Additional Information</h2>
 <h3 id="file-downloads">File Downloads</h3>
-<p>Due to the size of the dataset we provide a script for downloading parts of the dataset which can be found <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>. If you wish to download the extension only (i.e. you have already downloaded EPIC-Kitchens-55) the following command can be run:</p>
+<p>Due to the size of the dataset we provide a script for downloading parts of the dataset which can be found <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>. If you wish to download the extension only (i.e. you have already downloaded EPIC-KITCHENS-55) the following command can be run:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">python</span> epic_downloader.py --extension-only</a></code></pre></div>
 <p>If you wish to download the whole dataset, the follwoing command can be run:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="ex">python</span> epic_downloader.py</a></code></pre></div>
 <p>See the <a href="https://github.com/epic-kitchens/download-scripts-100/blob/master/README.md">README</a> for more information.</p>
 <h3 id="differences-to-epic-kitchen-55">Differences to EPIC-Kitchen-55</h3>
 <h4 id="updated-annotations">Updated Annotations</h4>
-<p>Whilst videos from EPIC-Kitchens-55 are used within EPIC-Kitchens-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-Kitchens-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-Kitchens-55 cannot be used for EPIC-Kitchens-100.</p>
+<p>Whilst videos from EPIC-KITCHENS-55 are used within EPIC-KITCHENS-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-KITCHENS-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-KITCHENS-55 cannot be used for EPIC-KITCHENS-100.</p>
 <h4 id="missing-narration-timestamps">Missing Narration Timestamps</h4>
-<p>Due to the differences in the annotation pipeline between EPIC-Kitchens-100 and EPIC-Kitchens-55, it was impossible to assign the narration timestamp to every action. Because of this, there are actions within <a href="#epic_100_traincsv">EPIC_100_train.csv</a> and <a href="#epic_100_validationcsv">EPIC_100_validation.csv</a> which do not have timestamp narrations and are thus marked with NaN within the dataframes.</p>
+<p>Due to the differences in the annotation pipeline between EPIC-KITCHENS-100 and EPIC-KITCHENS-55, it was impossible to assign the narration timestamp to every action. Because of this, there are actions within <a href="#epic_100_traincsv">EPIC_100_train.csv</a> and <a href="#epic_100_validationcsv">EPIC_100_validation.csv</a> which do not have timestamp narrations and are thus marked with NaN within the dataframes.</p>
 <h3 id="pickle-files">Pickle Files</h3>
 <p>We also provide pickle files for all of the main train/val/test csvs for ease of use. These files require python 3.5+ and pandas 1.0.0+ to read. The pickle files are automatically tagged with the commit hash and version for version control purposes which can be found as follows in python:</p>
 <pre><code>&gt;&gt;&gt; import pandas as pd
@@ -1089,5 +1089,5 @@
 <p>All files in this dataset are copyright by us and published under the Creative Commons Attribution-NonCommerial 4.0 International License, found <a href="https://creativecommons.org/licenses/by-nc/4.0/">here</a>. This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. You may not use the material for commercial purposes.</p>
 <p><a href="#index">back to top</a></p>
 <h2 id="changelog">Changelog</h2>
-<p>Please see the <a href="https://github.com/epic-kitchens/EPIC-Kitchens-100-Annotations/releases">release history</a> for the changelog.</p>
+<p>Please see the <a href="https://github.com/epic-kitchens/EPIC-KITCHENS-100-Annotations/releases">release history</a> for the changelog.</p>
 <p><a href="#index">back to top</a></p>

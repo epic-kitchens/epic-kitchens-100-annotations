@@ -1,10 +1,10 @@
-# EPIC Kitchens 100 Dataset
+# EPIC KITCHENS-100 Dataset
 
 <!-- start badges -->
 
 <!-- end badges -->
 
-> [EPIC-Kitchens-100](https://epic-kitchens.github.io/) is the largest dataset in first-person (egocentric) vision; itself an extension of the [EPIC-Kitchens-55 dataset](https://github.com/epic-kitchens/annotations) (formally known as EPIC-Kitchens-2018).
+> [EPIC-KITCHENS-100](https://epic-kitchens.github.io/) is the largest dataset in first-person (egocentric) vision; itself an extension of the [EPIC-KITCHENS-55 dataset](https://github.com/epic-kitchens/annotations) (formally known as EPIC-KITCHENS-2018).
 
 ## Authors
 Dima Damen (1)
@@ -38,10 +38,10 @@ TBA
 * [License](#license)
 
 ## Dataset Details
-The EPIC-Kitchens-100 dataset is an extension of the EPIC-Kitchens-55 dataset. Videos are distinguished as follows:
+The EPIC-KITCHENS-100 dataset is an extension of the EPIC-KITCHENS-55 dataset. Videos are distinguished as follows:
 
-* `PXX_YY.MP4` videos originate from EPIC-Kitchens-55.
-* `PXX_1YY.MP4` videos originate from the extension collected for EPIC-Kitchens-100 (thus represent new videos).
+* `PXX_YY.MP4` videos originate from EPIC-KITCHENS-55.
+* `PXX_1YY.MP4` videos originate from the extension collected for EPIC-KITCHENS-100 (thus represent new videos).
 
 
 
@@ -73,7 +73,7 @@ python epic_downloader.py --videos --rgb-frames --flow-frames
 ```
 
 2. Download the Action Recognition [train](EPIC_100_train.csv)/[val](EPIC_100_validation.csv)/[test](EPIC_100_test_timestamps.csv) files.
-3. Enjoy the EPIC-Kitchens-100 dataset in your favourite action recognition model, see [the paper](#citing) for details on the models we used for this baseline. Models trained on EPIC-Kitchens-55 can be found [here](https://github.com/epic-kitchens/action-models) as a starting point.
+3. Enjoy the EPIC-KITCHENS-100 dataset in your favourite action recognition model, see [the paper](#citing) for details on the models we used for this baseline. Models trained on EPIC-KITCHENS-55 can be found [here](https://github.com/epic-kitchens/action-models) as a starting point.
 
 ### Weakly Supervised Action Recognition Challenge
 1. Download the videos/RGB/Flow frames [here](https://github.com/epic-kitchens/download-scripts-100) with the following command: 
@@ -93,7 +93,7 @@ python epic_downloader.py --videos --rgb-frames --flow-frames
 ```
 
 2. This challenge uses the Action Recognition files, download the [train](EPIC_100_train.csv)/[val](EPIC_100_validation.csv)/[test](EPIC_100_test_timestamps.csv) files.
-3. Train an action proposal network on the EPIC-Kitchens-100 train set, for example [this model](https://github.com/JJBOY/BMN-Boundary-Matching-Network). This model predicts action-agnostic segments which still need to be classified.
+3. Train an action proposal network on the EPIC-KITCHENS-100 train set, for example [this model](https://github.com/JJBOY/BMN-Boundary-Matching-Network). This model predicts action-agnostic segments which still need to be classified.
 4. Use your favourite action recognition model to classify the proposals ([example models](https://github.com/epic-kitchens/action-models)).
 
 ### Action Anticipation Challenge
@@ -116,8 +116,8 @@ python epic_downloader.py --videos --rgb-frames --flow-frames --domain-adaptatio
 ```
 
 2. Download the Unsupervised Domain Adaptation [source train](UDA_annotations/EPIC_100_uda_source_train.csv)/[target train](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv)/[target test](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) files.
-3. Extract video features (for all three splits) using an off-the-shelf model trained on **EPIC-Kitchens-55** ([example model](https://github.com/epic-kitchens/action-models)).
-4. A simple baseline is using a domain discriminator (prediciting whether a video came from the source, EPIC-Kitchens-55, or the target, EPIC-Kitchens-100) to align the two domains. See [the paper](#citing) for details on the models we used for this baseline.
+3. Extract video features (for all three splits) using an off-the-shelf model trained on **EPIC-KITCHENS-55** ([example model](https://github.com/epic-kitchens/action-models)).
+4. A simple baseline is using a domain discriminator (prediciting whether a video came from the source, EPIC-KITCHENS-55, or the target, EPIC-KITCHENS-100) to align the two domains. See [the paper](#citing) for details on the models we used for this baseline.
 
 ### Action Retrieval Challenge
 1. Download the videos/RGB/Flow frames [here](https://github.com/epic-kitchens/download-scripts-100) with the following command: 
@@ -126,9 +126,9 @@ python epic_downloader.py --videos --rgb-frames --flow-frames --domain-adaptatio
 python epic_downloader.py --videos --rgb-frames --flow-frames --action-retrieval
 ```
 2. Download the Action Retrieval [train](retrieval_annotations/EPIC_100_retrieval_train.csv)/[test](retrieval_annotations/EPIC_100_retrieval_test.csv) files.
-3. Extract video features (for both the train and test set) using an off-the-shelf model trained on **EPIC-Kitchens-55** ([example model](https://github.com/epic-kitchens/action-models)).
+3. Extract video features (for both the train and test set) using an off-the-shelf model trained on **EPIC-KITCHENS-55** ([example model](https://github.com/epic-kitchens/action-models)).
 4. Extract word2vec features for the captions from both the train and test set ([example models](https://github.com/mmihaltz/word2vec-GoogleNews-vectors)).
-5. Enjoy the EPIC-Kitchens-100 dataset in your favourite video retrieval model, see [the paper](#citing) for details on the models we used for this baseline.
+5. Enjoy the EPIC-KITCHENS-100 dataset in your favourite video retrieval model, see [the paper](#citing) for details on the models we used for this baseline.
 
 
 [back to top](#index)
@@ -281,7 +281,7 @@ This CSV file contains the action annotations for the **source training set** us
 | `all_nouns`           | list of string (1 or more) | `[door]`       | List of all parsed nouns within the narration.                                |
 | `all_noun_classes`    | list of int (1 or more)    | `[3]`          | Numeric ID of all of the parsed noun's classes.                               |
 
-Note that this file contains only videos from EPIC-Kitchens-55 which is used as the source domain.
+Note that this file contains only videos from EPIC-KITCHENS-55 which is used as the source domain.
 
 See [here](#unsupervised-domain-adaptation-challenge) for more details on the unsupervised domain adaptation challenge.
 
@@ -302,7 +302,7 @@ This CSV file contains the action annotations for the **source testing set** use
 | `start_frame`         | int                        | `1`            | Start frame of the action.                                                    |
 | `stop_frame`          | int                        | `113`          | End frame of the action.                                                      |
 
-Note that this file contains only videos from EPIC-Kitchens-55 which is used as the source domain.
+Note that this file contains only videos from EPIC-KITCHENS-55 which is used as the source domain.
 
 See [here](#unsupervised-domain-adaptation-challenge) for more details on the unsupervised domain adaptation challenge.
 
@@ -324,7 +324,7 @@ This CSV file contains the action annotations for the **target training set** us
 | `start_frame`         | int                        | `27`           | Start frame of the action.                                                    |
 | `stop_frame`          | int                        | `111`          | End frame of the action.                                                      |
 
-Note that this file contains only videos from EPIC-Kitchens-100 which is used as the target domain.
+Note that this file contains only videos from EPIC-KITCHENS-100 which is used as the target domain.
 
 See [here](#unsupervised-domain-adaptation-challenge) for more details on the unsupervised domain adaptation challenge.
 
@@ -346,7 +346,7 @@ This CSV file contains the action annotations for the **target testing set** use
 | `start_frame`         | int                        | `143`          | Start frame of the action.                                                    |
 | `stop_frame`          | int                        | `193`          | End frame of the action.                                                      |
 
-Note that this file contains only videos from EPIC-Kitchens-100 which is used as the target domain.
+Note that this file contains only videos from EPIC-KITCHENS-100 which is used as the target domain.
 
 See [here](#unsupervised-domain-adaptation-challenge) for more details on the unsupervised domain adaptation challenge.
 
@@ -404,7 +404,7 @@ This CSV file contains the action annotations for the **action retrieval** testi
 
 #### EPIC_100_train_missing_timestamps_narrations.csv
 
-This CSV file contains the narration IDs of all EPIC-Kitchens-55 videos in the training set which do not have a narration timestamp (see [here]() for more details). This file has one column:
+This CSV file contains the narration IDs of all EPIC-KITCHENS-55 videos in the training set which do not have a narration timestamp (see [here]() for more details). This file has one column:
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
 | `narration_id`        | string                     | `P01_09_660`   | Unique ID for the segment as a string with participant ID and video ID.       |
@@ -413,7 +413,7 @@ This CSV file contains the narration IDs of all EPIC-Kitchens-55 videos in the t
 
 #### EPIC_100_validation_missing_timestamps_narrations.csv
 
-This CSV file contains the narration IDs of all EPIC-Kitchens-55 videos in the validation set which do not have a narration timestamp (see [here]() for more details). This file has one column:
+This CSV file contains the narration IDs of all EPIC-KITCHENS-55 videos in the validation set which do not have a narration timestamp (see [here]() for more details). This file has one column:
 | Column Name           | Type                       | Example        | Description                                                                   |
 | --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
 | `narration_id`        | string                     | `P02_12_293`   | Unique ID for the segment as a string with participant ID and video ID.       |
@@ -428,7 +428,7 @@ This CSV file contains the narration IDs of all EPIC-Kitchens-55 videos in the v
 ### File Downloads
 
 Due to the size of the dataset we provide a script for downloading parts of the dataset which can be found [here](https://github.com/epic-kitchens/download-scripts-100).
-If you wish to download the extension only (i.e. you have already downloaded EPIC-Kitchens-55) the following command can be run:
+If you wish to download the extension only (i.e. you have already downloaded EPIC-KITCHENS-55) the following command can be run:
 ```bash
 python epic_downloader.py --extension-only
 ```
@@ -444,12 +444,12 @@ See the [README](https://github.com/epic-kitchens/download-scripts-100/blob/mast
 
 #### Updated Annotations
 
-Whilst videos from EPIC-Kitchens-55 are used within EPIC-Kitchens-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-Kitchens-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-Kitchens-55 cannot be used for EPIC-Kitchens-100.
+Whilst videos from EPIC-KITCHENS-55 are used within EPIC-KITCHENS-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-KITCHENS-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-KITCHENS-55 cannot be used for EPIC-KITCHENS-100.
 
 
 #### Missing Narration Timestamps
 
-Due to the differences in the annotation pipeline between EPIC-Kitchens-100 and EPIC-Kitchens-55, it was impossible to assign the narration timestamp to every action. Because of this, there are actions within [EPIC_100_train.csv](#epic_100_traincsv) and [EPIC_100_validation.csv](#epic_100_validationcsv) which do not have timestamp narrations and are thus marked with NaN within the dataframes.
+Due to the differences in the annotation pipeline between EPIC-KITCHENS-100 and EPIC-KITCHENS-55, it was impossible to assign the narration timestamp to every action. Because of this, there are actions within [EPIC_100_train.csv](#epic_100_traincsv) and [EPIC_100_validation.csv](#epic_100_validationcsv) which do not have timestamp narrations and are thus marked with NaN within the dataframes.
 
 ### Pickle Files
 
@@ -479,6 +479,6 @@ may not use the material for commercial purposes.
 [back to top](#index)
 
 ## Changelog
-Please see the [release history](https://github.com/epic-kitchens/EPIC-Kitchens-100-Annotations/releases) for the changelog.
+Please see the [release history](https://github.com/epic-kitchens/EPIC-KITCHENS-100-Annotations/releases) for the changelog.
 
 [back to top](#index)

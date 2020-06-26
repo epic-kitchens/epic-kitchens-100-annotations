@@ -13,7 +13,16 @@
 <p><strong>Contact:</strong> <a href="mailto:uob-epic-kitchens2018@bristol.ac.uk">uob-epic-kitchens2018@bristol.ac.uk</a> <!-- TODO, should this be changed/renamed? --></p>
 <h2 id="citing">Citing</h2>
 <p>When using the dataset, kindly reference:</p>
-<p>TBA</p>
+<pre><code>@ARTICLE{Damen2020RESCALING,
+   title={Rescaling Egocentric Vision},
+   author={Damen, Dima and Doughty, Hazel and Farinella, Giovanni Maria  and and Furnari, Antonino 
+           and Ma, Jian and Kazakos, Evangelos and Moltisanti, Davide and Munro, Jonathan 
+           and Perrett, Toby and Price, Will and Wray, Michael},
+           journal   = {CoRR},
+           volume    = {abs/2006.13256},
+           year      = {2020},
+           ee        = {http://arxiv.org/abs/2006.13256},
+} </code></pre>
 <h2 id="index">Index</h2>
 <ul>
 <li><a href="#dataset-details">Dataset Details</a></li>
@@ -47,7 +56,7 @@
 <ol type="1">
 <li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb1-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
 <ol start="2" type="1">
 <li>Download the Action Recognition <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
 <li>Enjoy the EPIC-KITCHENS-100 dataset in your favourite action recognition model, see <a href="#citing">the paper</a> for details on the models we used for this baseline. Models trained on EPIC-KITCHENS-55 can be found <a href="https://github.com/epic-kitchens/action-models">here</a> as a starting point.</li>
@@ -56,7 +65,7 @@
 <ol type="1">
 <li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
 </ol>
-<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb2-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
 <ol start="2" type="1">
 <li>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
 <li>The weakly supervised challenge uses the narration timestamp, not the the start/end times of the action. Therefore a simple baseline would be to modify an action recognition model to use the surrounding 5s worth of frames. See <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
@@ -65,7 +74,7 @@
 <ol type="1">
 <li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb3-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
 <ol start="2" type="1">
 <li>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
 <li>Train an action proposal network on the EPIC-KITCHENS-100 train set, for example <a href="https://github.com/JJBOY/BMN-Boundary-Matching-Network">this model</a>. This model predicts action-agnostic segments which still need to be classified.</li>
@@ -75,7 +84,7 @@
 <ol type="1">
 <li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
 </ol>
-<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb4-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames</a></code></pre></div>
 <ol start="2" type="1">
 <li>This challenge uses the Action Recognition files, download the <a href="EPIC_100_train.csv">train</a>/<a href="EPIC_100_validation.csv">val</a>/<a href="EPIC_100_test_timestamps.csv">test</a> files.</li>
 <li>A simple baseline for this task is to train an action recognition model (example models <a href="">here</a>) on the 5 seconds that precede an action with a 1 second gap. For example, an action that starts at 20.00s in a video would see frames between 14.00s and 19.00s.</li>
@@ -85,7 +94,7 @@
 <ol type="1">
 <li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
 </ol>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb5-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames --domain-adaptation</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames --domain-adaptation</a></code></pre></div>
 <ol start="2" type="1">
 <li>Download the Unsupervised Domain Adaptation <a href="UDA_annotations/EPIC_100_uda_source_train.csv">source train</a>/<a href="UDA_annotations/EPIC_100_uda_target_train_timestamps.csv">target train</a>/<a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.csv">target test</a> files.</li>
 <li>Extract video features (for all three splits) using an off-the-shelf model trained on <strong>EPIC-KITCHENS-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
@@ -95,7 +104,7 @@
 <ol type="1">
 <li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
 </ol>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames --action-retrieval</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames --action-retrieval</a></code></pre></div>
 <ol start="2" type="1">
 <li>Download the Action Retrieval <a href="retrieval_annotations/EPIC_100_retrieval_train.csv">train</a>/<a href="retrieval_annotations/EPIC_100_retrieval_test.csv">test</a> files.</li>
 <li>Extract video features (for both the train and test set) using an off-the-shelf model trained on <strong>EPIC-KITCHENS-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
@@ -1116,9 +1125,9 @@
 <h2 id="additional-information">Additional Information</h2>
 <h3 id="file-downloads">File Downloads</h3>
 <p>Due to the size of the dataset we provide a script for downloading parts of the dataset which can be found <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>. If you wish to download the extension only (i.e. you have already downloaded EPIC-KITCHENS-55) the following command can be run:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb7-1" title="1"><span class="ex">python</span> epic_downloader.py --extension-only</a></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="ex">python</span> epic_downloader.py --extension-only</a></code></pre></div>
 <p>If you wish to download the whole dataset, the follwoing command can be run:</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="ex">python</span> epic_downloader.py</a></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="ex">python</span> epic_downloader.py</a></code></pre></div>
 <p>See the <a href="https://github.com/epic-kitchens/download-scripts-100/blob/master/README.md">README</a> for more information.</p>
 <h3 id="differences-to-epic-kitchen-55">Differences to EPIC-Kitchen-55</h3>
 <h4 id="updated-annotations">Updated Annotations</h4>

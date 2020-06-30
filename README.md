@@ -22,7 +22,7 @@ Michael Wray (1)
 * (1 University of Bristol)
 * (2 University of Catania)
 
-**Contact:** [uob-epic-kitchens2018@bristol.ac.uk](mailto:uob-epic-kitchens2018@bristol.ac.uk) <!-- TODO, should this be changed/renamed? -->
+**Contact:** [uob-epic-kitchens@bristol.ac.uk](mailto:uob-epic-kitchens@bristol.ac.uk)
 
 ## Citing
 When using the dataset, kindly reference:

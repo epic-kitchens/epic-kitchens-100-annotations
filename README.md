@@ -447,7 +447,7 @@ If you wish to download the extension only (i.e. you have already downloaded EPI
 python epic_downloader.py --extension-only
 ```
 
-If you wish to download the whole dataset, the follwoing command can be run:
+If you wish to download the whole dataset, the following command can be run:
 ```bash
 python epic_downloader.py
 ```
@@ -468,7 +468,7 @@ Due to the differences in the annotation pipeline between EPIC-KITCHENS-100 and 
 ### Pickle Files
 
 We also provide pickle files for all of the main train/val/test csvs for ease of use. These files require python 3.5+ and pandas 1.0.0+ to read.
-The pickle files are automatically tagged with the commit hash and version for version control purposes which can be found as follows in python:
+The pickle files are automatically tagged with the commit hash and version for version control purposes which can be found in python using the following commands:
 
 ```
 >>> import pandas as pd
@@ -477,7 +477,7 @@ The pickle files are automatically tagged with the commit hash and version for v
 {'commit_hash': 'ce7a0fb', 'version_number': '1.0.0'
 ```
 
-showing that this version of the `EPIC_100_train.pkl` came from commit hash ce7a0fb and version number 0.1.
+showing that this version of the `EPIC_100_train.pkl` came from commit hash ce7a0fb and version number 1.0.0.
 
 [back to top](#index)
 

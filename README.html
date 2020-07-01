@@ -1126,7 +1126,7 @@
 <h3 id="file-downloads">File Downloads</h3>
 <p>Due to the size of the dataset we provide a script for downloading parts of the dataset which can be found <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>. If you wish to download the extension only (i.e. you have already downloaded EPIC-KITCHENS-55) the following command can be run:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb8-1" title="1"><span class="ex">python</span> epic_downloader.py --extension-only</a></code></pre></div>
-<p>If you wish to download the whole dataset, the follwoing command can be run:</p>
+<p>If you wish to download the whole dataset, the following command can be run:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="ex">python</span> epic_downloader.py</a></code></pre></div>
 <p>See the <a href="https://github.com/epic-kitchens/download-scripts-100/blob/master/README.md">README</a> for more information.</p>
 <h3 id="differences-to-epic-kitchen-55">Differences to EPIC-Kitchen-55</h3>
@@ -1135,12 +1135,12 @@
 <h4 id="missing-narration-timestamps">Missing Narration Timestamps</h4>
 <p>Due to the differences in the annotation pipeline between EPIC-KITCHENS-100 and EPIC-KITCHENS-55, it was impossible to assign the narration timestamp to every action. Because of this, there are actions within <a href="#epic_100_traincsv">EPIC_100_train.csv</a> and <a href="#epic_100_validationcsv">EPIC_100_validation.csv</a> which do not have timestamp narrations and are thus marked with NaN within the dataframes.</p>
 <h3 id="pickle-files">Pickle Files</h3>
-<p>We also provide pickle files for all of the main train/val/test csvs for ease of use. These files require python 3.5+ and pandas 1.0.0+ to read. The pickle files are automatically tagged with the commit hash and version for version control purposes which can be found as follows in python:</p>
+<p>We also provide pickle files for all of the main train/val/test csvs for ease of use. These files require python 3.5+ and pandas 1.0.0+ to read. The pickle files are automatically tagged with the commit hash and version for version control purposes which can be found in python using the following commands:</p>
 <pre><code>&gt;&gt;&gt; import pandas as pd
 &gt;&gt;&gt; train = pd.read_pickle(&#39;EPIC_100_train.pkl&#39;)
 &gt;&gt;&gt; train._metadata
 {&#39;commit_hash&#39;: &#39;ce7a0fb&#39;, &#39;version_number&#39;: &#39;1.0.0&#39;</code></pre>
-<p>showing that this version of the <code>EPIC_100_train.pkl</code> came from commit hash ce7a0fb and version number 0.1.</p>
+<p>showing that this version of the <code>EPIC_100_train.pkl</code> came from commit hash ce7a0fb and version number 1.0.0.</p>
 <p><a href="#index">back to top</a></p>
 <h2 id="license">License</h2>
 <p>All files in this dataset are copyright by us and published under the Creative Commons Attribution-NonCommerial 4.0 International License, found <a href="https://creativecommons.org/licenses/by-nc/4.0/">here</a>. This means that you must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. You may not use the material for commercial purposes.</p>

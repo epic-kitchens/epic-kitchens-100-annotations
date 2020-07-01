@@ -1,7 +1,9 @@
 # EPIC KITCHENS-100 Dataset
 
 <!-- start badges -->
-
+[![CircleCI](https://img.shields.io/circleci/build/github/epic-kitchens/epic-kitchens-100-annotations.svg)](https://circleci.com/gh/epic-kitchens/epic-kitchens-100-annotations)
+[![GitHub release](https://img.shields.io/github/release/epic-kitchens/epic-kitchens-100-annotations.svg)](https://github.com/epic-kitchens/epic-kitchens-100-annotations/releases/latest)
+[![arXiv-2006.13256](https://img.shields.io/badge/arXiv-2006.13256-red.svg)](https://arxiv.org/abs/2006.13256)
 <!-- end badges -->
 
 > [EPIC-KITCHENS-100](https://epic-kitchens.github.io/) is the largest dataset in first-person (egocentric) vision; itself an extension of the [EPIC-KITCHENS-55 dataset](https://github.com/epic-kitchens/annotations) (formally known as EPIC-KITCHENS-2018).

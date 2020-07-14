@@ -135,6 +135,10 @@
 <li><a href="retrieval_annotations/EPIC_100_retrieval_test.csv"><code>retrieval_annotations/EPIC_100_retrieval_test.csv</code></a> (<a href="#epic_100_retrieval_testcsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_test.pkl">Pickle</a>)</li>
 <li><a href="EPIC_100_train_missing_timestamps_narrations.csv"><code>EPIC_100_train_missing_timestamps_narrations.csv</code></a> (<a href="#epic_100_train_missing_timestamps_narrationscsv">info</a>)</li>
 <li><a href="EPIC_100_validation_missing_timestamps_narrations.csv"><code>EPIC_100_validation_missing_timestamps_narrations.csv</code></a> (<a href="#epic_100_validation_missing_timestamps_narrationscsv">info</a>)</li>
+<li><a href="EPIC_100_unseen_participant_ids_test.csv"><code>EPIC_100_unseen_participant_ids_test.csv</code></a> (<a href="#epic_100_unseen_participant_idscsv">info</a>)</li>
+<li><a href="EPIC_100_unseen_participant_ids_validation.csv"><code>EPIC_100_unseen_participant_ids_validation.csv</code></a> (<a href="#epic_100_unseen_participant_idscsv">info</a>)</li>
+<li><a href="EPIC_100_tail_verbs.csv"><code>EPIC_100_tail_verbs.csv</code></a> (<a href="#epic_100_tail_verbscsv">info</a>)</li>
+<li><a href="EPIC_100_tail_nouns.csv"><code>EPIC_100_tail_nouns.csv</code></a> (<a href="#epic_100_tail_nounscsv">info</a>)</li>
 </ul>
 <p><a href="#index">back to top</a></p>
 <h2 id="file-structure">File Structure</h2>
@@ -1117,6 +1121,74 @@
 <td>string</td>
 <td><code>P02_12_293</code></td>
 <td>Unique ID for the segment as a string with participant ID and video ID.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_unseen_participant_ids.csv">EPIC_100_unseen_participant_ids.csv</h4>
+<p>This CSV file contains the list of participant IDs who are unseen during training for use in evaluating the unseen participant metrics.</p>
+<p>We have two files for both the validation and test set:</p>
+<ul>
+<li><code>EPIC_100_unseen_participant_ids_test.csv</code> - The unseen participants in the test set.</li>
+<li><code>EPIC_100_unseen_participant_ids_validation.csv</code> - The unseen participants in the validation set.</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>participant_id</code></td>
+<td>string</td>
+<td><code>P33</code></td>
+<td>ID of the participant (unique per participant).</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_tail_verbs.csv">EPIC_100_tail_verbs.csv</h4>
+<p>This CSV file contains the list of verb classes which are considered part of the tail classes. These are the set of smallest classes (i.e. those with fewest instances) that account for 20% of the total number of instances in the training set.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>verb</code></td>
+<td>int</td>
+<td><code>10</code></td>
+<td>Numeric ID representing the verb class.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_tail_nouns.csv">EPIC_100_tail_nouns.csv</h4>
+<p>This CSV file contains the list of noun classes which are considered part of the tail classes. These are the set of smallest classes (i.e. those with fewest instances) that account for 20% of the total number of instances in the training set.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>noun</code></td>
+<td>int</td>
+<td><code>56</code></td>
+<td>Numeric ID representing the noun class.</td>
 </tr>
 </tbody>
 </table>

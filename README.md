@@ -170,6 +170,10 @@ We provide html and pdf alternatives to this README which are auto-generated.
 * [`retrieval_annotations/EPIC_100_retrieval_test.csv`](retrieval_annotations/EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_test.pkl))
 * [`EPIC_100_train_missing_timestamps_narrations.csv`](EPIC_100_train_missing_timestamps_narrations.csv) ([info](#epic_100_train_missing_timestamps_narrationscsv)) 
 * [`EPIC_100_validation_missing_timestamps_narrations.csv`](EPIC_100_validation_missing_timestamps_narrations.csv) ([info](#epic_100_validation_missing_timestamps_narrationscsv)) 
+* [`EPIC_100_unseen_participant_ids_test.csv`](EPIC_100_unseen_participant_ids_test.csv) ([info](#epic_100_unseen_participant_idscsv))
+* [`EPIC_100_unseen_participant_ids_validation.csv`](EPIC_100_unseen_participant_ids_validation.csv) ([info](#epic_100_unseen_participant_idscsv))
+* [`EPIC_100_tail_verbs.csv`](EPIC_100_tail_verbs.csv) ([info](#epic_100_tail_verbscsv))
+* [`EPIC_100_tail_nouns.csv`](EPIC_100_tail_nouns.csv) ([info](#epic_100_tail_nounscsv))
 
 [back to top](#index)
 
@@ -434,6 +438,42 @@ This CSV file contains the narration IDs of all EPIC-KITCHENS-55 videos in the v
 
 [Back to Important Files](#important-files)
 
+#### EPIC_100_unseen_participant_ids.csv
+
+This CSV file contains the list of participant IDs who are unseen during training for use in evaluating the unseen participant metrics.
+
+We have two files for both the validation and test set:
+
+- `EPIC_100_unseen_participant_ids_test.csv` - The unseen participants in the test set.
+- `EPIC_100_unseen_participant_ids_validation.csv` - The unseen participants in the validation set.
+
+| Column Name           | Type   | Example        | Description                                                                   |
+| --------------------- | ------ | -------------- | ----------------------------------------------------------------------------- |
+| `participant_id`      | string | `P33`          | ID of the participant (unique per participant).                               |
+
+[Back to Important Files](#important-files)
+
+#### EPIC_100_tail_verbs.csv
+
+This CSV file contains the list of verb classes which are considered part of the tail classes.
+These are the set of smallest classes (i.e. those with fewest instances) that account for 20% of the total number of instances in the training set.
+
+| Column Name           | Type   | Example        | Description                                                                   |
+| --------------------- | ------ | -------------- | ----------------------------------------------------------------------------- |
+| `verb`                | int    | `10`           | Numeric ID representing the verb class.                                       |
+
+[Back to Important Files](#important-files)
+
+#### EPIC_100_tail_nouns.csv
+
+This CSV file contains the list of noun classes which are considered part of the tail classes.
+These are the set of smallest classes (i.e. those with fewest instances) that account for 20% of the total number of instances in the training set.
+
+| Column Name           | Type   | Example        | Description                                                                   |
+| --------------------- | ------ | -------------- | ----------------------------------------------------------------------------- |
+| `noun`                | int    | `56`           | Numeric ID representing the noun class.                                       |
+
+[Back to Important Files](#important-files)
 
 [back to top](#index)
 

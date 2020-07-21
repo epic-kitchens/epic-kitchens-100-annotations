@@ -139,6 +139,7 @@
 <li><a href="EPIC_100_unseen_participant_ids_validation.csv"><code>EPIC_100_unseen_participant_ids_validation.csv</code></a> (<a href="#epic_100_unseen_participant_idscsv">info</a>)</li>
 <li><a href="EPIC_100_tail_verbs.csv"><code>EPIC_100_tail_verbs.csv</code></a> (<a href="#epic_100_tail_verbscsv">info</a>)</li>
 <li><a href="EPIC_100_tail_nouns.csv"><code>EPIC_100_tail_nouns.csv</code></a> (<a href="#epic_100_tail_nounscsv">info</a>)</li>
+<li><a href="EPIC_100_video_info.csv"><code>EPIC_100_video_info.csv</code></a> (<a href="#epic_100_video_infocsv">info</a>)</li>
 </ul>
 <p><a href="#index">back to top</a></p>
 <h2 id="file-structure">File Structure</h2>
@@ -1189,6 +1190,44 @@
 <td>int</td>
 <td><code>56</code></td>
 <td>Numeric ID representing the noun class.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="epic_100_video_info.csv">EPIC_100_video_info.csv</h4>
+<p>This CSV file contains information about each video in the dataset.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>video_id</code></td>
+<td>str</td>
+<td><code>P01_01</code></td>
+<td>ID of the video.</td>
+</tr>
+<tr class="even">
+<td><code>duration</code></td>
+<td>float</td>
+<td><code>201.134</code></td>
+<td>Duration of the video in seconds.</td>
+</tr>
+<tr class="odd">
+<td><code>fps</code></td>
+<td>float</td>
+<td><code>50.0</code></td>
+<td>FPS of the video.</td>
+</tr>
+<tr class="even">
+<td><code>resolution</code></td>
+<td>str</td>
+<td><code>1920x1080</code></td>
+<td>Resolution of the video <code>width x height</code>.</td>
 </tr>
 </tbody>
 </table>

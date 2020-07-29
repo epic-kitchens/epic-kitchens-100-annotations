@@ -70,6 +70,8 @@ We provide csv files for the train/val/test sets of each benchmark detailed belo
 
 Ground truth is provided for action segments as action/verb/noun labels along with the start and end times of the segment.
 
+We also provide automatic annotations in the form of object masks and hand/object BBoxes. See [automatic annotations](#automatic-annotations-download) for more details.
+
 [back to top](#index)
 
 ## Quick Start
@@ -493,6 +495,16 @@ python epic_downloader.py
 ```
 
 See the [README](https://github.com/epic-kitchens/download-scripts-100/blob/master/README.md) for more information.
+
+#### Automatic Annotations Download
+
+We also provide automatic annotations in the form of object masks extracted through the use of MaskRCNN and hand-object BBoxes from [ddshan/Hand_Object_Detector](https://github.com/ddshan/Hand_Object_Detector)
+([CVPR
+2020](https://openaccess.thecvf.com/content_CVPR_2020/html/Shan_Understanding_Human_Hands_in_Contact_at_Internet_Scale_CVPR_2020_paper.html)).
+
+The masks can be downloaded from [data.bris](https://data.bris.ac.uk/data/dataset/3l8eci2oqgst92n14w2yqi5ytu) and a supporting library is available from [this repo](https://github.com/epic-kitchens/epic-kitchens-100-object-masks).
+
+The hand-object bboxes can be downloaded from [data.bris](https://data.bris.ac.uk/data/dataset/3l8eci2oqgst92n14w2yqi5ytu) and a supporting library is available from [this repo](https://github.com/epic-kitchens/epic-kitchens-100-hand-object-bboxes).
 
 ### Differences to EPIC-Kitchen-55
 

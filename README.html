@@ -49,6 +49,7 @@
 </ul>
 <p>We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use, see <a href="#important-files">Important Files</a> for more information.</p>
 <p>Ground truth is provided for action segments as action/verb/noun labels along with the start and end times of the segment.</p>
+<p>We also provide automatic annotations in the form of object masks and hand/object BBoxes. See <a href="#automatic-annotations-download">automatic annotations</a> for more details.</p>
 <p><a href="#index">back to top</a></p>
 <h2 id="quick-start">Quick Start</h2>
 <p>Here you can download the annotation files for all of the challenges. For more information on each challenge, please see the paper <a href="">here</a>. A download script is provided for the videos, RGB Frames and Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>.</p>
@@ -1201,6 +1202,10 @@
 <p>If you wish to download the whole dataset, the following command can be run:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="ex">python</span> epic_downloader.py</a></code></pre></div>
 <p>See the <a href="https://github.com/epic-kitchens/download-scripts-100/blob/master/README.md">README</a> for more information.</p>
+<h4 id="automatic-annotations-download">Automatic Annotations Download</h4>
+<p>We also provide automatic annotations in the form of object masks extracted through the use of MaskRCNN and hand-object BBoxes from <a href="https://github.com/ddshan/Hand_Object_Detector">ddshan/Hand_Object_Detector</a> (<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Shan_Understanding_Human_Hands_in_Contact_at_Internet_Scale_CVPR_2020_paper.html">CVPR 2020</a>).</p>
+<p>The masks can be downloaded from <a href="https://data.bris.ac.uk/data/dataset/3l8eci2oqgst92n14w2yqi5ytu">data.bris</a> and a supporting library is available from <a href="https://github.com/epic-kitchens/epic-kitchens-100-object-masks">this repo</a>.</p>
+<p>The hand-object bboxes can be downloaded from <a href="https://data.bris.ac.uk/data/dataset/3l8eci2oqgst92n14w2yqi5ytu">data.bris</a> and a supporting library is available from <a href="https://github.com/epic-kitchens/epic-kitchens-100-hand-object-bboxes">this repo</a>.</p>
 <h3 id="differences-to-epic-kitchen-55">Differences to EPIC-Kitchen-55</h3>
 <h4 id="updated-annotations">Updated Annotations</h4>
 <p>Whilst videos from EPIC-KITCHENS-55 are used within EPIC-KITCHENS-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-KITCHENS-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-KITCHENS-55 cannot be used for EPIC-KITCHENS-100.</p>

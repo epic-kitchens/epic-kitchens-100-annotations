@@ -133,7 +133,7 @@ python epic_downloader.py --videos --rgb-frames --flow-frames --domain-adaptatio
 3. Extract video features (for all six splits) using an off-the-shelf model trained on **EPIC-KITCHENS-55** ([example model](https://github.com/epic-kitchens/action-models)).
 4. A simple baseline is using a domain discriminator (prediciting whether a video came from the source, EPIC-KITCHENS-55, or the target, EPIC-KITCHENS-100) to align the two domains. See [the paper](#citing) for details on the models we used for this baseline.
 
-IMPORTANT NOTE ON HYPER-PARAMTER TUNING. As the target domain is unlabelled, the training splits cannot be used for hyper-paramter tuning. You must use the validation splits to choose hyper-parameters. The procedure for hyper-parameter tuning and training is as follows:
+IMPORTANT NOTE ON HYPER-PARAMETER TUNING. As the target domain is unlabelled, the training splits cannot be used for hyper-parameter tuning. You must use the validation splits to choose hyper-parameters. The procedure for hyper-parameter tuning and training is as follows:
 
 1. Train your model on [source val](UDA_annotations/EPIC_100_uda_source_val.csv) with unlabelled data from [target val](UDA_annotations/EPIC_100_uda_target_val.csv).
 2. Evaluate your model on [target val](UDA_annotations/EPIC_100_uda_target_val.csv) using the labels provided (these labels should not be used during training).

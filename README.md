@@ -129,8 +129,8 @@ The unsupervised domain adaptation challenge tests how models can cope with simi
 python epic_downloader.py --videos --rgb-frames --flow-frames --domain-adaptation
 ```
 
-2. Download the Unsupervised Domain Adaptation [source train](UDA_annotations/EPIC_100_uda_source_train.csv)/[target train](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv)/[target test](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv)/[source val](UDA_annotations/EPIC_100_uda_source_val.csv)/[target val](UDA_annotations/EPIC_100_uda_target_val.csv) files.
-3. Extract video features (for all three splits) using an off-the-shelf model trained on **EPIC-KITCHENS-55** ([example model](https://github.com/epic-kitchens/action-models)).
+2. Download the Unsupervised Domain Adaptation [source train](UDA_annotations/EPIC_100_uda_source_train.csv)/[target train](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv)/[source_test](UDA_annotations/EPIC_100_uda_source_test_timestamps.csv)/[target test](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv)/[source val](UDA_annotations/EPIC_100_uda_source_val.csv)/[target val](UDA_annotations/EPIC_100_uda_target_val.csv) files.
+3. Extract video features (for all six splits) using an off-the-shelf model trained on **EPIC-KITCHENS-55** ([example model](https://github.com/epic-kitchens/action-models)).
 4. A simple baseline is using a domain discriminator (prediciting whether a video came from the source, EPIC-KITCHENS-55, or the target, EPIC-KITCHENS-100) to align the two domains. See [the paper](#citing) for details on the models we used for this baseline.
 
 IMPORTANT NOTE ON HYPER-PARAMTER TUNING. As the target domain is unlabelled, the training splits cannot be used for hyper-paramter tuning. You must use the validation splits to choose hyper-parameters. The procedure for hyper-parameter tuning and training is as follows:
@@ -140,6 +140,8 @@ IMPORTANT NOTE ON HYPER-PARAMTER TUNING. As the target domain is unlabelled, the
 3. Select Hyper-paramters based on the performance on [target val](UDA_annotations/EPIC_100_uda_target_val.csv).
 4. Re-train your model on [source train](UDA_annotations/EPIC_100_uda_source_train.csv)/[target train](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv) with selected hyper-parameters.
 5. Evaluate the re-trained model on [target test](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) to produce action predictions for the challenge leaderboard.
+
+It is optional but highly ecouraged to evalute the performance on [source_test](UDA_annotations/EPIC_100_uda_source_test_timestamps.csv) to compare source domain performances.
 
 ### Action Retrieval Challenge
 1. Download the videos/RGB/Flow frames [here](https://github.com/epic-kitchens/download-scripts-100) with the following command: 

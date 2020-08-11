@@ -137,7 +137,7 @@ IMPORTANT NOTE ON HYPER-PARAMTER TUNING. As the target domain is unlabelled, the
 
 1. Train your model on [source val](UDA_annotations/EPIC_100_uda_source_val.csv) with unlabelled data from [target val](UDA_annotations/EPIC_100_uda_target_val.csv).
 2. Evaluate your model on [target val](UDA_annotations/EPIC_100_uda_target_val.csv) using the labels provided (these labels should not be used during training).
-3. Select hyper-paramters based on the performance on [target val](UDA_annotations/EPIC_100_uda_target_val.csv).
+3. Select hyper-parameters based on the performance on [target val](UDA_annotations/EPIC_100_uda_target_val.csv).
 4. Re-train your model on [source train](UDA_annotations/EPIC_100_uda_source_train.csv)/[target train](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv) with selected hyper-parameters.
 5. Evaluate the re-trained model on [target test](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) to produce action predictions for the challenge leaderboard.
 

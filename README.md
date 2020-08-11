@@ -129,9 +129,17 @@ The unsupervised domain adaptation challenge tests how models can cope with simi
 python epic_downloader.py --videos --rgb-frames --flow-frames --domain-adaptation
 ```
 
-2. Download the Unsupervised Domain Adaptation [source train](UDA_annotations/EPIC_100_uda_source_train.csv)/[target train](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv)/[target test](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) files.
+2. Download the Unsupervised Domain Adaptation [source train](UDA_annotations/EPIC_100_uda_source_train.csv)/[target train](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv)/[target test](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv)/[source val](UDA_annotations/EPIC_100_uda_source_val.csv)/[target val](UDA_annotations/EPIC_100_uda_target_val.csv) files.
 3. Extract video features (for all three splits) using an off-the-shelf model trained on **EPIC-KITCHENS-55** ([example model](https://github.com/epic-kitchens/action-models)).
 4. A simple baseline is using a domain discriminator (prediciting whether a video came from the source, EPIC-KITCHENS-55, or the target, EPIC-KITCHENS-100) to align the two domains. See [the paper](#citing) for details on the models we used for this baseline.
+
+IMPORTANT NOTE ON HYPER-PARAMTER TUNING. As the target domain is unlabelled, the training splits cannot be used for hyper-paramter tuning. You must use the validation splits to choose hyper-parameters. The procedure for hyper-parameter tuning and training is as follows:
+
+1. Train your model on [source val](UDA_annotations/EPIC_100_uda_source_val.csv) with unlabelled data from [target val](UDA_annotations/EPIC_100_uda_target_val.csv).
+2. Evaluate your model on [target val](UDA_annotations/EPIC_100_uda_target_val.csv) using the labels provided (these labels should not be used during training).
+3. Select Hyper-paramters based on the performance on [target val](UDA_annotations/EPIC_100_uda_target_val.csv).
+4. Re-train your model on [source train](UDA_annotations/EPIC_100_uda_source_train.csv)/[target train](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv) with selected hyper-parameters.
+5. Evaluate the re-trained model on [target test](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) to produce action predictions for the challenge leaderboard.
 
 ### Action Retrieval Challenge
 1. Download the videos/RGB/Flow frames [here](https://github.com/epic-kitchens/download-scripts-100) with the following command: 
@@ -168,6 +176,8 @@ We provide html and pdf alternatives to this README which are auto-generated.
 * [`UDA_annotations/EPIC_100_uda_source_test_timestamps.csv`](UDA_annotations/EPIC_100_uda_source_test_timestamps.csv) ([info](#epic_100_uda_source_test_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_source_test_timestamps.pkl))
 * [`UDA_annotations/EPIC_100_uda_target_train_timestamps.csv`](UDA_annotations/EPIC_100_uda_target_train_timestamps.csv) ([info](#epic_100_uda_target_train_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_train_timestamps.pkl))
 * [`UDA_annotations/EPIC_100_uda_target_test_timestamps.csv`](UDA_annotations/EPIC_100_uda_target_test_timestamps.csv) ([info](#epic_100_uda_target_test_timestampscsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_test_timestamps.pkl))
+* [`UDA_annotations/EPIC_100_uda_source_val.csv`](UDA_annotations/EPIC_100_uda_source_val.csv) ([info](#epic_100_uda_source_valcsv)) ([Pickle](UDA_annotations/EPIC_100_uda_source_val.pkl))
+* [`UDA_annotations/EPIC_100_uda_target_val.csv`](UDA_annotations/EPIC_100_uda_target_val.csv) ([info](#epic_100_uda_target_valcsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_val.pkl))
 * [`retrieval_annotations/EPIC_100_retrieval_train.csv`](retrieval_annotations/EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_train.pkl))
 * [`retrieval_annotations/EPIC_100_retrieval_test.csv`](retrieval_annotations/EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_test.pkl))
 * [`EPIC_100_train_missing_timestamps_narrations.csv`](EPIC_100_train_missing_timestamps_narrations.csv) ([info](#epic_100_train_missing_timestamps_narrationscsv)) 
@@ -370,6 +380,61 @@ See [here](#unsupervised-domain-adaptation-challenge) for more details on the un
 
 [Back to Important Files](#important-files)
 
+#### EPIC_100_uda_source_val.csv
+
+This CSV file contains the action annotations for the **source validation set** used for **Unsupervised Domain Adaptation** and contains 15 columns:
+
+| Column Name           | Type                       | Example        | Description                                                                   |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| `narration_id`        | string                     | `P03_02_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
+| `participant_id`      | int                        | `P03`          | ID of the participant (unique per participant).                               |
+| `video_id`            | string                     | `P03_02`       | ID of the video where the segment originated from (unique per video).         |
+| `narration_timestamp` | string                     | `00:00:04.310` | Timestamp of when the original narration was recorded in `HH:mm:ss.SSS`.      |
+| `start_timestamp`     | string                     | `00:00:03.29`  | Start time in `HH:mm:ss.SS` of the action segment.                            |
+| `stop_timestamp`      | string                     | `00:00:04.26`  | End time in `HH:mm:ss.SS` of the action segment.                              |
+| `start_frame`         | int                        | `197`            | Start frame of the action.                                                    |
+| `stop_frame`          | int                        | `255`          | End frame of the action.                                                      |
+| `narration`           | string                     | `put lunch box`    | Transcribed description of the English narration provided by the participant. |
+| `verb`                | string                     | `put`         | Parsed verb from the narration.                                               |
+| `verb_class`          | int                        | `1`            | Numeric ID of the verb's class.                                               |
+| `noun`                | string                     | `box:lunch`         | First parsed noun from the narration.                                         |
+| `noun_class`          | int                        | `23`            | Numeric ID of the first noun's class.                                         |
+| `all_nouns`           | list of string (1 or more) | `[box:lunch]`       | List of all parsed nouns within the narration.                                |
+| `all_noun_classes`    | list of int (1 or more)    | `[23]`          | Numeric ID of all of the parsed noun's classes.                               |
+
+Note that this file contains only videos from EPIC-KITCHENS-55 which is used as the source domain for validation.
+
+See [here](#unsupervised-domain-adaptation-challenge) for more details on the unsupervised domain adaptation challenge.
+
+[Back to Important Files](#important-files)
+
+#### EPIC_100_uda_target_val.csv
+
+This CSV file contains the action annotations for the **target validation set** used for **Unsupervised Domain Adaptation** and contains 15 columns:
+
+| Column Name           | Type                       | Example        | Description                                                                   |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| `narration_id`        | string                     | `P03_101_0`     | Unique ID for the segment as a string with participant ID and video ID.       |
+| `participant_id`      | int                        | `P03`          | ID of the participant (unique per participant).                               |
+| `video_id`            | string                     | `P03_101`       | ID of the video where the segment originated from (unique per video).         |
+| `narration_timestamp` | string                     | `00:00:02.877` | Timestamp of when the original narration was recorded in `HH:mm:ss.SSS`.      |
+| `start_timestamp`     | string                     | `00:00:02.60`  | Start time in `HH:mm:ss.SS` of the action segment.                            |
+| `stop_timestamp`      | string                     | `00:00:03.86`  | End time in `HH:mm:ss.SS` of the action segment.                              |
+| `start_frame`         | int                        | `130`            | Start frame of the action.                                                    |
+| `stop_frame`          | int                        | `193`          | End frame of the action.                                                      |
+| `narration`           | string                     | `turn on tap`    | Transcribed description of the English narration provided by the participant. |
+| `verb`                | string                     | `turn-on`         | Parsed verb from the narration.                                               |
+| `verb_class`          | int                        | `6`            | Numeric ID of the verb's class.                                               |
+| `noun`                | string                     | `tap`         | First parsed noun from the narration.                                         |
+| `noun_class`          | int                        | `0`            | Numeric ID of the first noun's class.                                         |
+| `all_nouns`           | list of string (1 or more) | `[tap]`       | List of all parsed nouns within the narration.                                |
+| `all_noun_classes`    | list of int (1 or more)    | `[23]`          | Numeric ID of all of the parsed noun's classes.                               |
+
+Note that this file contains only videos from EPIC-KITCHENS-100 which is used as the target domain for validation.
+
+See [here](#unsupervised-domain-adaptation-challenge) for more details on the unsupervised domain adaptation challenge.
+
+[Back to Important Files](#important-files)
 
 #### EPIC_100_retrieval_train.csv
 

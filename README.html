@@ -145,6 +145,8 @@
 <li><a href="UDA_annotations/EPIC_100_uda_target_val.csv"><code>UDA_annotations/EPIC_100_uda_target_val.csv</code></a> (<a href="#epic_100_uda_target_valcsv">info</a>) (<a href="UDA_annotations/EPIC_100_uda_target_val.pkl">Pickle</a>)</li>
 <li><a href="retrieval_annotations/EPIC_100_retrieval_train.csv"><code>retrieval_annotations/EPIC_100_retrieval_train.csv</code></a> (<a href="#epic_100_retrieval_traincsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_train.pkl">Pickle</a>)</li>
 <li><a href="retrieval_annotations/EPIC_100_retrieval_test.csv"><code>retrieval_annotations/EPIC_100_retrieval_test.csv</code></a> (<a href="#epic_100_retrieval_testcsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_test.pkl">Pickle</a>)</li>
+<li><a href="retrieval_annotations/EPIC_100_retrieval_train_sentence.csv"><code>retrieval_annotations/EPIC_100_retrieval_train_sentence.csv</code></a> (<a href="#epic_100_retrieval_train_sentencecsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_train_sentence.pkl">Pickle</a>)</li>
+<li><a href="retrieval_annotations/EPIC_100_retrieval_test_sentence.csv"><code>retrieval_annotations/EPIC_100_retrieval_test_sentence.csv</code></a> (<a href="#epic_100_retrieval_test_sentencecsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_test_sentence.pkl">Pickle</a>)</li>
 <li><a href="EPIC_100_train_missing_timestamps_narrations.csv"><code>EPIC_100_train_missing_timestamps_narrations.csv</code></a> (<a href="#epic_100_train_missing_timestamps_narrationscsv">info</a>)</li>
 <li><a href="EPIC_100_validation_missing_timestamps_narrations.csv"><code>EPIC_100_validation_missing_timestamps_narrations.csv</code></a> (<a href="#epic_100_validation_missing_timestamps_narrationscsv">info</a>)</li>
 <li><a href="EPIC_100_unseen_participant_ids_test.csv"><code>EPIC_100_unseen_participant_ids_test.csv</code></a> (<a href="#epic_100_unseen_participant_idscsv">info</a>)</li>
@@ -1198,6 +1200,63 @@
 </tbody>
 </table>
 <p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_retrieval_train_sentence.csv">EPIC_100_retrieval_train_sentence.csv</h4>
+<p>This CSV file contains the caption annotations for the <strong>action retrieval</strong> training set and contains 6 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P01_01_0</code></td>
+<td>Unique ID for the caption (corresponding to the original action).</td>
+</tr>
+<tr class="even">
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>open door</code></td>
+<td>Transcribed description of the English narration provided by the participant.</td>
+</tr>
+<tr class="odd">
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>Numeric ID of the verb’s class.</td>
+</tr>
+<tr class="even">
+<td><code>noun_classes</code></td>
+<td>list of int (1 or more)</td>
+<td><code>[3]</code></td>
+<td>Numeric ID of the all noun classes in the narration.</td>
+</tr>
+<tr class="odd">
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>open</code></td>
+<td>Parsed verb from the narration.</td>
+</tr>
+<tr class="even">
+<td><code>nouns</code></td>
+<td>list of string (1 or more)</td>
+<td><code>[door]</code></td>
+<td>All parsed nouns in the narration.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#important-files">Back to Important Files</a></p>
 <h4 id="epic_100_retrieval_test.csv">EPIC_100_retrieval_test.csv</h4>
 <p>This CSV file contains the action annotations for the <strong>action retrieval</strong> testing set and contains 15 columns:</p>
 <table>
@@ -1305,6 +1364,39 @@
 <td>list of int (1 or more)</td>
 <td><code>[2]</code></td>
 <td>Numeric ID of all of the parsed noun’s classes.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_retrieval_test_sentence.csv">EPIC_100_retrieval_test_sentence.csv</h4>
+<p>This CSV file contains the caption annotations for the <strong>action retrieval</strong> testing set and contains 2 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P01_11_0</code></td>
+<td>Unique ID for the caption (corresponding to the original action).</td>
+</tr>
+<tr class="even">
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>take plate</code></td>
+<td>Transcribed description of the English narration provided by the participant.</td>
 </tr>
 </tbody>
 </table>

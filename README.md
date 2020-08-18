@@ -182,6 +182,8 @@ We provide html and pdf alternatives to this README which are auto-generated.
 * [`UDA_annotations/EPIC_100_uda_target_val.csv`](UDA_annotations/EPIC_100_uda_target_val.csv) ([info](#epic_100_uda_target_valcsv)) ([Pickle](UDA_annotations/EPIC_100_uda_target_val.pkl))
 * [`retrieval_annotations/EPIC_100_retrieval_train.csv`](retrieval_annotations/EPIC_100_retrieval_train.csv) ([info](#epic_100_retrieval_traincsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_train.pkl))
 * [`retrieval_annotations/EPIC_100_retrieval_test.csv`](retrieval_annotations/EPIC_100_retrieval_test.csv) ([info](#epic_100_retrieval_testcsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_test.pkl))
+* [`retrieval_annotations/EPIC_100_retrieval_train_sentence.csv`](retrieval_annotations/EPIC_100_retrieval_train_sentence.csv) ([info](#epic_100_retrieval_train_sentencecsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_train_sentence.pkl))
+* [`retrieval_annotations/EPIC_100_retrieval_test_sentence.csv`](retrieval_annotations/EPIC_100_retrieval_test_sentence.csv) ([info](#epic_100_retrieval_test_sentencecsv)) ([Pickle](retrieval_annotations/EPIC_100_retrieval_test_sentence.pkl))
 * [`EPIC_100_train_missing_timestamps_narrations.csv`](EPIC_100_train_missing_timestamps_narrations.csv) ([info](#epic_100_train_missing_timestamps_narrationscsv)) 
 * [`EPIC_100_validation_missing_timestamps_narrations.csv`](EPIC_100_validation_missing_timestamps_narrations.csv) ([info](#epic_100_validation_missing_timestamps_narrationscsv)) 
 * [`EPIC_100_unseen_participant_ids_test.csv`](EPIC_100_unseen_participant_ids_test.csv) ([info](#epic_100_unseen_participant_idscsv))
@@ -463,6 +465,22 @@ This CSV file contains the action annotations for the **action retrieval** train
 [Back to Important Files](#important-files)
 
 
+#### EPIC_100_retrieval_train_sentence.csv
+
+This CSV file contains the caption annotations for the **action retrieval** training set and contains 6 columns:
+
+| Column Name           | Type                       | Example        | Description                                                                   |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| `narration_id`        | string                     | `P01_01_0`     | Unique ID for the caption (corresponding to the original action).             |
+| `narration`           | string                     | `open door`    | Transcribed description of the English narration provided by the participant. |
+| `verb_class`          | int                        | `3`            | Numeric ID of the verb's class.                                               |
+| `noun_classes`        | list of int (1 or more)    | `[3]`          | Numeric ID of the all noun classes in the narration.                          |
+| `verb`                | string                     | `open`         | Parsed verb from the narration.                                               |
+| `nouns`               | list of string (1 or more) | `[door]`       | All parsed nouns in the narration.                                            |
+
+[Back to Important Files](#important-files)
+
+
 #### EPIC_100_retrieval_test.csv
 
 This CSV file contains the action annotations for the **action retrieval** testing set and contains 15 columns:
@@ -484,6 +502,18 @@ This CSV file contains the action annotations for the **action retrieval** testi
 | `noun_class`          | int                        | `2`            | Numeric ID of the first noun's class.                                         |
 | `all_nouns`           | list of string (1 or more) | `[plate]`      | List of all parsed nouns within the narration.                                |
 | `all_noun_classes`    | list of int (1 or more)    | `[2]`          | Numeric ID of all of the parsed noun's classes.                               |
+
+[Back to Important Files](#important-files)
+
+
+#### EPIC_100_retrieval_test_sentence.csv
+
+This CSV file contains the caption annotations for the **action retrieval** testing set and contains 2 columns:
+
+| Column Name           | Type                       | Example        | Description                                                                   |
+| --------------------- | -------------------------- | -------------- | ----------------------------------------------------------------------------- |
+| `narration_id`        | string                     | `P01_11_0`     | Unique ID for the caption (corresponding to the original action).            |
+| `narration`           | string                     | `take plate`   | Transcribed description of the English narration provided by the participant. |
 
 [Back to Important Files](#important-files)
 

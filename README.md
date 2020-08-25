@@ -656,4 +656,6 @@ may not use the material for commercial purposes.
 ## Changelog
 Please see the [release history](https://github.com/epic-kitchens/EPIC-KITCHENS-100-Annotations/releases) for the changelog.
 
+Current Version 1.1.0.
+
 [back to top](#index)

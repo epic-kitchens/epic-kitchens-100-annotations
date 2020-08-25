@@ -49,6 +49,7 @@
 </ul>
 <p>We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use, see <a href="#important-files">Important Files</a> for more information.</p>
 <p>Ground truth is provided for action segments as action/verb/noun labels along with the start and end times of the segment.</p>
+<p>We also provide automatic annotations in the form of object masks and hand/object BBoxes. See <a href="#automatic-annotations-download">automatic annotations</a> for more details.</p>
 <p><a href="#index">back to top</a></p>
 <h2 id="quick-start">Quick Start</h2>
 <p>Here you can download the annotation files for all of the challenges. For more information on each challenge, please see the paper <a href="">here</a>. A download script is provided for the videos, RGB Frames and Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a>.</p>
@@ -96,10 +97,19 @@
 </ol>
 <div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb6-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames --domain-adaptation</a></code></pre></div>
 <ol start="2" type="1">
-<li>Download the Unsupervised Domain Adaptation <a href="UDA_annotations/EPIC_100_uda_source_train.csv">source train</a>/<a href="UDA_annotations/EPIC_100_uda_target_train_timestamps.csv">target train</a>/<a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.csv">target test</a> files.</li>
-<li>Extract video features (for all three splits) using an off-the-shelf model trained on <strong>EPIC-KITCHENS-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
+<li>Download the Unsupervised Domain Adaptation <a href="UDA_annotations/EPIC_100_uda_source_train.csv">source train</a>/<a href="UDA_annotations/EPIC_100_uda_target_train_timestamps.csv">target train</a>/<a href="UDA_annotations/EPIC_100_uda_source_test_timestamps.csv">source_test</a>/<a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.csv">target test</a>/<a href="UDA_annotations/EPIC_100_uda_source_val.csv">source val</a>/<a href="UDA_annotations/EPIC_100_uda_target_val.csv">target val</a> files.</li>
+<li>Extract video features (for all six splits) using an off-the-shelf model trained on <strong>EPIC-KITCHENS-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
 <li>A simple baseline is using a domain discriminator (prediciting whether a video came from the source, EPIC-KITCHENS-55, or the target, EPIC-KITCHENS-100) to align the two domains. See <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>
 </ol>
+<p>IMPORTANT NOTE ON HYPER-PARAMETER TUNING. As the target domain is unlabelled, the training splits cannot be used for hyper-parameter tuning. You must use the validation splits to choose hyper-parameters. The procedure for hyper-parameter tuning and training is as follows:</p>
+<ol type="1">
+<li>Train your model on <a href="UDA_annotations/EPIC_100_uda_source_val.csv">source val</a> with unlabelled data from <a href="UDA_annotations/EPIC_100_uda_target_val.csv">target val</a>.</li>
+<li>Evaluate your model on <a href="UDA_annotations/EPIC_100_uda_target_val.csv">target val</a> using the labels provided (these labels should not be used during training).</li>
+<li>Select hyper-parameters based on the performance on <a href="UDA_annotations/EPIC_100_uda_target_val.csv">target val</a>.</li>
+<li>Re-train your model on <a href="UDA_annotations/EPIC_100_uda_source_train.csv">source train</a>/<a href="UDA_annotations/EPIC_100_uda_target_train_timestamps.csv">target train</a> with selected hyper-parameters.</li>
+<li>Evaluate the re-trained model on <a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.csv">target test</a> to produce action predictions for the challenge leaderboard.</li>
+</ol>
+<p>It is optional but highly ecouraged to evalute the performance on <a href="UDA_annotations/EPIC_100_uda_source_test_timestamps.csv">source_test</a> to compare source domain performances.</p>
 <h3 id="action-retrieval-challenge">Action Retrieval Challenge</h3>
 <ol type="1">
 <li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
@@ -131,8 +141,12 @@
 <li><a href="UDA_annotations/EPIC_100_uda_source_test_timestamps.csv"><code>UDA_annotations/EPIC_100_uda_source_test_timestamps.csv</code></a> (<a href="#epic_100_uda_source_test_timestampscsv">info</a>) (<a href="UDA_annotations/EPIC_100_uda_source_test_timestamps.pkl">Pickle</a>)</li>
 <li><a href="UDA_annotations/EPIC_100_uda_target_train_timestamps.csv"><code>UDA_annotations/EPIC_100_uda_target_train_timestamps.csv</code></a> (<a href="#epic_100_uda_target_train_timestampscsv">info</a>) (<a href="UDA_annotations/EPIC_100_uda_target_train_timestamps.pkl">Pickle</a>)</li>
 <li><a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.csv"><code>UDA_annotations/EPIC_100_uda_target_test_timestamps.csv</code></a> (<a href="#epic_100_uda_target_test_timestampscsv">info</a>) (<a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.pkl">Pickle</a>)</li>
+<li><a href="UDA_annotations/EPIC_100_uda_source_val.csv"><code>UDA_annotations/EPIC_100_uda_source_val.csv</code></a> (<a href="#epic_100_uda_source_valcsv">info</a>) (<a href="UDA_annotations/EPIC_100_uda_source_val.pkl">Pickle</a>)</li>
+<li><a href="UDA_annotations/EPIC_100_uda_target_val.csv"><code>UDA_annotations/EPIC_100_uda_target_val.csv</code></a> (<a href="#epic_100_uda_target_valcsv">info</a>) (<a href="UDA_annotations/EPIC_100_uda_target_val.pkl">Pickle</a>)</li>
 <li><a href="retrieval_annotations/EPIC_100_retrieval_train.csv"><code>retrieval_annotations/EPIC_100_retrieval_train.csv</code></a> (<a href="#epic_100_retrieval_traincsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_train.pkl">Pickle</a>)</li>
 <li><a href="retrieval_annotations/EPIC_100_retrieval_test.csv"><code>retrieval_annotations/EPIC_100_retrieval_test.csv</code></a> (<a href="#epic_100_retrieval_testcsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_test.pkl">Pickle</a>)</li>
+<li><a href="retrieval_annotations/EPIC_100_retrieval_train_sentence.csv"><code>retrieval_annotations/EPIC_100_retrieval_train_sentence.csv</code></a> (<a href="#epic_100_retrieval_train_sentencecsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_train_sentence.pkl">Pickle</a>)</li>
+<li><a href="retrieval_annotations/EPIC_100_retrieval_test_sentence.csv"><code>retrieval_annotations/EPIC_100_retrieval_test_sentence.csv</code></a> (<a href="#epic_100_retrieval_test_sentencecsv">info</a>) (<a href="retrieval_annotations/EPIC_100_retrieval_test_sentence.pkl">Pickle</a>)</li>
 <li><a href="EPIC_100_train_missing_timestamps_narrations.csv"><code>EPIC_100_train_missing_timestamps_narrations.csv</code></a> (<a href="#epic_100_train_missing_timestamps_narrationscsv">info</a>)</li>
 <li><a href="EPIC_100_validation_missing_timestamps_narrations.csv"><code>EPIC_100_validation_missing_timestamps_narrations.csv</code></a> (<a href="#epic_100_validation_missing_timestamps_narrationscsv">info</a>)</li>
 <li><a href="EPIC_100_unseen_participant_ids_test.csv"><code>EPIC_100_unseen_participant_ids_test.csv</code></a> (<a href="#epic_100_unseen_participant_idscsv">info</a>)</li>
@@ -850,6 +864,232 @@
 <p>Note that this file contains only videos from EPIC-KITCHENS-100 which is used as the target domain.</p>
 <p>See <a href="#unsupervised-domain-adaptation-challenge">here</a> for more details on the unsupervised domain adaptation challenge.</p>
 <p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_uda_source_val.csv">EPIC_100_uda_source_val.csv</h4>
+<p>This CSV file contains the action annotations for the <strong>source validation set</strong> used for <strong>Unsupervised Domain Adaptation</strong> and contains 15 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P03_02_0</code></td>
+<td>Unique ID for the segment as a string with participant ID and video ID.</td>
+</tr>
+<tr class="even">
+<td><code>participant_id</code></td>
+<td>int</td>
+<td><code>P03</code></td>
+<td>ID of the participant (unique per participant).</td>
+</tr>
+<tr class="odd">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P03_02</code></td>
+<td>ID of the video where the segment originated from (unique per video).</td>
+</tr>
+<tr class="even">
+<td><code>narration_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:04.310</code></td>
+<td>Timestamp of when the original narration was recorded in <code>HH:mm:ss.SSS</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:03.29</code></td>
+<td>Start time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="even">
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:04.26</code></td>
+<td>End time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="odd">
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>197</code></td>
+<td>Start frame of the action.</td>
+</tr>
+<tr class="even">
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>255</code></td>
+<td>End frame of the action.</td>
+</tr>
+<tr class="odd">
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>put lunch box</code></td>
+<td>Transcribed description of the English narration provided by the participant.</td>
+</tr>
+<tr class="even">
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>put</code></td>
+<td>Parsed verb from the narration.</td>
+</tr>
+<tr class="odd">
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>1</code></td>
+<td>Numeric ID of the verb’s class.</td>
+</tr>
+<tr class="even">
+<td><code>noun</code></td>
+<td>string</td>
+<td><code>box:lunch</code></td>
+<td>First parsed noun from the narration.</td>
+</tr>
+<tr class="odd">
+<td><code>noun_class</code></td>
+<td>int</td>
+<td><code>23</code></td>
+<td>Numeric ID of the first noun’s class.</td>
+</tr>
+<tr class="even">
+<td><code>all_nouns</code></td>
+<td>list of string (1 or more)</td>
+<td><code>[box:lunch]</code></td>
+<td>List of all parsed nouns within the narration.</td>
+</tr>
+<tr class="odd">
+<td><code>all_noun_classes</code></td>
+<td>list of int (1 or more)</td>
+<td><code>[23]</code></td>
+<td>Numeric ID of all of the parsed noun’s classes.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that this file contains only videos from EPIC-KITCHENS-55 which is used as the source domain for validation.</p>
+<p>See <a href="#unsupervised-domain-adaptation-challenge">here</a> for more details on the unsupervised domain adaptation challenge.</p>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_uda_target_val.csv">EPIC_100_uda_target_val.csv</h4>
+<p>This CSV file contains the action annotations for the <strong>target validation set</strong> used for <strong>Unsupervised Domain Adaptation</strong> and contains 15 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P03_101_0</code></td>
+<td>Unique ID for the segment as a string with participant ID and video ID.</td>
+</tr>
+<tr class="even">
+<td><code>participant_id</code></td>
+<td>int</td>
+<td><code>P03</code></td>
+<td>ID of the participant (unique per participant).</td>
+</tr>
+<tr class="odd">
+<td><code>video_id</code></td>
+<td>string</td>
+<td><code>P03_101</code></td>
+<td>ID of the video where the segment originated from (unique per video).</td>
+</tr>
+<tr class="even">
+<td><code>narration_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:02.877</code></td>
+<td>Timestamp of when the original narration was recorded in <code>HH:mm:ss.SSS</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>start_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:02.60</code></td>
+<td>Start time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="even">
+<td><code>stop_timestamp</code></td>
+<td>string</td>
+<td><code>00:00:03.86</code></td>
+<td>End time in <code>HH:mm:ss.SS</code> of the action segment.</td>
+</tr>
+<tr class="odd">
+<td><code>start_frame</code></td>
+<td>int</td>
+<td><code>130</code></td>
+<td>Start frame of the action.</td>
+</tr>
+<tr class="even">
+<td><code>stop_frame</code></td>
+<td>int</td>
+<td><code>193</code></td>
+<td>End frame of the action.</td>
+</tr>
+<tr class="odd">
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>turn on tap</code></td>
+<td>Transcribed description of the English narration provided by the participant.</td>
+</tr>
+<tr class="even">
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>turn-on</code></td>
+<td>Parsed verb from the narration.</td>
+</tr>
+<tr class="odd">
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>6</code></td>
+<td>Numeric ID of the verb’s class.</td>
+</tr>
+<tr class="even">
+<td><code>noun</code></td>
+<td>string</td>
+<td><code>tap</code></td>
+<td>First parsed noun from the narration.</td>
+</tr>
+<tr class="odd">
+<td><code>noun_class</code></td>
+<td>int</td>
+<td><code>0</code></td>
+<td>Numeric ID of the first noun’s class.</td>
+</tr>
+<tr class="even">
+<td><code>all_nouns</code></td>
+<td>list of string (1 or more)</td>
+<td><code>[tap]</code></td>
+<td>List of all parsed nouns within the narration.</td>
+</tr>
+<tr class="odd">
+<td><code>all_noun_classes</code></td>
+<td>list of int (1 or more)</td>
+<td><code>[23]</code></td>
+<td>Numeric ID of all of the parsed noun’s classes.</td>
+</tr>
+</tbody>
+</table>
+<p>Note that this file contains only videos from EPIC-KITCHENS-100 which is used as the target domain for validation.</p>
+<p>See <a href="#unsupervised-domain-adaptation-challenge">here</a> for more details on the unsupervised domain adaptation challenge.</p>
+<p><a href="#important-files">Back to Important Files</a></p>
 <h4 id="epic_100_retrieval_train.csv">EPIC_100_retrieval_train.csv</h4>
 <p>This CSV file contains the action annotations for the <strong>action retrieval</strong> training set and contains 15 columns:</p>
 <table>
@@ -961,6 +1201,63 @@
 </tbody>
 </table>
 <p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_retrieval_train_sentence.csv">EPIC_100_retrieval_train_sentence.csv</h4>
+<p>This CSV file contains the caption annotations for the <strong>action retrieval</strong> training set and contains 6 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P01_01_0</code></td>
+<td>Unique ID for the caption (corresponding to the original action).</td>
+</tr>
+<tr class="even">
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>open door</code></td>
+<td>Transcribed description of the English narration provided by the participant.</td>
+</tr>
+<tr class="odd">
+<td><code>verb_class</code></td>
+<td>int</td>
+<td><code>3</code></td>
+<td>Numeric ID of the verb’s class.</td>
+</tr>
+<tr class="even">
+<td><code>noun_classes</code></td>
+<td>list of int (1 or more)</td>
+<td><code>[3]</code></td>
+<td>Numeric ID of the all noun classes in the narration.</td>
+</tr>
+<tr class="odd">
+<td><code>verb</code></td>
+<td>string</td>
+<td><code>open</code></td>
+<td>Parsed verb from the narration.</td>
+</tr>
+<tr class="even">
+<td><code>nouns</code></td>
+<td>list of string (1 or more)</td>
+<td><code>[door]</code></td>
+<td>All parsed nouns in the narration.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#important-files">Back to Important Files</a></p>
 <h4 id="epic_100_retrieval_test.csv">EPIC_100_retrieval_test.csv</h4>
 <p>This CSV file contains the action annotations for the <strong>action retrieval</strong> testing set and contains 15 columns:</p>
 <table>
@@ -1068,6 +1365,39 @@
 <td>list of int (1 or more)</td>
 <td><code>[2]</code></td>
 <td>Numeric ID of all of the parsed noun’s classes.</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#important-files">Back to Important Files</a></p>
+<h4 id="epic_100_retrieval_test_sentence.csv">EPIC_100_retrieval_test_sentence.csv</h4>
+<p>This CSV file contains the caption annotations for the <strong>action retrieval</strong> testing set and contains 2 columns:</p>
+<table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Column Name</th>
+<th>Type</th>
+<th>Example</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>narration_id</code></td>
+<td>string</td>
+<td><code>P01_11_0</code></td>
+<td>Unique ID for the caption (corresponding to the original action).</td>
+</tr>
+<tr class="even">
+<td><code>narration</code></td>
+<td>string</td>
+<td><code>take plate</code></td>
+<td>Transcribed description of the English narration provided by the participant.</td>
 </tr>
 </tbody>
 </table>
@@ -1240,6 +1570,10 @@
 <p>If you wish to download the whole dataset, the following command can be run:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb9-1" title="1"><span class="ex">python</span> epic_downloader.py</a></code></pre></div>
 <p>See the <a href="https://github.com/epic-kitchens/download-scripts-100/blob/master/README.md">README</a> for more information.</p>
+<h4 id="automatic-annotations-download">Automatic Annotations Download</h4>
+<p>We also provide automatic annotations in the form of object masks extracted through the use of MaskRCNN and hand-object BBoxes from <a href="https://github.com/ddshan/Hand_Object_Detector">ddshan/Hand_Object_Detector</a> (<a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Shan_Understanding_Human_Hands_in_Contact_at_Internet_Scale_CVPR_2020_paper.html">CVPR 2020</a>).</p>
+<p>The masks can be downloaded from <a href="https://data.bris.ac.uk/data/dataset/3l8eci2oqgst92n14w2yqi5ytu">data.bris</a> and a supporting library is available from <a href="https://github.com/epic-kitchens/epic-kitchens-100-object-masks">this repo</a>.</p>
+<p>The hand-object bboxes can be downloaded from <a href="https://data.bris.ac.uk/data/dataset/3l8eci2oqgst92n14w2yqi5ytu">data.bris</a> and a supporting library is available from <a href="https://github.com/epic-kitchens/epic-kitchens-100-hand-object-bboxes">this repo</a>.</p>
 <h3 id="differences-to-epic-kitchen-55">Differences to EPIC-Kitchen-55</h3>
 <h4 id="updated-annotations">Updated Annotations</h4>
 <p>Whilst videos from EPIC-KITCHENS-55 are used within EPIC-KITCHENS-100 some of the annotations have been modified to improve the quality of the annotations. Additionally, with EPIC-KITCHENS-100, the verb/noun classes have been updated to cover the annotations from the new videos. Because of this, the annotations from EPIC-KITCHENS-55 cannot be used for EPIC-KITCHENS-100.</p>

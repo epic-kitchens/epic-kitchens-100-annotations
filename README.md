@@ -190,6 +190,7 @@ We provide html and pdf alternatives to this README which are auto-generated.
 * [`EPIC_100_unseen_participant_ids_validation.csv`](EPIC_100_unseen_participant_ids_validation.csv) ([info](#epic_100_unseen_participant_idscsv))
 * [`EPIC_100_tail_verbs.csv`](EPIC_100_tail_verbs.csv) ([info](#epic_100_tail_verbscsv))
 * [`EPIC_100_tail_nouns.csv`](EPIC_100_tail_nouns.csv) ([info](#epic_100_tail_nounscsv))
+* [`EPIC_100_video_info.csv`](EPIC_100_video_info.csv) ([info](#epic_100_video_infocsv))
 
 [back to top](#index)
 
@@ -571,6 +572,17 @@ These are the set of smallest classes (i.e. those with fewest instances) that ac
 | Column Name           | Type   | Example        | Description                                                                   |
 | --------------------- | ------ | -------------- | ----------------------------------------------------------------------------- |
 | `noun`                | int    | `56`           | Numeric ID representing the noun class.                                       |
+
+#### EPIC_100_video_info.csv
+
+This CSV file contains information about each video in the dataset.
+
+| Column Name           | Type   | Example        | Description                                                                   |
+| --------------------- | ------ | -------------- | ----------------------------------------------------------------------------- |
+| `video_id`            | str    | `P01_01`       | ID of the video.                                                              |
+| `duration`            | float  | `201.134`      | Duration of the video in seconds.                                             |
+| `fps`                 | float  | `50.0`         | FPS of the video.                                                             |
+| `resolution`          | str    | `1920x1080`    | Resolution of the video `width x height`.                                     |
 
 [Back to Important Files](#important-files)
 

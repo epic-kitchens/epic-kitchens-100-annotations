@@ -41,6 +41,66 @@ When using the dataset, kindly reference:
 } 
 ```
 
+## Erratum
+
+**Important:** We have recently detected an error in our pre-extracted RGB and Optical flow frames for two videos in our dataset. This does not affect the videos themselves or any of the annotations in this github. However, if you've been using our pre-extracted frames, we below detail how you can fix the error at your end, until we publish replacement frames for downloading.
+
+Download the videos `P01_109.MP4` and `P27_103.MP4`. Then set up a directory like so:
+
+    $ mkdir -p rgb/{P01_109,P27_103}
+    $ mkdir -p flow/{P01_109,P27_103}
+    $ mkdir videos
+    $ mv /path/to/{P01_109,P27_103}.MP4 videos
+
+You will need docker setup on your machine to extract the frames and flow.
+
+**RGB**
+
+    $ docker run --gpus "device=0" \
+         -it \
+         --rm \
+         -v "$PWD:/workspace" \
+         willprice/nvidia-ffmpeg \
+         -hwaccel cuvid \
+         -c:v hevc_cuvid \
+         -i /workspace/videos/P27_103.MP4 \
+         -vf 'scale_npp=-2:256:interp_algo=super,hwdownload,format=nv12' \
+         -qscale:v 4 \
+         -r 50 /workspace/rgb/P27_103/frame_%010d.jpg
+    
+    $ docker run --gpus "device=0" \
+         -it \
+         --rm \
+         -v "$PWD:/workspace" \
+         willprice/nvidia-ffmpeg \
+         -hwaccel cuvid \
+         -c:v hevc_cuvid \
+         -i /workspace/videos/P01_109.MP4 \
+         -vf 'scale_npp=-2:256:interp_algo=super,hwdownload,format=nv12' \
+         -qscale:v 4 \
+         -r 50 /workspace/rgb/P01_109/frame_%010d.jpg
+
+
+**Flow**
+
+
+    $ docker run --gpus "device=0" \
+         -it \
+         --rm \
+         -v "$PWD/rgb/P01_109:/input" \
+         -v "$PWD/flow/P01_109:/output" \
+         willprice/furnari-flow \
+         frame_%010d.jpg -g 0 -s 1 -d 1 -b 8
+    
+    $ docker run --gpus "device=0" \
+         -it \
+         --rm \
+         -v "$PWD/rgb/P27_103:/input" \
+         -v "$PWD/flow/P27_103:/output" \
+         willprice/furnari-flow \
+         frame_%010d.jpg -g 0 -s 1 -d 1 -b 8
+
+
 ## Index
 * [Dataset Details](#dataset-details)
 * [Quick start Guides](#quick-start)

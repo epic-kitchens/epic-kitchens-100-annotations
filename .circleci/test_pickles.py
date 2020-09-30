@@ -36,7 +36,6 @@ def test_files(pkl_paths, csv_paths, commit_hash, version_number):
                 try:
                     assert (csv[column] == df[column]).all()
                 except:
-                    import bpdb; bpdb.set_trace()
                     raise Exception('Column {} doesn\'t match between {} and {}'.format(column, csv_path, pkl_path))
         if 'narration_timestamp' in df.columns:
             train_missing = pd.read_csv('./EPIC_100_train_missing_timestamp_narrations.csv')
@@ -44,17 +43,6 @@ def test_files(pkl_paths, csv_paths, commit_hash, version_number):
             missing = set(pd.concat([train_missing, val_missing]).narration_id)
             diff = set(df[csv['narration_timestamp'] != df['narration_timestamp']].index)
             assert len(diff) == 0 or diff.issubset(missing)
-        #if 'noun_class' in df.columns or 'verb_class' in df.columns or 'start_timestamp' df.columns or 'end_timestamp' in df.columns:
-        #    print(pkl_path)
-        #    csv = csv.set_index('uid')
-        #if 'noun_class' in df.columns:
-        #    assert (csv.noun_class == df.noun_class).all()
-        #if 'verb_class' in df.columns:
-        #    assert (csv.verb_class == df.verb_class).all()
-        #if 'start_timestamp' in df.columns:
-        #    assert (csv.start_timestamp == df.start_timestamp).all()
-        #if 'stop_timestamp' in df.columns:
-        #    assert (csv.stop_timestamp == df.stop_timestamp).all()
 
 def get_csv_error_message(csv_path, pkl_path, csv_ids, df_ids):
     in_csv_not_in_df = csv_ids - df_ids

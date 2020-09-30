@@ -1,4 +1,4 @@
-index,narration,verb_class,noun_classes,verb,nouns
+narration_id,narration,verb_class,noun_classes,verb,nouns
 P01_01_0,open door,3,[3],open,['door']
 P01_01_1,turn on light,6,[114],turn-on,['light']
 P01_01_10,open drawer,3,[8],open,['drawer']

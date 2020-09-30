@@ -93,7 +93,7 @@ $ docker run --gpus &quot;device=0&quot; \
 <li><a href="#action-detection-challenge">Action Detection</a></li>
 <li><a href="#action-anticipation-challenge">Action Anticipation</a></li>
 <li><a href="#unsupervised-domain-adaptation-challenge">Unsupervised Domain Adaptation</a></li>
-<li><a href="#action-retrieval-challenge">Action Retrieval</a></li>
+<li><a href="#multi-instance-retrieval-challenge">Multi-Instance Retrieval</a></li>
 </ul>
 <p>We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use, see <a href="#important-files">Important Files</a> for more information.</p>
 <p>Ground truth is provided for action segments as action/verb/noun labels along with the start and end times of the segment.</p>
@@ -158,13 +158,14 @@ $ docker run --gpus &quot;device=0&quot; \
 <li>Evaluate the re-trained model on <a href="UDA_annotations/EPIC_100_uda_target_test_timestamps.csv">target test</a> to produce action predictions for the challenge leaderboard.</li>
 </ol>
 <p>It is optional but highly ecouraged to evalute the performance on <a href="UDA_annotations/EPIC_100_uda_source_test_timestamps.csv">source_test</a> to compare source domain performances.</p>
-<h3 id="action-retrieval-challenge">Action Retrieval Challenge</h3>
+<h3 id="multi-instance-retrieval-challenge">Multi-Instance Retrieval Challenge</h3>
+<p><strong>NOTE</strong> <em>30/09/2020</em> There was an error in the creation of the sentence files for the retrieval challenge. Please download the new sentence dataframes.</p>
 <ol type="1">
 <li>Download the videos/RGB/Flow frames <a href="https://github.com/epic-kitchens/download-scripts-100">here</a> with the following command:</li>
 </ol>
 <div class="sourceCode" id="cb10"><pre class="sourceCode bash"><code class="sourceCode bash"><a class="sourceLine" id="cb10-1" title="1"><span class="ex">python</span> epic_downloader.py --videos --rgb-frames --flow-frames --action-retrieval</a></code></pre></div>
 <ol start="2" type="1">
-<li>Download the Action Retrieval <a href="retrieval_annotations/EPIC_100_retrieval_train.csv">train</a>/<a href="retrieval_annotations/EPIC_100_retrieval_test.csv">test</a> files.</li>
+<li>Download the Multi-Instance Retrieval <a href="retrieval_annotations/EPIC_100_retrieval_train.csv">train</a>/<a href="retrieval_annotations/EPIC_100_retrieval_test.csv">test</a> files.</li>
 <li>Extract video features (for both the train and test set) using an off-the-shelf model trained on <strong>EPIC-KITCHENS-55</strong> (<a href="https://github.com/epic-kitchens/action-models">example model</a>).</li>
 <li>Extract word2vec features for the captions from both the train and test set (<a href="https://github.com/mmihaltz/word2vec-GoogleNews-vectors">example models</a>).</li>
 <li>Enjoy the EPIC-KITCHENS-100 dataset in your favourite video retrieval model, see <a href="#citing">the paper</a> for details on the models we used for this baseline.</li>

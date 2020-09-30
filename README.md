@@ -124,7 +124,7 @@ The dataset currently has 6 active benchmarks:
 * [Action Detection](#action-detection-challenge)
 * [Action Anticipation](#action-anticipation-challenge)
 * [Unsupervised Domain Adaptation](#unsupervised-domain-adaptation-challenge)
-* [Action Retrieval](#action-retrieval-challenge)
+* [Multi-Instance Retrieval](#multi-instance-retrieval-challenge)
 
 We provide csv files for the train/val/test sets of each benchmark detailed below for ease of use, see [Important Files](#important-files) for more information.
 
@@ -203,13 +203,16 @@ IMPORTANT NOTE ON HYPER-PARAMETER TUNING. As the target domain is unlabelled, th
 
 It is optional but highly ecouraged to evalute the performance on [source_test](UDA_annotations/EPIC_100_uda_source_test_timestamps.csv) to compare source domain performances.
 
-### Action Retrieval Challenge
+### Multi-Instance Retrieval Challenge
+
+**NOTE** *30/09/2020* There was an error in the creation of the sentence files for the retrieval challenge. Please download the new sentence dataframes.
+
 1. Download the videos/RGB/Flow frames [here](https://github.com/epic-kitchens/download-scripts-100) with the following command: 
 
 ```bash
 python epic_downloader.py --videos --rgb-frames --flow-frames --action-retrieval
 ```
-2. Download the Action Retrieval [train](retrieval_annotations/EPIC_100_retrieval_train.csv)/[test](retrieval_annotations/EPIC_100_retrieval_test.csv) files.
+2. Download the Multi-Instance Retrieval [train](retrieval_annotations/EPIC_100_retrieval_train.csv)/[test](retrieval_annotations/EPIC_100_retrieval_test.csv) files.
 3. Extract video features (for both the train and test set) using an off-the-shelf model trained on **EPIC-KITCHENS-55** ([example model](https://github.com/epic-kitchens/action-models)).
 4. Extract word2vec features for the captions from both the train and test set ([example models](https://github.com/mmihaltz/word2vec-GoogleNews-vectors)).
 5. Enjoy the EPIC-KITCHENS-100 dataset in your favourite video retrieval model, see [the paper](#citing) for details on the models we used for this baseline.

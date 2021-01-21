@@ -653,6 +653,10 @@ This CSV file contains information about each video in the dataset.
 
 ## Additional Information
 
+### Frame indexing
+
+All frame indices are 0 indexed.
+
 ### File Downloads
 
 Due to the size of the dataset we provide a script for downloading parts of the dataset which can be found [here](https://github.com/epic-kitchens/download-scripts-100).

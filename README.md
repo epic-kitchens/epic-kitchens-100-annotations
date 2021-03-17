@@ -720,6 +720,11 @@ may not use the material for commercial purposes.
 
 [back to top](#index)
 
+## Disclaimer
+EPIC-KITCHENS-55 and EPIC-KITCHENS-100 were collected as a tool for research in computer vision, however, it is worth noting that the dataset may have unintended biases (including those of a societal, gender or racial nature).
+
+[back to top](#index)
+
 ## Changelog
 Please see the [release history](https://github.com/epic-kitchens/EPIC-KITCHENS-100-Annotations/releases) for the changelog.
 

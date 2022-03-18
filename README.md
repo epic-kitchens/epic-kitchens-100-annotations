@@ -29,15 +29,17 @@ Michael Wray (1)
 ## Citing
 When using the dataset, kindly reference:
 ```
-@ARTICLE{Damen2020RESCALING,
+@article{damen2022rescaling,
    title={Rescaling Egocentric Vision},
    author={Damen, Dima and Doughty, Hazel and Farinella, Giovanni Maria  and and Furnari, Antonino 
            and Ma, Jian and Kazakos, Evangelos and Moltisanti, Davide and Munro, Jonathan 
            and Perrett, Toby and Price, Will and Wray, Michael},
-           journal   = {CoRR},
-           volume    = {abs/2006.13256},
-           year      = {2020},
-           ee        = {http://arxiv.org/abs/2006.13256},
+           journal={International Journal of Computer Vision},
+           volume={130},
+           number={1},
+           pages={33--55},
+           year={2022},
+           publisher={Springer}
 } 
 ```
 
